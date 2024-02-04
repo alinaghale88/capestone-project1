@@ -5,3 +5,8 @@
     --clr-light: #CDCDCD;
     --clr-white: #FFFFFF;
 }
+
+/*Border box fix*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
