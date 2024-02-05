@@ -1,6 +1,6 @@
 function showNav() {
-  var element1 = document.getElementsByClassName("top-navbar");
-  var element2 = document.getElementsByClassName("side-navbar");
+  var element1 = document.getElementsByClassName("c-top-navbar");
+  var element2 = document.getElementsByClassName("c-side-navbar");
   var toggleButton = document.getElementById("toggleButton");
   var closeButton = document.getElementById("closeButton");
   for (var i = 0; i < element1.length; i++) {
