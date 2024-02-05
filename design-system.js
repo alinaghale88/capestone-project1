@@ -5,6 +5,6 @@ function showNav() {
       element1[i].classList.toggle("show-items");
   }
   for (var i = 0; i < element2.length; i++) {
-      element2[i].classList.toggle("show-items");
+      element2[i].classList.toggle("navbar--show-items");
   }
   }

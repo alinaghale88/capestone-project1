@@ -1,7 +1,7 @@
 .top-navbar, .side-navbar {
     display: none;
 }
-.show-items {
+.navbar--show-items {
     display: block;
 }
 .mobile-navbar {
