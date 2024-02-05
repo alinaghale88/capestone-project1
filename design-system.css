@@ -17,3 +17,6 @@
 .top-navbar__link:hover, .side-navbar__link:hover {
     color: var(--clr-secondary);
 }
+.side-navbar__sub-menu {
+    margin: 16px 0;
+}
