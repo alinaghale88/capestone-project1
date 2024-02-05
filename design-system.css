@@ -9,3 +9,6 @@
 .top-navbar__menu, .side-navbar__menu, .side-navbar__sub-menu {
     list-style: none;
 }
+.top-navbar__link, .side-navbar__link {
+    text-decoration: none;
+}
