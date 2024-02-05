@@ -9,6 +9,8 @@ function showNav() {
   for (var i = 0; i < element2.length; i++) {
     element2[i].classList.toggle("navbar--show-items");
   }
-  toggleButton.style.display = toggleButton.style.display === 'none' ? 'block' : 'none';
-    closeButton.style.display = closeButton.style.display === 'none' ? 'block' : 'none';
+  toggleButton.style.display =
+    toggleButton.style.display === "none" ? "block" : "none";
+  closeButton.style.display =
+    closeButton.style.display === "none" ? "block" : "none";
 }
