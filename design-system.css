@@ -1,3 +1,9 @@
+.top-navbar, .side-navbar {
+    display: none;
+}
+.show-items {
+    display: block;
+}
 .mobile-navbar {
     display: flex;
     justify-content: space-between;
