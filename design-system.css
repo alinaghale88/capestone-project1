@@ -6,3 +6,6 @@
 .mobile-navbar__toggle {
     padding-right: 10px;
 }
+.top-navbar__menu, .side-navbar__menu {
+    list-style: none;
+}
