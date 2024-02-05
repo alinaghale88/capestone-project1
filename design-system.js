@@ -18,5 +18,5 @@ function showNav() {
 // Code to set the active state
 var currentPage = window.location.pathname;
 if (currentPage === "/about-me.html") {
-    document.getElementById("aboutLink").classList.add("link--active");
+  document.getElementById("aboutLink").classList.add("link--active");
 }
