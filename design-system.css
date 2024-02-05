@@ -13,3 +13,6 @@
     text-decoration: none;
     color: var(--clr-primary);
 }
+.top-navbar__link:hover, .side-navbar__link:hover {
+    color: var(--clr-secondary);
+}
