@@ -32,4 +32,7 @@
     .mobile-navbar__toggle {
         display: none;
     }
+    .top-navbar, .side-navbar {
+        display: block;
+    }
 }
