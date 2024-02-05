@@ -3,3 +3,6 @@
     justify-content: space-between;
     align-items: center;
 }
+.mobile-navbar__toggle {
+    padding-right: 10px;
+}
