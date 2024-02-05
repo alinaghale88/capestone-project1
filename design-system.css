@@ -8,6 +8,7 @@
 }
 .top-navbar__menu, .side-navbar__menu, .side-navbar__sub-menu {
     list-style: none;
+    padding-left: 0;
 }
 .top-navbar__link, .side-navbar__link {
     text-decoration: none;
