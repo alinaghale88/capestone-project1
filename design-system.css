@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.mobile-navbar__toggle {
+.mobile-navbar__toggle, .mobile-navbar__close {
     padding-right: 10px;
 }
 .top-navbar__menu, .side-navbar__menu, .side-navbar__sub-menu {
