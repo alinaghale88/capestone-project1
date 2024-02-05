@@ -1,22 +1,33 @@
 :root {
-    --clr-primary: #000000;
-    --clr-secondary: #A9A9A9;
-    --clr-accent: #A9A9A9;
-    --clr-light: #CDCDCD;
-    --clr-white: #FFFFFF;
+  --clr-primary: #000000;
+  --clr-secondary: #a9a9a9;
+  --clr-accent: #a9a9a9;
+  --clr-light: #cdcdcd;
+  --clr-white: #ffffff;
 }
 
 /*Border box fix*/
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /*Reset browser-default margin*/
-body, h1, h2, h3, h4, h5, h6, p, figure, picture {
-    margin: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
 }
 
 /*Reset padding value of list element*/
 li {
-    padding: 0;
+  padding: 0;
 }
