@@ -14,3 +14,9 @@ function showNav() {
   closeButton.style.display =
     closeButton.style.display === "none" ? "block" : "none";
 }
+
+// Code to set the active state
+var currentPage = window.location.pathname;
+if (currentPage === "/about-me.html") {
+    document.getElementById("aboutLink").classList.add("link--active");
+}
