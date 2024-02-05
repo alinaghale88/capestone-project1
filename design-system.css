@@ -26,6 +26,10 @@
 .side-navbar__sub-menu {
     margin: 16px 0;
 }
+/*Active state styling*/
+.menu .link--active {
+    color: var(--clr-secondary);
+}
 
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
