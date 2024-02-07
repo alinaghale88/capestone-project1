@@ -4,6 +4,15 @@
   --clr-accent: #a9a9a9;
   --clr-light: #cdcdcd;
   --clr-white: #ffffff;
+  --clr-text-primary: #605F4F;
+  --clr-bg-primary: #E6FEF7;
+  --clr-text-secondary: #8C8B7B;
+  --clr-bg-secondary: #FDDB91;
+  --clr-accent: #BA2D0B;
+  --clr-bg-primary-100: #F4FFFF;
+  --clr-bg-primary-200: #B8F7EE;
+  --clr-bg-accent-100: #FF9E77;
+  --clr-bg-accent-200: #7A1700;
 }
 
 /*Border box fix*/
