@@ -35,3 +35,40 @@ picture {
 li {
   padding: 0;
 }
+
+/*Utility classes for all the colors*/
+.u-text-primary {
+  color: var(--clr-text-primary);
+}
+
+.u-text-secondary {
+  color: var(--clr-text-secondary);
+}
+
+.u-bg-primary {
+  color: var(--clr-bg-primary);
+}
+
+.u-bg-secondary {
+  color: var(--clr-bg-secondary);
+}
+
+.u-accent {
+  color: var(--clr-accent);
+}
+
+.u-bg-primary-light {
+  color: var(--clr-bg-primary-100);
+}
+
+.u-bg-primary-dark {
+  color: var(--clr-bg-primary-100);
+}
+
+.u-bg-accent-light {
+  color: var(--clr-bg-accent-100);
+}
+
+.u-bg-accent-dark {
+  color: var(--clr-bg-accent-200);
+}
