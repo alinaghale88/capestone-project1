@@ -33,7 +33,7 @@
   margin: 16px 0;
 }
 /*Active state styling*/
-.c-navbar .menu .link--active {
+.c-top-navbar__link.link--active, .c-side-navbar__link.link--active {
   color: var(--clr-text-secondary);
 }
 
