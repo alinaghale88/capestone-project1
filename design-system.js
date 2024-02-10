@@ -4,10 +4,10 @@ function showNav() {
   var toggleButton = document.getElementById("toggleButton");
   var closeButton = document.getElementById("closeButton");
   for (var i = 0; i < element1.length; i++) {
-    element1[i].classList.toggle("navbar--show-items");
+    element1[i].classList.toggle("c-navbar--show-items");
   }
   for (var i = 0; i < element2.length; i++) {
-    element2[i].classList.toggle("navbar--show-items");
+    element2[i].classList.toggle("c-navbar--show-items");
   }
   toggleButton.style.display =
     toggleButton.style.display === "none" ? "block" : "none";
