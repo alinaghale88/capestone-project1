@@ -5,7 +5,7 @@
 .navbar--show-items {
   display: block;
 }
-.mobile-navbar {
+.c-mobile-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
