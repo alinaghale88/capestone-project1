@@ -1,13 +1,13 @@
 :root {
-  --clr-text-primary: #605F4F;
-  --clr-bg-primary: #E6FEF7;
-  --clr-text-secondary: #F4FFFF;
-  --clr-bg-secondary: #FDDB91;
-  --clr-accent: #BA2D0B;
-  --clr-bg-primary-100: #F4FFFF;
-  --clr-bg-primary-200: #B5F6EB;
-  --clr-bg-accent-100: #FF9E77;
-  --clr-bg-accent-200: #7A1700;
+  --clr-text-primary: #605f4f;
+  --clr-bg-primary: #e6fef7;
+  --clr-text-secondary: #f4ffff;
+  --clr-bg-secondary: #fddb91;
+  --clr-accent: #ba2d0b;
+  --clr-bg-primary-100: #f4ffff;
+  --clr-bg-primary-200: #b5f6eb;
+  --clr-bg-accent-100: #ff9e77;
+  --clr-bg-accent-200: #7a1700;
 }
 
 /*Border box fix*/
