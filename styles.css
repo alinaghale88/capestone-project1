@@ -94,3 +94,47 @@ li {
 .u-bg-accent-dark {
   background-color: var(--clr-bg-accent-200);
 }
+
+/*Utility classes for font family*/
+.u-heading-font {
+  font-family: var(--heading-font);
+}
+.u-body-font {
+  font-family: var(--body-font);
+}
+.u-heading-xl {
+  font-size: var(--heading-size-xl);
+}
+.u-heading-lg {
+  font-size: var(--heading-size-lg);
+}
+.u-heading-md {
+  font-size: var(--heading-size-md);
+}
+.u-heading-sm {
+  font-size: var(--heading-size-sm);
+}
+.u-body-lg {
+  font-size: var(--body-size-lg);
+}
+.u-body-md {
+  font-size: var(--body-size-md);
+}
+.u-heading-bold {
+  font-weight: var(--heading-weight-bold);
+}
+.u-heading-regular {
+  font-weight: var(--heading-weight-regular);
+}
+.u-body-regular {
+  font-weight: var(--body-weight-regular);
+}
+.u-heading-line-height {
+  line-height: var(--heading-line-height);
+}
+.u-body-line-height {
+  line-height: var(--body-line-height);
+}
+.u-letter-spacing-normal {
+  letter-spacing: var(--letter-spacing-normal);
+}
