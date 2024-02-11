@@ -37,6 +37,13 @@
   color: var(--clr-text-secondary);
 }
 
+/*Styling for colour swatch block*/
+.c-colour-swatch {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+}
+
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
   .mobile-navbar__toggle {
