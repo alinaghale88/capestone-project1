@@ -1,4 +1,5 @@
 :root {
+  /*Color variables*/
   --clr-text-primary: #605f4f;
   --clr-bg-primary: #e6fef7;
   --clr-text-secondary: #f4ffff;
@@ -8,6 +9,26 @@
   --clr-bg-primary-200: #b5f6eb;
   --clr-bg-accent-100: #ff9e77;
   --clr-bg-accent-200: #7a1700;
+
+  /*Font variables*/
+  --heading-font: 'Cabin', sans-serif;
+  --body-font: 'Playfair Display', serif;
+
+  --heading-size-xl: 2.5rem;
+  --heading-size-lg: 2rem;
+  --heading-size-md: 1.5rem;
+  --heading-size-sm: 1.25rem;
+  --body-size-lg: 1.125rem;
+  --body-size-md: 1rem;
+
+  --heading-weight-bold: bold;
+  --heading-weight-regular: normal;
+  --body-weight-regular: normal;
+
+  --heading-line-height: 1.2;
+  --body-line-height: 1.6;
+
+  --letter-spacing-normal: normal;
 }
 
 /*Border box fix*/
