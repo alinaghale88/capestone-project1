@@ -57,6 +57,14 @@ h3 {
   margin-bottom: 20px;
 }
 
+/*Styling for table*/
+.colour-combinations__table {
+  border-collapse: collapse;
+}
+.colour-combinations__table-heading {
+  border: 1px solid #000;
+}
+
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
   .mobile-navbar__toggle {
