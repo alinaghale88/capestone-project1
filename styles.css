@@ -28,7 +28,7 @@
   --heading-line-height: 1.2;
   --body-line-height: 1.6;
 
-  --letter-spacing-normal: normal;
+  --letter-spacing-normal: 0.5px;
 }
 
 /*Border box fix*/
