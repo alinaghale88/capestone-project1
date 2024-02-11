@@ -32,6 +32,12 @@
 .c-side-navbar__sub-menu {
   margin: 16px 0;
 }
+
+/*Styling for Colours page*/
+.colours-page {
+  background-color: #999999;
+}
+
 /*Active state styling*/
 .c-top-navbar__link.link--active, .c-side-navbar__link.link--active {
   color: var(--clr-text-secondary);
@@ -60,9 +66,11 @@ h3 {
 /*Styling for table*/
 .colour-combinations__table {
   border-collapse: collapse;
+  text-align: center;
 }
-.colour-combinations__table-heading {
+.colour-combinations__table-heading, .colour-combinations__table-data {
   border: 1px solid #000;
+  padding: 10px;
 }
 
 /*Styling for Desktop screens*/
