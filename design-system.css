@@ -37,7 +37,7 @@
   color: var(--clr-text-secondary);
 }
 
-/*Styling for colour swatch block*/
+/*Styling for colour swatch blocks*/
 .c-colour-swatch {
   display: inline-block;
   width: 300px;
