@@ -45,6 +45,15 @@
   text-align: center;
 }
 
+/*Styling for headings*/
+h2 {
+  font-size: 42px;
+  margin-bottom: 32px;
+}
+h3 {
+  font-size: 28px;
+}
+
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
   .mobile-navbar__toggle {
