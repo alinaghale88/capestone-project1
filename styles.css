@@ -16,9 +16,10 @@
 
   --heading-size-xl-dt: 2.5rem; /*Heading size for h1 element (Site logo / Page title) in desktop view*/
   --heading-size-xl-mb: 2rem; /*Heading size for h1 element in mobile view*/
-  --heading-size-lg: 2rem; /*Heading size for h2 elements in desktop view*/ 
-  --heading-size-md: 1.5rem; /*Heading size for h2 elements in mobile view*/
-  --heading-size-sm: 1.25rem; /*Heading size for h3 elements*/
+  --heading-size-lg-dt: 2rem; /*Heading size for h2 elements in desktop view*/ 
+  --heading-size-lg-mb: 1.8rem; /*Heading size for h2 elements in mobile view*/ 
+  --heading-size-md: 1.5rem; /*Heading size for h3 elements in desktop & mobile view*/
+  --heading-size-sm: 1.25rem; /*Heading size for h4 elements in desktop & mobile view*/
   --body-size-lg: 2.5rem; /*Contact form labels, FAQ title, Name in Testimonials, section content*/
   --body-size-md: 1rem; /*Blog content, excerpt, meta info*/
 
