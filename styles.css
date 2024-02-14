@@ -158,6 +158,15 @@ li {
 .u-body-line-height {
   line-height: var(--body-line-height);
 }
+.u-letter-spacing-xl-dt {
+  letter-spacing: var(--letter-spacing-xl-dt);
+}
+.u-letter-spacing-lg-dt {
+  letter-spacing: var(--letter-spacing-lg-dt);
+}
+.u-letter-spacing-heading {
+  letter-spacing: var(--letter-spacing-heading);
+}
 .u-letter-spacing-normal {
   letter-spacing: var(--letter-spacing-normal);
 }
