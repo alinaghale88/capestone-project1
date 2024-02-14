@@ -52,18 +52,6 @@
   text-align: center;
 }
 
-/*Styling for headings*/
-h2 {
-  font-size: 42px;
-  margin-bottom: 32px;
-  margin-top: 48px;
-}
-h3 {
-  font-size: 28px;
-  margin-top: 48px;
-  margin-bottom: 20px;
-}
-
 /*Styling for table*/
 .colour-combinations__table {
   border-collapse: collapse;
