@@ -74,6 +74,11 @@ h3 {
   border: 1px solid #000;
   padding: 10px;
 }
+.c-typography-table {
+  border: 1px solid #000;
+  margin: 35px 20px;
+  border-spacing: 70px 25px;
+}
 
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
