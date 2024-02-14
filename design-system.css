@@ -79,6 +79,9 @@ h3 {
   margin: 35px 20px;
   border-spacing: 70px 25px;
 }
+.c-typography-table__regular-caps {
+  padding-top: 20px;
+}
 
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
