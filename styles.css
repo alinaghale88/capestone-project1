@@ -127,6 +127,9 @@ li {
 .u-heading-regular {
   font-weight: var(--heading-weight-regular);
 }
+.u-body-bold {
+  font-weight: var(--body-weight-bold);
+}
 .u-body-regular {
   font-weight: var(--body-weight-regular);
 }
