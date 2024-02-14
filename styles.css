@@ -14,12 +14,13 @@
   --heading-font: 'Cabin', sans-serif;
   --body-font: 'Playfair Display', serif;
 
-  --heading-size-xl: 2.5rem; /*Heading size for h1 element (Site logo / Page title)*/
+  --heading-size-xl-dt: 2.5rem; /*Heading size for h1 element (Site logo / Page title) in desktop view*/
+  --heading-size-xl-mb: 2rem; /*Heading size for h1 element in mobile view*/
   --heading-size-lg: 2rem; /*Heading size for h2 elements in desktop view*/ 
   --heading-size-md: 1.5rem; /*Heading size for h2 elements in mobile view*/
   --heading-size-sm: 1.25rem; /*Heading size for h3 elements*/
-  --body-size-lg: 2.5rem; /*Contact form labels, FAQ title, Name in Testimonials*/
-  --body-size-md: 1rem; /*Blog content, body text content, meta info*/
+  --body-size-lg: 2.5rem; /*Contact form labels, FAQ title, Name in Testimonials, section content*/
+  --body-size-md: 1rem; /*Blog content, excerpt, meta info*/
 
   --heading-weight-bold: bold;
   --heading-weight-regular: normal;
@@ -103,8 +104,11 @@ li {
 .u-body-font {
   font-family: var(--body-font);
 }
-.u-heading-xl {
-  font-size: var(--heading-size-xl);
+.u-heading-xl-dt {
+  font-size: var(--heading-size-xl-dt);
+}
+.u-heading-xl-mb {
+  font-size: var(--heading-size-xl-mb);
 }
 .u-heading-lg {
   font-size: var(--heading-size-lg);
