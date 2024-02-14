@@ -111,8 +111,11 @@ li {
 .u-heading-xl-mb {
   font-size: var(--heading-size-xl-mb);
 }
-.u-heading-lg {
-  font-size: var(--heading-size-lg);
+.u-heading-lg-dt {
+  font-size: var(--heading-size-lg-dt);
+}
+.u-heading-lg-mb {
+  font-size: var(--heading-size-lg-mb);
 }
 .u-heading-md {
   font-size: var(--heading-size-md);
