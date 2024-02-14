@@ -33,7 +33,10 @@
   --heading-line-height-md: 1.4;
   --body-line-height: 1.5;
 
-  --letter-spacing-normal: 0.5px;
+  --letter-spacing-xl-dt: -0.02em;
+  --letter-spacing-lg-dt: -0.01em;
+  --letter-spacing-heading: 0em;
+  --letter-spacing-normal: 0.01em;
 }
 
 /*Border box fix*/
