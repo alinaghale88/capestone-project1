@@ -14,7 +14,7 @@
   --heading-font: 'Cabin', sans-serif;
   --body-font: 'Playfair Display', serif;
 
-  --heading-size-xl: 2.5rem; /*Heading size for Site logo / Page title*/
+  --heading-size-xl: 2.5rem; /*Heading size for h1 element (Site logo / Page title)*/
   --heading-size-lg: 2rem; /*Heading size for h2 elements in desktop view*/ 
   --heading-size-md: 1.5rem; /*Heading size for h2 elements in mobile view*/
   --heading-size-sm: 1.25rem; /*Heading size for h3 elements*/
