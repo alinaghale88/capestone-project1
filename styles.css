@@ -143,8 +143,14 @@ li {
 .u-body-regular {
   font-weight: var(--body-weight-regular);
 }
-.u-heading-line-height {
-  line-height: var(--heading-line-height);
+.u-heading-line-height-xl {
+  line-height: var(--heading-line-height-xl-dt);
+}
+.u-heading-line-height-lg {
+  line-height: var(--heading-line-height-lg-dt);
+}
+.u-heading-line-height-md {
+  line-height: var(--heading-line-height-md);
 }
 .u-body-line-height {
   line-height: var(--body-line-height);
