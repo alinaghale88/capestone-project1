@@ -94,11 +94,12 @@
   .c-desktop-header {
     display: flex;
     justify-content: space-between;
+    background-color: var(--clr-bg-primary);
   }
   .c-top-navbar__menu {
     display: flex;
   }
   .c-mobile-navbar, .c-top-navbar {
     background-color: unset;
-}
+  }
 }
