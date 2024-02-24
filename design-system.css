@@ -5,6 +5,7 @@
 }
 .c-navbar--show-items {
   display: block;
+  width: 60%;
 }
 .c-mobile-navbar {
   display: flex;
@@ -19,7 +20,11 @@
 .c-side-navbar__menu,
 .c-side-navbar__sub-menu {
   list-style: none;
-  padding-left: 0;
+  padding: 16px 0;
+  margin: 0;
+}
+.c-side-navbar__menu {
+  padding: 0;
 }
 .c-top-navbar__link,
 .c-side-navbar__link {
@@ -29,9 +34,6 @@
 .c-top-navbar__link:hover,
 .c-side-navbar__link:hover {
   color: var(--clr-text-secondary);
-}
-.c-side-navbar__sub-menu {
-  margin: 16px 0;
 }
 
 /*Styling for Colours page*/
