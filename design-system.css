@@ -102,4 +102,7 @@
   .c-mobile-navbar, .c-top-navbar {
     background-color: unset;
   }
+  .c-side-navbar {
+    width: 256px;
+  }
 }
