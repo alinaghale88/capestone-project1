@@ -98,4 +98,7 @@
   .c-top-navbar__menu {
     display: flex;
   }
+  .c-mobile-navbar, .c-top-navbar {
+    background-color: unset;
+}
 }
