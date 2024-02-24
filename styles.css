@@ -5,10 +5,10 @@
   --clr-text-secondary: #f4ffff;
   --clr-bg-secondary: #fddb91;
   --clr-accent: #ba2d0b;
-  --clr-bg-primary-100: #f4ffff;
-  --clr-bg-primary-200: #b5f6eb;
-  --clr-bg-accent-100: #ff9e77;
-  --clr-bg-accent-200: #7a1700;
+  --clr-bg-primary-light: #f4ffff;
+  --clr-bg-primary-dark: #b5f6eb;
+  --clr-bg-accent-light: #ff9e77;
+  --clr-bg-accent-dark: #7a1700;
 
   /*Font variables*/
   --heading-font: 'Cabin', sans-serif;
@@ -88,19 +88,19 @@ li {
 }
 
 .u-bg-primary-light {
-  background-color: var(--clr-bg-primary-100);
+  background-color: var(--clr-bg-primary-light);
 }
 
 .u-bg-primary-dark {
-  background-color: var(--clr-bg-primary-200);
+  background-color: var(--clr-bg-primary-dark);
 }
 
 .u-bg-accent-light {
-  background-color: var(--clr-bg-accent-100);
+  background-color: var(--clr-bg-accent-light);
 }
 
 .u-bg-accent-dark {
-  background-color: var(--clr-bg-accent-200);
+  background-color: var(--clr-bg-accent-dark);
 }
 
 /*Utility classes for font family*/
