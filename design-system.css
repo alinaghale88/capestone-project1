@@ -42,8 +42,8 @@
   color: var(--clr-text-secondary);
 }
 
-/*Styling for colour swatch table*/
-.c-colour-details__title {
+/*Styling for colour swatch & fonts use case table*/
+.c-colour-details__title, .c-typeface-details__title {
   text-align: left;
 }
 .c-colour-details__colour-swatch {
@@ -51,16 +51,16 @@
   width: 200px;
   height: 80px;
 }
-.c-colour-details__colour-swatch-col {
-  width: 40%;
+.c-colour-details__colour-swatch-col, .c-typeface-details__preview-col {
+  width: 35%;
 }
-.c-colour-details__attribute {
-  width: 15%;
+.c-colour-details__attribute, .c-typeface-details__attribute {
+  width: 20%;
 }
-.c-colour-details__value {
+.c-colour-details__value, .c-typeface-details__value {
   width: 45%;
 }
-.c-colour-details {
+.c-colour-details, .c-typeface-details {
   width: 1000px;
   border-collapse: collapse;
 }
@@ -69,7 +69,7 @@
   width: 100%;
   margin: 20px 0 30px;
 }
-.c-colour-details__cell-space {
+.c-colour-details__cell-space, .c-typeface-details__cell-space {
   padding: 10px 0;
 }
 
