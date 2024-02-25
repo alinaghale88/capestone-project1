@@ -51,6 +51,22 @@
   width: 200px;
   height: 80px;
 }
+.c-colour-details__colour-swatch-col {
+  width: 40%;
+}
+.c-colour-details__attribute {
+  width: 15%;
+}
+.c-colour-details__value {
+  width: 45%;
+}
+.c-colour-details {
+  width: 1000px;
+}
+.c-table-scroll {
+  overflow-x: auto;
+  width: 100%;
+}
 
 /*Styling for Colour-combinations table*/
 .colour-combinations__table {
