@@ -67,6 +67,7 @@
 .c-table-scroll {
   overflow-x: auto;
   width: 100%;
+  margin: 20px 0 30px;
 }
 .c-colour-details__cell-space {
   padding: 10px 0;
