@@ -62,6 +62,7 @@
 }
 .c-colour-details {
   width: 1000px;
+  border-collapse: collapse;
 }
 .c-table-scroll {
   overflow-x: auto;
