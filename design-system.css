@@ -42,7 +42,10 @@
   color: var(--clr-text-secondary);
 }
 
-/*Styling for colour swatch blocks*/
+/*Styling for colour swatch table*/
+.c-colour-details__title {
+  text-align: left;
+}
 .c-colour-details__colour-swatch {
   display: inline-block;
   width: 200px;
