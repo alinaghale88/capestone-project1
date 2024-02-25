@@ -16,14 +16,14 @@
   --heading-font: 'Cabin', sans-serif;
   --body-font: 'Playfair Display', serif;
 
-  --heading-size-xl-dt: 2.5rem; /*Heading size for h1 element (Site logo / Page title) in desktop view*/
-  --heading-size-xl-mb: 2rem; /*Heading size for h1 element in mobile view*/
-  --heading-size-lg-dt: 2rem; /*Heading size for h2 elements in desktop view*/ 
-  --heading-size-lg-mb: 1.8rem; /*Heading size for h2 elements in mobile view*/ 
-  --heading-size-md: 1.5rem; /*Heading size for h3 elements in desktop & mobile view*/
-  --heading-size-sm: 1.25rem; /*Heading size for h4 elements in desktop & mobile view*/
-  --body-size-lg: 1.1rem; /*Contact form labels, FAQ title, Name in Testimonials, section content*/
-  --body-size-md: 1rem; /*Blog content, excerpt, meta info*/
+  --heading-size-xl-dt: 2.5rem; 
+  --heading-size-xl-mb: 2rem; 
+  --heading-size-lg-dt: 2rem; 
+  --heading-size-lg-mb: 1.8rem; 
+  --heading-size-md: 1.5rem; 
+  --heading-size-sm: 1.25rem; 
+  --body-size-lg: 1.1rem; 
+  --body-size-md: 1rem; 
 
   --heading-weight-bold: bold;
   --heading-weight-regular: normal;
@@ -69,91 +69,91 @@ li {
 
 /*Utility classes for all the colors*/
 .u-text-primary {
-  color: var(--clr-text-primary);
+  color: var(--clr-text-primary); /*Primary text color*/
 }
 
 .u-text-primary-as-bg {
-  background-color: var(--clr-text-primary-bg);
+  background-color: var(--clr-text-primary-bg); /*Primary text color to be used as background-color*/
 }
 
 .u-text-secondary {
-  color: var(--clr-text-secondary);
+  color: var(--clr-text-secondary); /*Secondary text color*/
 }
 
 .u-bg-primary {
-  background-color: var(--clr-bg-primary);
+  background-color: var(--clr-bg-primary); /*Primary background color*/
 }
 
 .u-bg-secondary {
-  background-color: var(--clr-bg-secondary);
+  background-color: var(--clr-bg-secondary); /*Secondary background color*/
 }
 
 .u-accent {
-  background-color: var(--clr-accent);
+  background-color: var(--clr-accent); /*Accent color*/
 }
 
 .u-bg-primary-light {
-  background-color: var(--clr-bg-primary-light);
+  background-color: var(--clr-bg-primary-light); /*Primary background color in light shade*/
 }
 
 .u-text-primary-light {
-  color: var(--clr-text-primary-light);
+  color: var(--clr-text-primary-light); /*Primary text color in light shade*/
 }
 
 .u-bg-primary-dark {
-  background-color: var(--clr-bg-primary-dark);
+  background-color: var(--clr-bg-primary-dark); /*Primary background color in dark shade*/
 }
 
 .u-bg-accent-light {
-  background-color: var(--clr-bg-accent-light);
+  background-color: var(--clr-bg-accent-light); /*Accent color to be used as background in light shade*/
 }
 
 .u-bg-accent-dark {
-  background-color: var(--clr-bg-accent-dark);
+  background-color: var(--clr-bg-accent-dark); /*Accent color to be used as background in dark shade*/
 }
 
 /*Utility classes for font family*/
 .u-heading-font {
-  font-family: var(--heading-font);
+  font-family: var(--heading-font); /*Cabin font-family*/
 }
 .u-body-font {
-  font-family: var(--body-font);
+  font-family: var(--body-font); /*Playfair Display font-family*/
 }
 .u-heading-xl-dt {
-  font-size: var(--heading-size-xl-dt);
+  font-size: var(--heading-size-xl-dt); /*Heading size for h1 element (Site logo / Page title) in desktop view*/
 }
 .u-heading-xl-mb {
-  font-size: var(--heading-size-xl-mb);
+  font-size: var(--heading-size-xl-mb); /*Heading size for h1 element in mobile view*/
 }
 .u-heading-lg-dt {
-  font-size: var(--heading-size-lg-dt);
+  font-size: var(--heading-size-lg-dt); /*Heading size for h2 elements in desktop view*/
 }
 .u-heading-lg-mb {
-  font-size: var(--heading-size-lg-mb);
+  font-size: var(--heading-size-lg-mb); /*Heading size for h2 elements in mobile view*/
 }
 .u-heading-md {
-  font-size: var(--heading-size-md);
+  font-size: var(--heading-size-md); /*Heading size for h3 elements in desktop & mobile view*/
 }
 .u-heading-sm {
-  font-size: var(--heading-size-sm);
+  font-size: var(--heading-size-sm); /*Heading size for h4 elements in desktop & mobile view*/
 }
 .u-body-lg {
-  font-size: var(--body-size-lg);
+  font-size: var(--body-size-lg); /*FAQ title, Name in Testimonials, Contact form labels, section content*/
 }
 .u-body-md {
-  font-size: var(--body-size-md);
+  font-size: var(--body-size-md); /*Blog content, excerpt, meta info*/
 }
 .u-heading-bold {
-  font-weight: var(--heading-weight-bold);
+  font-weight: var(--heading-weight-bold); /*Font weight: 700*/
 }
 .u-heading-regular {
-  font-weight: var(--heading-weight-regular);
+  font-weight: var(--heading-weight-regular); /*Font weight: 400*/
 }
 .u-body-bold {
-  font-weight: var(--body-weight-bold);
+  font-weight: var(--body-weight-bold); /*Font weight: 700*/
 }
 .u-body-regular {
-  font-weight: var(--body-weight-regular);
+  font-weight: var(--body-weight-regular); /*Font weight: 400*/
 }
 .u-heading-line-height-xl {
   line-height: var(--heading-line-height-xl-dt);
