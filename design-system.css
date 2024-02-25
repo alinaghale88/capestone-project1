@@ -43,11 +43,10 @@
 }
 
 /*Styling for colour swatch blocks*/
-.c-colour-swatch {
+.c-colour-details__colour-swatch {
   display: inline-block;
-  width: 300px;
-  height: 300px;
-  text-align: center;
+  width: 200px;
+  height: 80px;
 }
 
 /*Styling for table*/
