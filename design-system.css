@@ -68,6 +68,9 @@
   overflow-x: auto;
   width: 100%;
 }
+.c-colour-details__cell-space {
+  padding: 10px 0;
+}
 
 /*Styling for Colour-combinations table*/
 .colour-combinations__table {
