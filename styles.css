@@ -6,6 +6,7 @@
   --clr-bg-secondary: #fddb91;
   --clr-accent: #ba2d0b;
   --clr-bg-primary-light: #f4ffff;
+  --clr-text-primary-light: #f4ffff;
   --clr-bg-primary-dark: #b5f6eb;
   --clr-bg-accent-light: #ff9e77;
   --clr-bg-accent-dark: #7a1700;
@@ -83,12 +84,15 @@ li {
 }
 
 .u-accent {
-  color: var(--clr-accent);
   background-color: var(--clr-accent);
 }
 
 .u-bg-primary-light {
   background-color: var(--clr-bg-primary-light);
+}
+
+.u-text-primary-light {
+  color: var(--clr-text-primary-light);
 }
 
 .u-bg-primary-dark {
