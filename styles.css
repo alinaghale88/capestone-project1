@@ -1,6 +1,7 @@
 :root {
   /*Color variables*/
   --clr-text-primary: #605f4f;
+  --clr-text-primary-bg: #605f4f;
   --clr-bg-primary: #e6fef7;
   --clr-text-secondary: #BA2D0B;
   --clr-bg-secondary: #fddb91;
@@ -69,6 +70,10 @@ li {
 /*Utility classes for all the colors*/
 .u-text-primary {
   color: var(--clr-text-primary);
+}
+
+.u-text-primary-as-bg {
+  color: var(--clr-text-primary-bg);
 }
 
 .u-text-secondary {
