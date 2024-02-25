@@ -49,14 +49,6 @@
   height: 300px;
   text-align: center;
 }
-.c-colour-category {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-.c-colour-category h3 {
-  width: 100%;
-}
 
 /*Styling for table*/
 .colour-combinations__table {
