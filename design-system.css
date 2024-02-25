@@ -12,8 +12,8 @@
   justify-content: space-between;
   align-items: center;
 }
-.mobile-navbar__toggle,
-.mobile-navbar__close {
+.c-mobile-navbar__toggle,
+.c-mobile-navbar__close {
   padding-right: 10px;
 }
 .c-top-navbar__menu,
@@ -74,12 +74,12 @@
 }
 
 /*Styling for Colour-combinations table*/
-.colour-combinations__table {
+.c-colour-combinations__table {
   border-collapse: collapse;
   text-align: center;
 }
-.colour-combinations__table-heading,
-.colour-combinations__table-data {
+.c-colour-combinations__table-heading,
+.c-colour-combinations__table-data {
   border: 1px solid #000;
   padding: 10px;
 }
@@ -99,7 +99,7 @@
 
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
-  .mobile-navbar__toggle {
+  .c-mobile-navbar__toggle {
     display: none !important;
   }
   .c-top-navbar,
