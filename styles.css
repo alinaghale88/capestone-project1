@@ -73,7 +73,7 @@ li {
 }
 
 .u-text-primary-as-bg {
-  color: var(--clr-text-primary-bg);
+  background-color: var(--clr-text-primary-bg);
 }
 
 .u-text-secondary {
