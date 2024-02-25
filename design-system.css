@@ -36,11 +36,6 @@
   color: var(--clr-text-secondary);
 }
 
-/*Styling for Colours page*/
-.colours-page {
-  background-color: #f5f5f5;
-}
-
 /*Active state styling*/
 .c-top-navbar__link.link--active,
 .c-side-navbar__link.link--active {
