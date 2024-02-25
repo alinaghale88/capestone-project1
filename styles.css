@@ -3,7 +3,7 @@
   --clr-text-primary: #605f4f;
   --clr-text-primary-bg: #605f4f;
   --clr-bg-primary: #e6fef7;
-  --clr-text-secondary: #BA2D0B;
+  --clr-text-secondary: #ba2d0b;
   --clr-bg-secondary: #fddb91;
   --clr-accent: #ba2d0b;
   --clr-bg-primary-light: #f4ffff;
@@ -13,17 +13,17 @@
   --clr-bg-accent-dark: #7a1700;
 
   /*Font variables*/
-  --heading-font: 'Cabin', sans-serif;
-  --body-font: 'Playfair Display', serif;
+  --heading-font: "Cabin", sans-serif;
+  --body-font: "Playfair Display", serif;
 
-  --heading-size-xl-dt: 2.5rem; 
-  --heading-size-xl-mb: 2rem; 
-  --heading-size-lg-dt: 2rem; 
-  --heading-size-lg-mb: 1.8rem; 
-  --heading-size-md: 1.5rem; 
-  --heading-size-sm: 1.25rem; 
-  --body-size-lg: 1.1rem; 
-  --body-size-md: 1rem; 
+  --heading-size-xl-dt: 2.5rem;
+  --heading-size-xl-mb: 2rem;
+  --heading-size-lg-dt: 2rem;
+  --heading-size-lg-mb: 1.8rem;
+  --heading-size-md: 1.5rem;
+  --heading-size-sm: 1.25rem;
+  --body-size-lg: 1.1rem;
+  --body-size-md: 1rem;
 
   --heading-weight-bold: bold;
   --heading-weight-regular: normal;
@@ -73,7 +73,9 @@ li {
 }
 
 .u-text-primary-as-bg {
-  background-color: var(--clr-text-primary-bg); /*Primary text color to be used as background-color*/
+  background-color: var(
+    --clr-text-primary-bg
+  ); /*Primary text color to be used as background-color*/
 }
 
 .u-text-secondary {
@@ -93,7 +95,9 @@ li {
 }
 
 .u-bg-primary-light {
-  background-color: var(--clr-bg-primary-light); /*Primary background color in light shade*/
+  background-color: var(
+    --clr-bg-primary-light
+  ); /*Primary background color in light shade*/
 }
 
 .u-text-primary-light {
@@ -101,15 +105,21 @@ li {
 }
 
 .u-bg-primary-dark {
-  background-color: var(--clr-bg-primary-dark); /*Primary background color in dark shade*/
+  background-color: var(
+    --clr-bg-primary-dark
+  ); /*Primary background color in dark shade*/
 }
 
 .u-bg-accent-light {
-  background-color: var(--clr-bg-accent-light); /*Accent color to be used as background in light shade*/
+  background-color: var(
+    --clr-bg-accent-light
+  ); /*Accent color to be used as background in light shade*/
 }
 
 .u-bg-accent-dark {
-  background-color: var(--clr-bg-accent-dark); /*Accent color to be used as background in dark shade*/
+  background-color: var(
+    --clr-bg-accent-dark
+  ); /*Accent color to be used as background in dark shade*/
 }
 
 /*Utility classes for font family*/
@@ -120,25 +130,39 @@ li {
   font-family: var(--body-font); /*Playfair Display font-family*/
 }
 .u-heading-xl-dt {
-  font-size: var(--heading-size-xl-dt); /*Heading size for h1 element (Site logo / Page title) in desktop view*/
+  font-size: var(
+    --heading-size-xl-dt
+  ); /*Heading size for h1 element (Site logo / Page title) in desktop view*/
 }
 .u-heading-xl-mb {
-  font-size: var(--heading-size-xl-mb); /*Heading size for h1 element in mobile view*/
+  font-size: var(
+    --heading-size-xl-mb
+  ); /*Heading size for h1 element in mobile view*/
 }
 .u-heading-lg-dt {
-  font-size: var(--heading-size-lg-dt); /*Heading size for h2 elements in desktop view*/
+  font-size: var(
+    --heading-size-lg-dt
+  ); /*Heading size for h2 elements in desktop view*/
 }
 .u-heading-lg-mb {
-  font-size: var(--heading-size-lg-mb); /*Heading size for h2 elements in mobile view*/
+  font-size: var(
+    --heading-size-lg-mb
+  ); /*Heading size for h2 elements in mobile view*/
 }
 .u-heading-md {
-  font-size: var(--heading-size-md); /*Heading size for h3 elements in desktop & mobile view*/
+  font-size: var(
+    --heading-size-md
+  ); /*Heading size for h3 elements in desktop & mobile view*/
 }
 .u-heading-sm {
-  font-size: var(--heading-size-sm); /*Heading size for h4 elements in desktop & mobile view*/
+  font-size: var(
+    --heading-size-sm
+  ); /*Heading size for h4 elements in desktop & mobile view*/
 }
 .u-body-lg {
-  font-size: var(--body-size-lg); /*FAQ title, Name in Testimonials, Contact form labels, section content*/
+  font-size: var(
+    --body-size-lg
+  ); /*FAQ title, Name in Testimonials, Contact form labels, section content*/
 }
 .u-body-md {
   font-size: var(--body-size-md); /*Blog content, excerpt, meta info*/
