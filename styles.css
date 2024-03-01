@@ -46,6 +46,9 @@
   --letter-spacing-lg-dt: -0.01em;
   --letter-spacing-heading: 0em;
   --letter-spacing-normal: 0.01em;
+
+  /*header height*/
+  --header-height: 60px;
 }
 
 /*Reset browser-default margin*/
