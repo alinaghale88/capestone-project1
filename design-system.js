@@ -29,3 +29,25 @@ navLinks.forEach((link) => {
     link.classList.add("link--active");
   }
 });
+
+// Function to move menu items between navbars based on viewport width
+function adjustMenuItems() {
+  const aboutMenuItem = document.getElementById('aboutLink').parentNode;
+  const demoMenuItem = document.getElementById('demoLink').parentNode;
+  const sideNavbar = document.querySelector('.c-side-navbar__menu');
+  const desktopNavbar = document.querySelector('.c-top-navbar__menu');
+
+  if (window.innerWidth < 1200) {
+    // Move menu items to top of side navbar
+    sideNavbar.insertBefore(aboutMenuItem, sideNavbar.firstChild);
+    sideNavbar.insertBefore(demoMenuItem, sideNavbar.firstChild);
+  } else {
+    // Move menu items back to desktop navbar
+    desktopNavbar.appendChild(aboutMenuItem);
+    desktopNavbar.appendChild(demoMenuItem);
+  }
+}
+
+// Call the function initially and whenever the window is resized
+adjustMenuItems();
+window.addEventListener('resize', adjustMenuItems);
