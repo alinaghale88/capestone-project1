@@ -6,9 +6,11 @@
 .c-side-navbar {
   display: none;
 }
+.c-side-navbar {
+  width: 256px;
+}
 .c-navbar--show-items {
   display: block;
-  width: 60%;
 }
 .c-mobile-navbar {
   display: flex;
@@ -126,9 +128,6 @@
   .c-mobile-navbar,
   .c-top-navbar {
     background-color: unset;
-  }
-  .c-side-navbar {
-    width: 256px;
   }
   .c-desktop-header {
     height: var(--header-height);
