@@ -1,4 +1,7 @@
 /*Styling for site header*/
+.c-mobile-navbar {
+  height: var(--header-height);
+}
 .c-top-navbar,
 .c-side-navbar {
   display: none;
@@ -126,5 +129,8 @@
   }
   .c-side-navbar {
     width: 256px;
+  }
+  .c-desktop-header {
+    height: var(--header-height);
   }
 }
