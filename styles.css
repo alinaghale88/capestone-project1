@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-/*Setup root font size*/
-html {
-  font-size: 62.5%;
-}
-
 :root {
   /*Color variables*/
   --clr-text-primary: #605f4f;
@@ -53,11 +48,6 @@ html {
   --letter-spacing-normal: 0.01em;
 }
 
-/*Setup content line-height*/
-body {
-  line-height: 1.5rem;
-}
-
 /*Reset browser-default margin*/
 body,
 h1,
@@ -70,6 +60,11 @@ p,
 figure,
 picture {
   margin: 0;
+}
+
+/*Setup content line-height*/
+body {
+  line-height: 1.5rem;
 }
 
 /*Reset padding value of list element*/
