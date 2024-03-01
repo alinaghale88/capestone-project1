@@ -1,3 +1,15 @@
+/*Border box fix*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*Setup root font size*/
+html {
+  font-size: 62.5%;
+}
+
 :root {
   /*Color variables*/
   --clr-text-primary: #605f4f;
@@ -41,11 +53,9 @@
   --letter-spacing-normal: 0.01em;
 }
 
-/*Border box fix*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/*Setup content line-height*/
+body {
+  line-height: 1.5rem;
 }
 
 /*Reset browser-default margin*/
