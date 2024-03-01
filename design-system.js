@@ -1,13 +1,9 @@
 function showNav() {
-  var element1 = document.getElementsByClassName("c-top-navbar");
-  var element2 = document.getElementsByClassName("c-side-navbar");
+  var element1 = document.getElementsByClassName("c-side-navbar");
   var toggleButton = document.getElementById("toggleButton");
   var closeButton = document.getElementById("closeButton");
   for (var i = 0; i < element1.length; i++) {
     element1[i].classList.toggle("c-navbar--show-items");
-  }
-  for (var i = 0; i < element2.length; i++) {
-    element2[i].classList.toggle("c-navbar--show-items");
   }
   toggleButton.style.display =
     toggleButton.style.display === "none" ? "block" : "none";
