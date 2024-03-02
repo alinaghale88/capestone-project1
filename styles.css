@@ -216,6 +216,9 @@ li {
 }
 
 /*Classes for base layout*/
+.l-block {
+  display: block;
+}
 .l-flex {
   display: flex;
 }
@@ -255,6 +258,9 @@ li {
 .l-mb-1 {
   margin-bottom: 1rem;
 }
+.l-mb-3-5 {
+  margin-bottom: 3.5rem;
+}
 .l-mt-3 {
   margin-top: 3rem;
 }
@@ -269,6 +275,9 @@ li {
 }
 .l-mt-1 {
   margin-top: 1rem;
+}
+.l-mt-0 {
+  margin-top: 0;
 }
 .l-pl-1 {
   padding-left: 1rem;
@@ -288,6 +297,9 @@ li {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.l-pt-10px {
+  padding-top: 10px;
+}
 .l-pt-1 {
   padding-top: 1rem;
 }
@@ -305,6 +317,7 @@ li {
 
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
+
   /*Styling for site content on desktop*/
   .c-site-content {
     left: var(--side-nav-width);
@@ -318,32 +331,21 @@ li {
   .text-wrapper-desktop {
     max-width: 760px;
   }
+
   /*Base layout classes for desktop*/
   .l-px-40-desktop {
     padding-left: 40px;
     padding-right: 40px;
   }
-  /*Updated heading sizes for desktop screens*/
-  .u-heading-xl-mb {
-    font-size: var(
-    --heading-size-xl-dt
-  ); /*Heading size for h1 element (Page title) in desktop view*/
-  }
-  .u-heading-lg-mb {
-    font-size: var(
-    --heading-size-lg-dt
-  ); /*Heading size for h2 elements in desktop view*/
-  }
-  /*Updated line height of h1 and h2 for desktop screens*/
-  .u-heading-line-height-lg {
-    line-height: var(--heading-line-height-xl-dt);
-  }
-  .u-heading-line-height-md {
-    line-height: var(var(--heading-line-height-lg-dt));
-  }
+
   /*Setting padding value for top nav menu to 0 in desktop*/
   .l-py-1, .l-pt-1 {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  /*Base layout classes for desktop screen*/
+  .l-table-dt {
+    display: table-row;
   }
 }

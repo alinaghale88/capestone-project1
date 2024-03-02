@@ -66,7 +66,7 @@
 }
 
 /*Styling for colour palette table*/
-.c-colour-block {
+.c-colour-block, .c-type-block {
   border-bottom: 1px solid var(--clr-bg-accent-light);
 }
 
@@ -81,19 +81,13 @@
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-.c-colour-details__colour-swatch-col,
-.c-typeface-details__preview-col {
-  width: 35%;
-}
-.c-colour-details__attribute,
-.c-typeface-details__attribute {
+.c-colour-details__attribute {
   width: 120px;
 }
-.c-colour-details,
-.c-typeface-details {
-  width: 1000px;
-  border-collapse: collapse;
+.c-type-details__attribute {
+  width: 100%;
 }
+
 
 /*Styling for Colour-combinations table*/
 .c-colour-combinations__table {
@@ -145,5 +139,8 @@
   }
   .c-desktop-header {
     height: var(--header-height);
+  }
+  .c-type-details__attribute {
+    width: 170px;
   }
 }
