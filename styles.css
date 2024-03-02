@@ -232,7 +232,16 @@ li {
   width: 100%;
 }
 
+/*Base spacing classes*/
+.l-mx {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*Container classes*/
 .max-width-mobile {
   max-width: 480px;
+}
+.full-width {
+  width: 100%;
 }
