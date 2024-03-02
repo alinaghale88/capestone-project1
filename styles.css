@@ -215,7 +215,7 @@ li {
   letter-spacing: var(--letter-spacing-normal);
 }
 
-/*Utility classes for base layout*/
+/*Classes for base layout*/
 .l-flex {
   display: flex;
 }
@@ -230,4 +230,9 @@ li {
 }
 .l-content-width {
   width: 100%;
+}
+
+/*Container classes*/
+.max-width-mobile {
+  max-width: 480px;
 }
