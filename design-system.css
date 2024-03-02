@@ -58,6 +58,12 @@
   color: var(--clr-text-secondary);
 }
 
+/*Styling for the content area*/
+.c-site-content {
+  position: absolute;
+  top: var(--header-height);
+}
+
 /*Styling for colour swatch & fonts use case table*/
 .c-colour-details__title,
 .c-typeface-details__title {
@@ -85,6 +91,8 @@
   width: 1000px;
   border-collapse: collapse;
 }
+
+/*Styling for the table*/
 .c-table-scroll {
   overflow-x: auto;
   width: 100%;
