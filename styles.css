@@ -143,7 +143,7 @@ li {
 .u-heading-xl-dt {
   font-size: var(
     --heading-size-xl-dt
-  ); /*Heading size for h1 element (Site logo / Page title) in desktop view*/
+  ); /*Heading size for h1 element (Page title) in desktop view*/
 }
 .u-heading-xl-mb {
   font-size: var(
@@ -306,5 +306,23 @@ li {
   .l-px-40-desktop {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  /*Updated heading sizes for desktop screens*/
+  .u-heading-xl-mb {
+    font-size: var(
+    --heading-size-xl-dt
+  ); /*Heading size for h1 element (Page title) in desktop view*/
+  }
+  .u-heading-lg-mb {
+    font-size: var(
+    --heading-size-lg-dt
+  ); /*Heading size for h2 elements in desktop view*/
+  }
+  /*Updated line height of h1 and h2 for desktop screens*/
+  .u-heading-line-height-lg {
+    line-height: var(--heading-line-height-xl-dt);
+  }
+  .u-heading-line-height-md {
+    line-height: var(var(--heading-line-height-lg-dt));
   }
 }
