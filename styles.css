@@ -238,7 +238,7 @@ li {
   margin-right: auto;
 }
 
-/*Container classes*/
+/*Container classes for mobile view*/
 .max-width-mobile {
   max-width: 480px;
 }

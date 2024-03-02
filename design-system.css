@@ -151,4 +151,7 @@
   .c-site-content {
     left: var(--side-nav-width);
   }
+  .desktop-full-width {
+    width: calc(100% - var(--side-nav-width));
+  }
 }
