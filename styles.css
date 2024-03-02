@@ -49,6 +49,9 @@
 
   /*header height*/
   --header-height: 60px;
+
+  /*side-navbar width*/
+  --side-nav-width: 256px;
 }
 
 /*Reset browser-default margin*/

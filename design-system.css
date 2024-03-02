@@ -14,7 +14,7 @@
   display: none;
 }
 .c-side-navbar {
-  width: 256px;
+  width: var(--side-nav-width);
   position: sticky;
   overflow-x: hidden;
   overflow-y: auto;
@@ -62,6 +62,7 @@
 .c-site-content {
   position: absolute;
   top: var(--header-height);
+
 }
 
 /*Styling for colour swatch & fonts use case table*/
