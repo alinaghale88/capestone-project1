@@ -154,4 +154,7 @@
   .desktop-full-width {
     width: calc(100% - var(--side-nav-width));
   }
+  .max-width-desktop {
+    max-width: 1240px;
+  }
 }
