@@ -35,8 +35,8 @@ function adjustMenuItems() {
 
   if (window.innerWidth < 1200) {
     // Move menu items to top of side navbar
-    sideNavbar.insertBefore(aboutMenuItem, sideNavbar.firstChild);
     sideNavbar.insertBefore(demoMenuItem, sideNavbar.firstChild);
+    sideNavbar.insertBefore(aboutMenuItem, sideNavbar.firstChild);
   } else {
     // Move menu items back to desktop navbar
     desktopNavbar.appendChild(aboutMenuItem);

@@ -270,13 +270,29 @@ li {
 .l-mt-1 {
   margin-top: 1rem;
 }
+.l-pl-1 {
+  padding-left: 1rem;
+}
+.l-pr-1 {
+  padding-right: 1rem;
+}
 .l-px-1 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.l-py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .l-py-10px {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.l-pt-1 {
+  padding-top: 1rem;
+}
+.l-pr-1-5 {
+  padding-right: 1.5rem;
 }
 
 /*Container classes for mobile view*/
@@ -324,5 +340,10 @@ li {
   }
   .u-heading-line-height-md {
     line-height: var(var(--heading-line-height-lg-dt));
+  }
+  /*Setting padding value for top nav menu to 0 in desktop*/
+  .l-py-1, .l-pt-1 {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
