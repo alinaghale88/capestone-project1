@@ -214,3 +214,17 @@ li {
 .u-letter-spacing-normal {
   letter-spacing: var(--letter-spacing-normal);
 }
+
+/*Utility classes for base layout*/
+.l-flex {
+  display: flex;
+}
+.l-direction-row {
+  flex-direction: row;
+}
+.l-direction-column {
+  flex-direction: column;
+}
+.l-wrap {
+  flex-wrap: wrap;
+}
