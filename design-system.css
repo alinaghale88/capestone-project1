@@ -65,6 +65,11 @@
 
 }
 
+/*Styling for colour palette table*/
+.c-colour-block {
+  border-bottom: 1px solid var(--clr-bg-accent-light);
+}
+
 /*Styling for colour swatch & fonts use case table*/
 .c-colour-details__title,
 .c-typeface-details__title {
