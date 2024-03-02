@@ -93,17 +93,6 @@
   border-collapse: collapse;
 }
 
-/*Styling for the table*/
-.c-table-scroll {
-  overflow-x: auto;
-  width: 100%;
-  margin: 20px 0 30px;
-}
-.c-colour-details__cell-space,
-.c-typeface-details__cell-space {
-  padding: 10px 0;
-}
-
 /*Styling for Colour-combinations table*/
 .c-colour-combinations__table {
   border-collapse: collapse;
