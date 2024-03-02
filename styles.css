@@ -231,11 +231,52 @@ li {
 .l-content-width {
   width: 100%;
 }
+.l-justify-flex-end {
+  justify-content: flex-end;
+}
+.l-vtl-alignment-top {
+  vertical-align: top;
+}
 
 /*Base spacing classes*/
-.l-mx {
+.l-mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.l-mb-2 {
+  margin-bottom: 2rem;
+}
+.l-mb-1-5 {
+  margin-bottom: 1.5rem;
+}
+.l-mb-1-25 {
+  margin-bottom: 1.25rem;
+}
+.l-mb-1 {
+  margin-bottom: 1rem;
+}
+.l-mt-3 {
+  margin-top: 3rem;
+}
+.l-mt-3-5 {
+  margin-top: 3.5rem;
+}
+.l-mt-2 {
+  margin-top: 2rem;
+}
+.l-mt-1-5 {
+  margin-top: 1.5rem;
+}
+.l-mt-1 {
+  margin-top: 1rem;
+}
+.l-px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.l-py-10px {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*Container classes for mobile view*/

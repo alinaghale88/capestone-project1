@@ -62,7 +62,11 @@
 .c-site-content {
   position: absolute;
   top: var(--header-height);
+}
 
+/*Styling for page title container*/
+.c-site-title-container {
+  height: 160px;
 }
 
 /*Styling for colour palette table*/
@@ -86,11 +90,7 @@
 }
 .c-colour-details__attribute,
 .c-typeface-details__attribute {
-  width: 20%;
-}
-.c-colour-details__value,
-.c-typeface-details__value {
-  width: 45%;
+  width: 120px;
 }
 .c-colour-details,
 .c-typeface-details {
