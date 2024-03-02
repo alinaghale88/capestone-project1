@@ -20,115 +20,144 @@
   <body
     class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md"
   >
-    <header class="c-site-header">
-      <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
-      <div class="c-desktop-header l-px-1">
-        <!--Mobile Navbar-->
-        <div class="c-mobile-navbar u-bg-primary">
-          <a href="index.html"
-            ><span class="logo u-heading-font u-heading-xl-mb">
-              Design System
-            </span></a
-          >
-          <a
-            class="c-mobile-navbar__toggle"
-            id="toggleButton"
-            onclick="showNav()"
-            ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
-          ></a>
-          <a
-            class="c-mobile-navbar__close"
-            id="closeButton"
-            onclick="showNav()"
-            style="display: none"
-            ><i class="fa-solid fa-times fa-lg u-text-primary"></i
-          ></a>
-        </div>
-        <!--Top Navbar-->
-        <nav class="c-navbar c-top-navbar u-bg-primary-light">
-          <ul class="c-top-navbar__menu">
-            <li>
-              <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
-                >About Me</a
-              >
-            </li>
-            <li>
-              <a id="demoLink" class="c-top-navbar__link" href="#">Demo Site</a>
-            </li>
-          </ul>
-        </nav>
+  <header class="c-site-header">
+    <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
+    <div class="c-desktop-header">
+      <!--Mobile Navbar-->
+      <div class="c-mobile-navbar u-bg-primary l-pl-1">
+        <a href="index.html"
+          ><span class="logo u-heading-font u-heading-xl"
+            >Design System</span
+          ></a
+        >
+        <a
+          class="c-mobile-navbar__toggle l-pr-1"
+          id="toggleButton"
+          onclick="showNav()"
+          ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
+        ></a>
+        <a
+          class="c-mobile-navbar__close l-pr-1"
+          id="closeButton"
+          onclick="showNav()"
+          style="display: none"
+          ><i class="fa-solid fa-times fa-lg u-text-primary"></i
+        ></a>
       </div>
-      <!--Side Navbar-->
-      <nav class="c-navbar c-side-navbar u-bg-primary-light">
-        <ul class="c-side-navbar__menu">
-          <li>
-            <a id="brandingLink" class="c-side-navbar__link" href="#"
-              >Branding</a
+      <!--Top Navbar-->
+      <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
+        <ul class="c-top-navbar__menu">
+          <li class="l-pt-1 l-pr-1-5">
+            <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
+              >About Me</a
             >
           </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a id="colorsLink" class="c-side-navbar__link" href="colours.html"
-                >01 Colours</a
-              >
-            </li>
-            <li>
-              <a
-                id="typographyLink"
-                class="c-side-navbar__link link--active"
-                href="typography.html"
-                >02 Typography</a
-              >
-            </li>
-            <li>
-              <a id="logoLink" class="c-side-navbar__link" href="#">03 Logo</a>
-            </li>
-          </ul>
-          <li><a class="c-side-navbar__link" href="#">Utilities</a></li>
-          <ul class="c-side-navbar__sub-menu">
-            <li><a class="c-side-navbar__link" href="#">04 Spacing</a></li>
-            <li>
-              <a class="c-side-navbar__link" href="#">05 Containers</a>
-            </li>
-            <li><a class="c-side-navbar__link" href="#">06 Images</a></li>
-            <li>
-              <a class="c-side-navbar__link" href="#">07 Interactive</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="#">08 Feedback</a>
-            </li>
-          </ul>
-          <li><a class="c-side-navbar__link" href="#">Navigation</a></li>
-          <ul class="c-side-navbar__sub-menu">
-            <li><a class="c-side-navbar__link" href="#">09 Navbars</a></li>
-            <li>
-              <a class="c-side-navbar__link" href="#">10 Breadcrumbs</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="#">11 Pagination</a>
-            </li>
-          </ul>
-          <li><a class="c-side-navbar__link" href="#">Blocks</a></li>
-          <ul class="c-side-navbar__sub-menu">
-            <li><a class="c-side-navbar__link" href="#">12 Hero</a></li>
-            <li>
-              <a class="c-side-navbar__link" href="#">13 Carousel</a>
-            </li>
-            <li><a class="c-side-navbar__link" href="#">14 Slats</a></li>
-            <li><a class="c-side-navbar__link" href="#">15 Footer</a></li>
-          </ul>
-          <li><a class="c-side-navbar__link" href="#">Components</a></li>
-          <ul class="c-side-navbar__sub-menu">
-            <li><a class="c-side-navbar__link" href="#">16 Cards</a></li>
-            <li><a class="c-side-navbar__link" href="#">17 Forms</a></li>
-            <li>
-              <a class="c-side-navbar__link" href="#">18 Accordion</a>
-            </li>
-            <li><a class="c-side-navbar__link" href="#">19 Lists</a></li>
-          </ul>
+          <li class="l-py-1">
+            <a id="demoLink" class="c-top-navbar__link" href="#">Demo Site</a>
+          </li>
         </ul>
       </nav>
-    </header>
+    </div>
+    <!--Side Navbar-->
+    <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
+      <ul class="c-side-navbar__menu">
+        <li>
+          <a id="brandingLink" class="c-side-navbar__link" href="#"
+            >Branding</a
+          >
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a
+              id="colorsLink"
+              class="c-side-navbar__link"
+              href="colours.html"
+              >01 Colours</a
+            >
+          </li>
+          <li>
+            <a
+              id="typographyLink"
+              class="c-side-navbar__link"
+              href="typography.html"
+              >02 Typography</a
+            >
+          </li>
+          <li>
+            <a id="logoLink" class="c-side-navbar__link" href="#">03 Logo</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link" href="#">Utilities</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="#">04 Spacing</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">05 Containers</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">06 Images</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">07 Interactive</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">08 Feedback</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link" href="#">Navigation</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="#">09 Navbars</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">10 Breadcrumbs</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">11 Pagination</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link" href="#">Blocks</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="#">12 Hero</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">13 Carousel</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">14 Slats</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">15 Footer</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link" href="#">Components</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="#">16 Cards</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">17 Forms</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">18 Accordion</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="#">19 Lists</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
     <main class="c-site-content full-width">
       <div class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end">
       <h1 class="max-width-mobile max-width-desktop full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt">Typography</h1>
