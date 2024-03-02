@@ -228,3 +228,6 @@ li {
 .l-wrap {
   flex-wrap: wrap;
 }
+.l-content-width {
+  width: 100%;
+}
