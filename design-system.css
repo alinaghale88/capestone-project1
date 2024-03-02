@@ -152,4 +152,9 @@
   .c-desktop-header {
     height: var(--header-height);
   }
+
+  /*Styling for site content on desktop*/
+  .c-site-content {
+    left: var(--side-nav-width);
+  }
 }
