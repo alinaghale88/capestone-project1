@@ -286,3 +286,16 @@ li {
 .full-width {
   width: 100%;
 }
+
+/*Styling for site content on desktop*/
+@media screen and (min-width: 1200px) {
+  .c-site-content {
+    left: var(--side-nav-width);
+  }
+  .desktop-full-width {
+    width: calc(100% - var(--side-nav-width));
+  }
+  .max-width-desktop {
+    max-width: 1240px;
+  }
+}
