@@ -1,4 +1,11 @@
 /*Styling for site header*/
+.c-site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
 .c-mobile-navbar {
   height: var(--header-height);
 }
@@ -8,6 +15,10 @@
 }
 .c-side-navbar {
   width: 256px;
+  position: sticky;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - var(--header-height));
 }
 .c-navbar--show-items {
   display: block;
