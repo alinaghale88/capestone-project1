@@ -287,8 +287,9 @@ li {
   width: 100%;
 }
 
-/*Styling for site content on desktop*/
+/*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
+  /*Styling for site content on desktop*/
   .c-site-content {
     left: var(--side-nav-width);
   }
@@ -297,5 +298,13 @@ li {
   }
   .max-width-desktop {
     max-width: 1240px;
+  }
+  .text-wrapper-desktop {
+    max-width: 760px;
+  }
+  /*Base layout classes for desktop*/
+  .l-px-40-desktop {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
