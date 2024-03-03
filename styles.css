@@ -140,20 +140,10 @@ li {
 .u-body-font {
   font-family: var(--body-font); /*Playfair Display font-family*/
 }
-.u-heading-xl-dt {
-  font-size: var(
-    --heading-size-xl-dt
-  ); /*Heading size for h1 element (Page title) in desktop view*/
-}
 .u-heading-xl-mb {
   font-size: var(
     --heading-size-xl-mb
   ); /*Heading size for h1 element in mobile view*/
-}
-.u-heading-lg-dt {
-  font-size: var(
-    --heading-size-lg-dt
-  ); /*Heading size for h2 elements in desktop view*/
 }
 .u-heading-lg-mb {
   font-size: var(
@@ -190,23 +180,11 @@ li {
 .u-body-regular {
   font-weight: var(--body-weight-regular); /*Font weight: 400*/
 }
-.u-heading-line-height-xl {
-  line-height: var(--heading-line-height-xl-dt);
-}
-.u-heading-line-height-lg {
-  line-height: var(--heading-line-height-lg-dt);
-}
 .u-heading-line-height-md {
   line-height: var(--heading-line-height-md);
 }
 .u-body-line-height {
   line-height: var(--body-line-height);
-}
-.u-letter-spacing-xl-dt {
-  letter-spacing: var(--letter-spacing-xl-dt);
-}
-.u-letter-spacing-lg-dt {
-  letter-spacing: var(--letter-spacing-lg-dt);
 }
 .u-letter-spacing-heading {
   letter-spacing: var(--letter-spacing-heading);
@@ -390,5 +368,33 @@ li {
   /*Base layout classes for desktop screen*/
   .l-table-dt {
     display: table-row;
+  }
+
+  /*Headings fonts change for desktop screen*/
+  
+  /*For H1*/
+  .u-heading-xl-dt {
+    font-size: var(
+      --heading-size-xl-dt
+    ); /*Heading size for h1 element (Page title) in desktop view*/
+  }
+  .u-heading-line-height-xl {
+    line-height: var(--heading-line-height-xl-dt);
+  }
+  .u-letter-spacing-xl-dt {
+    letter-spacing: var(--letter-spacing-xl-dt);
+  }
+  
+  /*For H2*/
+  .u-heading-lg-dt {
+    font-size: var(
+      --heading-size-lg-dt
+    ); /*Heading size for h2 elements in desktop view*/
+  }
+  .u-heading-line-height-lg {
+    line-height: var(--heading-line-height-lg-dt);
+  }
+  .u-letter-spacing-lg-dt {
+    letter-spacing: var(--letter-spacing-lg-dt);
   }
 }
