@@ -215,6 +215,46 @@ li {
   letter-spacing: var(--letter-spacing-normal);
 }
 
+/*Utility classes for the font family for only Typography page*/
+.u-heading-xl-dt-tp {
+  font-size: var(
+    --heading-size-xl-dt
+  );
+}
+.u-heading-line-height-xl-tp {
+  line-height: var(--heading-line-height-xl-dt);
+}
+.u-letter-spacing-xl-dt-tp {
+  letter-spacing: var(--letter-spacing-xl-dt);
+}
+.u-heading-lg-dt-tp {
+  font-size: var(
+    --heading-size-lg-dt
+  );
+}
+.u-heading-line-height-lg-tp {
+  line-height: var(--heading-line-height-lg-dt);
+}
+.u-letter-spacing-lg-dt-tp {
+  letter-spacing: var(--letter-spacing-lg-dt);
+}
+.u-heading-xl-mb-tp {
+  font-size: var(
+    --heading-size-xl-mb
+  );
+}
+.u-heading-lg-mb-tp {
+  font-size: var(
+    --heading-size-lg-mb
+  ); 
+}
+.u-heading-line-height-md-tp {
+  line-height: var(--heading-line-height-md);
+}
+.u-letter-spacing-heading-tp {
+  letter-spacing: var(--letter-spacing-heading);
+}
+
 /*Classes for base layout*/
 .l-block {
   display: block;
