@@ -20,145 +20,338 @@
   <body
     class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md"
   >
-  <header class="c-site-header">
-    <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
-    <div class="c-desktop-header">
-      <!--Mobile Navbar-->
-      <div class="c-mobile-navbar u-bg-primary l-pl-1">
-        <a href="index.html"
-          ><span class="logo u-heading-font u-heading-xl"
-            >Design System</span
-          ></a
-        >
-        <a
-          class="c-mobile-navbar__toggle l-pr-1"
-          id="toggleButton"
-          onclick="showNav()"
-          ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
-        ></a>
-        <a
-          class="c-mobile-navbar__close l-pr-1"
-          id="closeButton"
-          onclick="showNav()"
-          style="display: none"
-          ><i class="fa-solid fa-times fa-lg u-text-primary"></i
-        ></a>
+    <header class="c-site-header">
+      <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
+      <div class="c-desktop-header">
+        <!--Mobile Navbar-->
+        <div class="c-mobile-navbar u-bg-primary l-pl-1">
+          <a href="index.html"
+            ><span class="logo u-heading-font u-heading-xl"
+              >Design System</span
+            ></a
+          >
+          <a
+            class="c-mobile-navbar__toggle l-pr-1"
+            id="toggleButton"
+            onclick="showNav()"
+            ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
+          ></a>
+          <a
+            class="c-mobile-navbar__close l-pr-1"
+            id="closeButton"
+            onclick="showNav()"
+            style="display: none"
+            ><i class="fa-solid fa-times fa-lg u-text-primary"></i
+          ></a>
+        </div>
+        <!--Top Navbar-->
+        <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
+          <ul class="c-top-navbar__menu">
+            <li class="l-pt-1 l-pr-1-5">
+              <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
+                >About Me</a
+              >
+            </li>
+            <li class="l-py-1">
+              <a id="demoLink" class="c-top-navbar__link" href="#">Demo Site</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <!--Top Navbar-->
-      <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
-        <ul class="c-top-navbar__menu">
-          <li class="l-pt-1 l-pr-1-5">
-            <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
-              >About Me</a
+      <!--Side Navbar-->
+      <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
+        <ul class="c-side-navbar__menu">
+          <li>
+            <a id="brandingLink" class="c-side-navbar__link" href="#"
+              >Branding</a
             >
           </li>
-          <li class="l-py-1">
-            <a id="demoLink" class="c-top-navbar__link" href="#">Demo Site</a>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a id="colorsLink" class="c-side-navbar__link" href="colours.html"
+                >01 Colours</a
+              >
+            </li>
+            <li>
+              <a
+                id="typographyLink"
+                class="c-side-navbar__link"
+                href="typography.html"
+                >02 Typography</a
+              >
+            </li>
+            <li>
+              <a id="logoLink" class="c-side-navbar__link" href="#">03 Logo</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link" href="#">Utilities</a>
           </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="spacing.html">04 Spacing</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">05 Containers</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">06 Images</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">07 Interactive</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">08 Feedback</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link" href="#">Navigation</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="#">09 Navbars</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">10 Breadcrumbs</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">11 Pagination</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link" href="#">Blocks</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="#">12 Hero</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">13 Carousel</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">14 Slats</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">15 Footer</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link" href="#">Components</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="#">16 Cards</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">17 Forms</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">18 Accordion</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">19 Lists</a>
+            </li>
+          </ul>
         </ul>
       </nav>
-    </div>
-    <!--Side Navbar-->
-    <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
-      <ul class="c-side-navbar__menu">
-        <li>
-          <a id="brandingLink" class="c-side-navbar__link" href="#"
-            >Branding</a
+    </header>
+    <main class="c-site-content full-width desktop-full-width">
+      <div
+        class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end"
+      >
+        <h1
+          class="max-width-mobile max-width-desktop full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-40-desktop u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
+        >
+          Spacing
+        </h1>
+      </div>
+      <div
+        class="max-width-mobile max-width-desktop l-mx-auto l-px-1 l-px-40-desktop"
+      >
+        <section>
+          <h2
+            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
           >
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a
-              id="colorsLink"
-              class="c-side-navbar__link"
-              href="colours.html"
-              >01 Colours</a
-            >
-          </li>
-          <li>
-            <a
-              id="typographyLink"
-              class="c-side-navbar__link"
-              href="typography.html"
-              >02 Typography</a
-            >
-          </li>
-          <li>
-            <a id="logoLink" class="c-side-navbar__link" href="#">03 Logo</a>
-          </li>
-        </ul>
-        <li>
-          <a class="c-side-navbar__link" href="#">Utilities</a>
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a class="c-side-navbar__link" href="spacing.html">04 Spacing</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">05 Containers</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">06 Images</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">07 Interactive</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">08 Feedback</a>
-          </li>
-        </ul>
-        <li>
-          <a class="c-side-navbar__link" href="#">Navigation</a>
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a class="c-side-navbar__link" href="#">09 Navbars</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">10 Breadcrumbs</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">11 Pagination</a>
-          </li>
-        </ul>
-        <li>
-          <a class="c-side-navbar__link" href="#">Blocks</a>
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a class="c-side-navbar__link" href="#">12 Hero</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">13 Carousel</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">14 Slats</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">15 Footer</a>
-          </li>
-        </ul>
-        <li>
-          <a class="c-side-navbar__link" href="#">Components</a>
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a class="c-side-navbar__link" href="#">16 Cards</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">17 Forms</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">18 Accordion</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">19 Lists</a>
-          </li>
-        </ul>
-      </ul>
-    </nav>
-  </header>
-    <main class="c-site-content"></main>
+            Margin
+          </h2>
+          <p class="text-wrapper-desktop">
+            The Margin section of our design system provides a comprehensive
+            overview of margin utility classes tailored to suit various spacing
+            needs. These classes ensure consistent and visually appealing
+            layouts across our web pages. Here's a breakdown of the margin
+            utility classes available:
+          </p>
+          <!--Generated from ChatGPT-->
+          <table>
+            <thead class="u-bg-accent-light">
+              <tr>
+                <th>Class Name</th>
+                <th>Margin Value</th>
+                <th>Unit</th>
+                <th>Scope</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>.l-mx-auto</td>
+                <td>auto</td>
+                <td>-</td>
+                <td>Horizontal</td>
+              </tr>
+              <tr>
+                <td>.l-mb-2</td>
+                <td>2</td>
+                <td>rem</td>
+                <td>Bottom</td>
+              </tr>
+              <tr>
+                <td>.l-mb-1-5</td>
+                <td>1.5</td>
+                <td>rem</td>
+                <td>Bottom</td>
+              </tr>
+              <tr>
+                <td>.l-mb-1-25</td>
+                <td>1.25</td>
+                <td>rem</td>
+                <td>Bottom</td>
+              </tr>
+              <tr>
+                <td>.l-mb-1</td>
+                <td>1</td>
+                <td>rem</td>
+                <td>Bottom</td>
+              </tr>
+              <tr>
+                <td>.l-mb-3-5</td>
+                <td>3.5</td>
+                <td>rem</td>
+                <td>Bottom</td>
+              </tr>
+              <tr>
+                <td>.l-mt-3</td>
+                <td>3</td>
+                <td>rem</td>
+                <td>Top</td>
+              </tr>
+              <tr>
+                <td>.l-mt-3-5</td>
+                <td>3.5</td>
+                <td>rem</td>
+                <td>Top</td>
+              </tr>
+              <tr>
+                <td>.l-mt-2-5</td>
+                <td>2.5</td>
+                <td>rem</td>
+                <td>Top</td>
+              </tr>
+              <tr>
+                <td>.l-mt-2</td>
+                <td>2</td>
+                <td>rem</td>
+                <td>Top</td>
+              </tr>
+              <tr>
+                <td>.l-mt-1-5</td>
+                <td>1.5</td>
+                <td>rem</td>
+                <td>Top</td>
+              </tr>
+              <tr>
+                <td>.l-mt-1</td>
+                <td>1</td>
+                <td>rem</td>
+                <td>Top</td>
+              </tr>
+              <tr>
+                <td>.l-mt-0</td>
+                <td>0</td>
+                <td>-</td>
+                <td>Top</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2
+            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
+          >
+            Padding
+          </h2>
+          <p class="text-wrapper-desktop">
+            The Padding section of our design system provides classes to easily
+            add padding to elements. These classes are designed to be intuitive
+            and flexible, allowing you to specify padding values for different
+            sides or combinations of sides.
+          </p>
+          <p class="text-wrapper-desktop">
+            Here are the available classes and their corresponding padding
+            values:
+          </p>
+          <table>
+            <thead class="u-bg-accent-light">
+              <tr>
+                <th>Class Name</th>
+                <th>Padding Value</th>
+                <th>Unit</th>
+                <th>Scope</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>.l-pl-1</td>
+                <td>1</td>
+                <td>rem</td>
+                <td>Left</td>
+              </tr>
+              <tr>
+                <td>.l-pr-1</td>
+                <td>1</td>
+                <td>rem</td>
+                <td>Right</td>
+              </tr>
+              <tr>
+                <td>.l-pr-1-5</td>
+                <td>1.5</td>
+                <td>rem</td>
+                <td>Right</td>
+              </tr>
+              <tr>
+                <td>.l-px-1</td>
+                <td>1</td>
+                <td>rem</td>
+                <td>Horizontal</td>
+              </tr>
+              <tr>
+                <td>.l-pt-10px</td>
+                <td>10</td>
+                <td>px</td>
+                <td>Top</td>
+              </tr>
+              <tr>
+                <td>.l-pt-1</td>
+                <td>1</td>
+                <td>rem</td>
+                <td>Top</td>
+              </tr>
+              <tr>
+                <td>.l-py-10px</td>
+                <td>10</td>
+                <td>px</td>
+                <td>Vertical</td>
+              </tr>
+              <tr>
+                <td>.l-py-1</td>
+                <td>1</td>
+                <td>rem</td>
+                <td>Vertical</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
     <script src="design-system.js"></script>
   </body>
 </html>
