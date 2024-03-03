@@ -362,7 +362,7 @@ li {
   }
 
   /*Setting padding value for top nav menu to 0 in desktop*/
-  .l-py-1, .l-pt-1 {
+  .l-py-0-desktop {
     padding-top: 0;
     padding-bottom: 0;
   }
