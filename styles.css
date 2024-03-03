@@ -399,4 +399,9 @@ li {
   .u-letter-spacing-lg-dt {
     letter-spacing: var(--letter-spacing-lg-dt);
   }
+
+  /*Base layout classes for Desktop screens*/
+  .l-direction-row-dt {
+    flex-direction: row;
+  }
 }
