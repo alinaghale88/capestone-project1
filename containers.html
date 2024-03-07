@@ -20,261 +20,347 @@
   <body
     class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md"
   >
-  <header class="c-site-header">
-    <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
-    <div class="c-desktop-header">
-      <!--Mobile Navbar-->
-      <div class="c-mobile-navbar u-bg-primary l-pl-1">
-        <a href="index.html"
-          ><span class="logo u-heading-font u-heading-xl"
-            >Design System</span
-          ></a
-        >
-        <a
-          class="c-mobile-navbar__toggle l-pr-1"
-          id="toggleButton"
-          onclick="showNav()"
-          ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
-        ></a>
-        <a
-          class="c-mobile-navbar__close l-pr-1"
-          id="closeButton"
-          onclick="showNav()"
-          style="display: none"
-          ><i class="fa-solid fa-times fa-lg u-text-primary"></i
-        ></a>
+    <header class="c-site-header">
+      <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
+      <div class="c-desktop-header">
+        <!--Mobile Navbar-->
+        <div class="c-mobile-navbar u-bg-primary l-pl-1">
+          <a href="index.html"
+            ><span class="logo u-heading-font u-heading-xl"
+              >Design System</span
+            ></a
+          >
+          <a
+            class="c-mobile-navbar__toggle l-pr-1"
+            id="toggleButton"
+            onclick="showNav()"
+            ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
+          ></a>
+          <a
+            class="c-mobile-navbar__close l-pr-1"
+            id="closeButton"
+            onclick="showNav()"
+            style="display: none"
+            ><i class="fa-solid fa-times fa-lg u-text-primary"></i
+          ></a>
+        </div>
+        <!--Top Navbar-->
+        <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
+          <ul class="c-top-navbar__menu">
+            <li class="l-py-0-desktop l-pr-1-5">
+              <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
+                >About Me</a
+              >
+            </li>
+            <li class="l-py-0-desktop">
+              <a id="demoLink" class="c-top-navbar__link" href="#">Demo Site</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <!--Top Navbar-->
-      <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
-        <ul class="c-top-navbar__menu">
-          <li class="l-py-0-desktop l-pr-1-5">
-            <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
-              >About Me</a
+      <!--Side Navbar-->
+      <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
+        <ul class="c-side-navbar__menu">
+          <li>
+            <a id="brandingLink" class="c-side-navbar__link" href="#"
+              >Branding</a
             >
           </li>
-          <li class="l-py-0-desktop">
-            <a id="demoLink" class="c-top-navbar__link" href="#">Demo Site</a>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a id="colorsLink" class="c-side-navbar__link" href="colours.html"
+                >01 Colours</a
+              >
+            </li>
+            <li>
+              <a
+                id="typographyLink"
+                class="c-side-navbar__link"
+                href="typography.html"
+                >02 Typography</a
+              >
+            </li>
+            <li>
+              <a id="logoLink" class="c-side-navbar__link" href="#">03 Logo</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link" href="#">Utilities</a>
           </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="spacing.html">04 Spacing</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="containers.html"
+                >05 Containers</a
+              >
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">06 Images</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">07 Interactive</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">08 Feedback</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link" href="#">Navigation</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="#">09 Navbars</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">10 Breadcrumbs</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">11 Pagination</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link" href="#">Blocks</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="#">12 Hero</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">13 Carousel</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">14 Slats</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">15 Footer</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link" href="#">Components</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="#">16 Cards</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">17 Forms</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">18 Accordion</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="#">19 Lists</a>
+            </li>
+          </ul>
         </ul>
       </nav>
-    </div>
-    <!--Side Navbar-->
-    <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
-      <ul class="c-side-navbar__menu">
-        <li>
-          <a id="brandingLink" class="c-side-navbar__link" href="#"
-            >Branding</a
-          >
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a
-              id="colorsLink"
-              class="c-side-navbar__link"
-              href="colours.html"
-              >01 Colours</a
-            >
-          </li>
-          <li>
-            <a
-              id="typographyLink"
-              class="c-side-navbar__link"
-              href="typography.html"
-              >02 Typography</a
-            >
-          </li>
-          <li>
-            <a id="logoLink" class="c-side-navbar__link" href="#">03 Logo</a>
-          </li>
-        </ul>
-        <li>
-          <a class="c-side-navbar__link" href="#">Utilities</a>
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a class="c-side-navbar__link" href="spacing.html">04 Spacing</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="containers.html">05 Containers</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">06 Images</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">07 Interactive</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">08 Feedback</a>
-          </li>
-        </ul>
-        <li>
-          <a class="c-side-navbar__link" href="#">Navigation</a>
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a class="c-side-navbar__link" href="#">09 Navbars</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">10 Breadcrumbs</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">11 Pagination</a>
-          </li>
-        </ul>
-        <li>
-          <a class="c-side-navbar__link" href="#">Blocks</a>
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a class="c-side-navbar__link" href="#">12 Hero</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">13 Carousel</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">14 Slats</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">15 Footer</a>
-          </li>
-        </ul>
-        <li>
-          <a class="c-side-navbar__link" href="#">Components</a>
-        </li>
-        <ul class="c-side-navbar__sub-menu">
-          <li>
-            <a class="c-side-navbar__link" href="#">16 Cards</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">17 Forms</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">18 Accordion</a>
-          </li>
-          <li>
-            <a class="c-side-navbar__link" href="#">19 Lists</a>
-          </li>
-        </ul>
-      </ul>
-    </nav>
-  </header>
-  <main class="c-site-content full-width desktop-full-width">
-    <div
-      class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end"
-    >
-      <h1
-        class="max-width-mobile max-width-desktop full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-40-desktop u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
+    </header>
+    <main class="c-site-content full-width desktop-full-width">
+      <div
+        class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end"
       >
-        Containers
-      </h1>
-    </div>
-    <div
-      class="max-width-mobile max-width-desktop l-mx-auto l-px-1 l-px-40-desktop"
-    >
-      <section>
-        <h2
-          class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
+        <h1
+          class="max-width-mobile max-width-desktop full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-40-desktop u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
         >
-        Flexible Layout Classes
-        </h2>
-        <p class="text-wrapper-desktop">
-          The Flexible Layout Classes section of my design system outlines a set of classes tailored to create flexible and responsive layouts using flexbox.
-        </p>
-        <!--Generated from ChatGPT-->
-        <table class="l-mt-1-5 c-containers-table">
-          <thead class="u-bg-accent-light">
-            <tr>
-              <th class="l-p-10px-12px c-containers-table__table-heading c-containers-table__table-heading-class">Class Name</th>
-              <th class="l-p-10px-12px c-containers-table__table-heading">Property</th>
-              <th class="l-p-10px-12px c-containers-table__table-heading">Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.l-flex</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">display</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">flex</td>
-            </tr>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.l-direction-row</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">flex-direction</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">row</td>
-            </tr>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.l-direction-row-dt</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">flex-direction</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">row</td>
-            </tr>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.l-direction-column</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">flex-direction</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">column</td>
-            </tr>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.l-wrap</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">flex-wrap</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">wrap</td>
-            </tr>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.l-justify-flex-end</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">justify-cotent</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">flex-end</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section>
-        <h2
-          class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
-        >
-          Container classes
-        </h2>
-        <p class="text-wrapper-desktop">
-          The Container classes section of our design system encompasses various classes tailored to manage the layout and width of containers across different screen sizes
-        </p> <!--Content generated from ChatGPT-->
-        <p class="text-wrapper-desktop">
-          Here are the available classes and their corresponding padding
-          values:
-        </p>
-        <table class="l-mt-1-5 c-containers-table">
-          <thead class="u-bg-accent-light">
-            <tr>
-              <th class="l-p-10px-12px c-containers-table__table-heading c-containers-table__table-heading-class">Class Name</th>
-              <th class="l-p-10px-12px c-containers-table__table-heading">Property</th>
-              <th class="l-p-10px-12px c-containers-table__table-heading">Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.full-width</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">width</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">100%</td>
-            </tr>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.desktop-full-width</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">width</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">calc(100% - var(--side-nav-width))</td>
-            </tr>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.max-width-mobile</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">max-width</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">480px</td>
-            </tr>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.max-width-desktop</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">max-width</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">1240px</td>
-            </tr>
-            <tr>
-              <td class="l-p-10px-12px c-containers-table__table-data">.text-wrapper-desktop</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">max-width</td>
-              <td class="l-p-10px-12px c-containers-table__table-data">760px</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </div>
-  </main>
+          Containers
+        </h1>
+      </div>
+      <div
+        class="max-width-mobile max-width-desktop l-mx-auto l-px-1 l-px-40-desktop"
+      >
+        <section>
+          <h2
+            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
+          >
+            Flexible Layout Classes
+          </h2>
+          <p class="text-wrapper-desktop">
+            The Flexible Layout Classes section of my design system outlines a
+            set of classes tailored to create flexible and responsive layouts
+            using flexbox.
+          </p>
+          <!--Generated from ChatGPT-->
+          <table class="l-mt-1-5 c-containers-table">
+            <thead class="u-bg-accent-light">
+              <tr>
+                <th
+                  class="l-p-10px-12px c-containers-table__table-heading c-containers-table__table-heading-class"
+                >
+                  Class Name
+                </th>
+                <th class="l-p-10px-12px c-containers-table__table-heading">
+                  Property
+                </th>
+                <th class="l-p-10px-12px c-containers-table__table-heading">
+                  Value
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .l-flex
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  display
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  flex
+                </td>
+              </tr>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .l-direction-row
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  flex-direction
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  row
+                </td>
+              </tr>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .l-direction-row-dt
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  flex-direction
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  row
+                </td>
+              </tr>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .l-direction-column
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  flex-direction
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  column
+                </td>
+              </tr>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .l-wrap
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  flex-wrap
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  wrap
+                </td>
+              </tr>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .l-justify-flex-end
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  justify-cotent
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  flex-end
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2
+            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
+          >
+            Container classes
+          </h2>
+          <p class="text-wrapper-desktop">
+            The Container classes section of our design system encompasses
+            various classes tailored to manage the layout and width of
+            containers across different screen sizes.
+          </p>
+          <!--Content generated from ChatGPT-->
+          <p class="text-wrapper-desktop l-mt-1">
+            Here are the available classes and their corresponding padding
+            values:
+          </p>
+          <table class="l-mt-1-5 c-containers-table">
+            <thead class="u-bg-accent-light">
+              <tr>
+                <th
+                  class="l-p-10px-12px c-containers-table__table-heading c-containers-table__table-heading-class"
+                >
+                  Class Name
+                </th>
+                <th class="l-p-10px-12px c-containers-table__table-heading">
+                  Property
+                </th>
+                <th class="l-p-10px-12px c-containers-table__table-heading">
+                  Value
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .full-width
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  width
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  100%
+                </td>
+              </tr>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .desktop-full-width
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  width
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  calc(100% - var(--side-nav-width))
+                </td>
+              </tr>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .max-width-mobile
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  max-width
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  480px
+                </td>
+              </tr>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .max-width-desktop
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  max-width
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  1240px
+                </td>
+              </tr>
+              <tr>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  .text-wrapper-desktop
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  max-width
+                </td>
+                <td class="l-p-10px-12px c-containers-table__table-data">
+                  760px
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
     <script src="design-system.js"></script>
   </body>
 </html>

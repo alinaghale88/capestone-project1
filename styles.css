@@ -195,9 +195,7 @@ li {
 
 /*Utility classes for the font family for only Typography page*/
 .u-heading-xl-dt-tp {
-  font-size: var(
-    --heading-size-xl-dt
-  );
+  font-size: var(--heading-size-xl-dt);
 }
 .u-heading-line-height-xl-tp {
   line-height: var(--heading-line-height-xl-dt);
@@ -206,9 +204,7 @@ li {
   letter-spacing: var(--letter-spacing-xl-dt);
 }
 .u-heading-lg-dt-tp {
-  font-size: var(
-    --heading-size-lg-dt
-  );
+  font-size: var(--heading-size-lg-dt);
 }
 .u-heading-line-height-lg-tp {
   line-height: var(--heading-line-height-lg-dt);
@@ -217,14 +213,10 @@ li {
   letter-spacing: var(--letter-spacing-lg-dt);
 }
 .u-heading-xl-mb-tp {
-  font-size: var(
-    --heading-size-xl-mb
-  );
+  font-size: var(--heading-size-xl-mb);
 }
 .u-heading-lg-mb-tp {
-  font-size: var(
-    --heading-size-lg-mb
-  ); 
+  font-size: var(--heading-size-lg-mb);
 }
 .u-heading-line-height-md-tp {
   line-height: var(--heading-line-height-md);
@@ -350,7 +342,6 @@ li {
 
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
-
   /*Styling for site content on desktop*/
   .c-site-content {
     left: var(--side-nav-width);
@@ -383,7 +374,7 @@ li {
   }
 
   /*Headings fonts change for desktop screen*/
-  
+
   /*For H1*/
   .u-heading-xl-dt {
     font-size: var(
@@ -396,7 +387,7 @@ li {
   .u-letter-spacing-xl-dt {
     letter-spacing: var(--letter-spacing-xl-dt);
   }
-  
+
   /*For H2*/
   .u-heading-lg-dt {
     font-size: var(

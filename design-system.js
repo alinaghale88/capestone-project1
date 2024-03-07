@@ -28,10 +28,10 @@ navLinks.forEach((link) => {
 
 // Function to move menu items between navbars based on viewport width
 function adjustMenuItems() {
-  const aboutMenuItem = document.getElementById('aboutLink').parentNode;
-  const demoMenuItem = document.getElementById('demoLink').parentNode;
-  const sideNavbar = document.querySelector('.c-side-navbar__menu');
-  const desktopNavbar = document.querySelector('.c-top-navbar__menu');
+  const aboutMenuItem = document.getElementById("aboutLink").parentNode;
+  const demoMenuItem = document.getElementById("demoLink").parentNode;
+  const sideNavbar = document.querySelector(".c-side-navbar__menu");
+  const desktopNavbar = document.querySelector(".c-top-navbar__menu");
 
   if (window.innerWidth < 1200) {
     // Move menu items to top of side navbar
@@ -46,4 +46,4 @@ function adjustMenuItems() {
 
 // Call the function initially and whenever the window is resized
 adjustMenuItems();
-window.addEventListener('resize', adjustMenuItems);
+window.addEventListener("resize", adjustMenuItems);

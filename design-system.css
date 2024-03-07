@@ -66,7 +66,8 @@
 }
 
 /*Styling for colour palette table*/
-.c-colour-block, .c-type-block {
+.c-colour-block,
+.c-type-block {
   border-bottom: 1px solid var(--clr-bg-accent-light);
 }
 
@@ -79,7 +80,8 @@
   display: inline-block;
   width: 200px;
   height: 80px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .c-colour-details__attribute {
   width: 120px;
@@ -88,14 +90,19 @@
   width: 100%;
 }
 
-
 /*Styling for Colour-combinations, Spacing table*/
-.c-colour-combinations__table, .c-spacing-table, .c-containers-table {
+.c-colour-combinations__table,
+.c-spacing-table,
+.c-containers-table {
   border-collapse: collapse;
   text-align: center;
 }
 .c-colour-combinations__table-heading,
-.c-colour-combinations__table-data, .c-spacing-table__table-heading, .c-spacing-table__table-data, .c-containers-table__table-heading, .c-containers-table__table-data {
+.c-colour-combinations__table-data,
+.c-spacing-table__table-heading,
+.c-spacing-table__table-data,
+.c-containers-table__table-heading,
+.c-containers-table__table-data {
   border: 1px solid #000;
 }
 .c-table-scroll {
@@ -103,7 +110,8 @@
 }
 
 /*Styling for 'Class Name' table header*/
-.c-spacing-table__table-heading-class, .c-containers-table__table-heading-class {
+.c-spacing-table__table-heading-class,
+.c-containers-table__table-heading-class {
   min-width: 110px;
 }
 
