@@ -90,12 +90,12 @@
 
 
 /*Styling for Colour-combinations table*/
-.c-colour-combinations__table {
+.c-colour-combinations__table, .c-spacing-table {
   border-collapse: collapse;
   text-align: center;
 }
 .c-colour-combinations__table-heading,
-.c-colour-combinations__table-data {
+.c-colour-combinations__table-data, .c-spacing-table__table-heading, .c-spacing-table__table-data {
   border: 1px solid #000;
 }
 .c-table-scroll {
