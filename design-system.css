@@ -119,6 +119,11 @@
   padding-top: 20px;
 }
 
+/*Styling for About Me page*/
+.c-developer-info__image {
+  width: 100%;
+}
+
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
   .c-mobile-navbar__toggle {
@@ -145,5 +150,8 @@
   }
   .c-type-details__attribute {
     width: 170px;
+  }
+  .c-developer-info__image {
+    width: 500px;
   }
 }
