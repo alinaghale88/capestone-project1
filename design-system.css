@@ -97,7 +97,6 @@
 .c-colour-combinations__table-heading,
 .c-colour-combinations__table-data {
   border: 1px solid #000;
-  padding: 10px;
 }
 .c-table-scroll {
   overflow: auto;

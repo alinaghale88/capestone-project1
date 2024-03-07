@@ -329,6 +329,9 @@ li {
 .l-pr-1-5 {
   padding-right: 1.5rem;
 }
+.l-p-10px-12px {
+  padding: 10px 12px;
+}
 
 /*Container classes for mobile view*/
 .max-width-mobile {
@@ -356,13 +359,13 @@ li {
   }
 
   /*Base layout classes for desktop*/
-  .l-px-40-desktop {
+  .l-px-40-dt {
     padding-left: 40px;
     padding-right: 40px;
   }
 
   /*Setting padding value for top nav menu to 0 in desktop*/
-  .l-py-0-desktop {
+  .l-py-0-dt {
     padding-top: 0;
     padding-bottom: 0;
   }
