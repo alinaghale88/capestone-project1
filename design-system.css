@@ -103,7 +103,7 @@
 }
 
 /*Styling for 'Class Name' table header*/
-.c-spacing-table__table-heading-class {
+.c-spacing-table__table-heading-class, .c-containers-table__table-heading-class {
   min-width: 110px;
 }
 
