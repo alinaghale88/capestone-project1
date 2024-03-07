@@ -258,6 +258,9 @@ li {
 .l-vtl-alignment-top {
   vertical-align: top;
 }
+.l-gap {
+  gap: 8px;
+}
 
 /*Base spacing classes*/
 /*Margin*/
@@ -300,6 +303,9 @@ li {
 }
 .l-mt-0 {
   margin-top: 0;
+}
+.l-mt-10px {
+  margin-top: 10px;
 }
 
 /*Padding*/
@@ -407,5 +413,10 @@ li {
   /*Base layout classes for Desktop screens*/
   .l-direction-row-dt {
     flex-direction: row;
+  }
+
+  /*Flex classes for Desktop screens*/
+  .l-gap {
+    gap: 100px;
   }
 }
