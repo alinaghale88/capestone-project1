@@ -157,6 +157,9 @@
   .c-top-navbar {
     background-color: unset;
   }
+  .c-site-content {
+    left: var(--side-nav-width);
+  }
   .c-site-content-no-sidenav {
     left: 0;
   }

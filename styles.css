@@ -333,26 +333,23 @@ li {
 }
 
 /*Container classes for mobile view*/
-.max-width-mobile {
+.l-max-width-mobile {
   max-width: 480px;
 }
-.full-width {
+.l-full-width {
   width: 100%;
 }
 
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
   /*Styling for site content on desktop*/
-  .c-site-content {
-    left: var(--side-nav-width);
-  }
-  .desktop-full-width {
+  .l-desktop-full-width {
     width: calc(100% - var(--side-nav-width));
   }
-  .max-width-desktop {
+  .l-max-width-desktop {
     max-width: 1240px;
   }
-  .text-wrapper-desktop {
+  .l-text-wrapper-desktop {
     max-width: 760px;
   }
 
