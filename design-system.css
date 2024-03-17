@@ -141,6 +141,10 @@
   .c-side-navbar {
     display: block;
   }
+  /*Hides side navbar in About Me page in desktop view*/
+  .c-side-navbar--inactive {
+    display: none;
+  }
   .c-desktop-header {
     display: flex;
     justify-content: space-between;
@@ -152,6 +156,9 @@
   .c-mobile-navbar,
   .c-top-navbar {
     background-color: unset;
+  }
+  .c-site-content-no-sidenav {
+    left: 0;
   }
   .c-desktop-header {
     height: var(--header-height);
