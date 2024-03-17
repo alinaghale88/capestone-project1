@@ -296,8 +296,8 @@ li {
 .l-mt-0 {
   margin-top: 0;
 }
-.l-mt-10px {
-  margin-top: 10px;
+.l-mt-0-5 {
+  margin-top: 0.5rem;
 }
 
 /*Padding*/
@@ -315,12 +315,12 @@ li {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.l-py-10px {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.l-py-0-5 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-.l-pt-10px {
-  padding-top: 10px;
+.l-pt-0-5 {
+  padding-top: 0.5rem;
 }
 .l-pt-1 {
   padding-top: 1rem;
@@ -328,8 +328,8 @@ li {
 .l-pr-1-5 {
   padding-right: 1.5rem;
 }
-.l-p-10px-12px {
-  padding: 10px 12px;
+.l-p-0-5-0-75 {
+  padding: 0.5rem 0.75rem;
 }
 
 /*Container classes for mobile view*/
@@ -354,9 +354,9 @@ li {
   }
 
   /*Base layout classes for desktop*/
-  .l-px-40-dt {
-    padding-left: 40px;
-    padding-right: 40px;
+  .l-px-2-5-dt {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   /*Setting padding value for top nav menu to 0 in desktop*/
