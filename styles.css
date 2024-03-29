@@ -408,3 +408,19 @@ li {
     gap: 175px;
   }
 }
+
+
+/* Styling for index.html */
+
+/*Styling for site header*/
+.c-mobile-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-nav-menu {
+  display: none;
+}
+.c-nav-menu--show-items {
+  display: block;
+}
