@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="design-system.css" />
@@ -16,11 +16,35 @@
       src="https://kit.fontawesome.com/588bcee0c3.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md">
-    <header></header>
+  </head>
+  <body
+    class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md"
+  >
+    <header class="c-site-header">
+      <!--Mobile Navbar-->
+      <div class="c-mobile-navbar u-bg-primary l-pl-1">
+        <a href="design-system.html"
+          ><span class="logo u-heading-font u-heading-xl"
+            >Outback Nursery</span
+          ></a
+        >
+        <a
+          class="c-mobile-navbar__toggle l-pr-1"
+          id="toggleButton"
+          onclick="showNav()"
+          ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
+        ></a>
+        <a
+          class="c-mobile-navbar__close l-pr-1"
+          id="closeButton"
+          onclick="showNav()"
+          style="display: none"
+          ><i class="fa-solid fa-times fa-lg u-text-primary"></i
+        ></a>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
