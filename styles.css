@@ -46,6 +46,7 @@
   --letter-spacing-lg-dt: -0.01em;
   --letter-spacing-heading: 0em;
   --letter-spacing-normal: 0.01em;
+  --letter-spacing-cabin-normal: 0.05em;
 
   /*header height*/
   --header-height: 60px;
@@ -191,6 +192,9 @@ li {
 }
 .u-letter-spacing-normal {
   letter-spacing: var(--letter-spacing-normal);
+}
+.u-letter-spacing-cabin-normal {
+  letter-spacing: var(--letter-spacing-cabin-normal);
 }
 
 /*Utility classes for the font family for only Typography page*/
@@ -441,12 +445,17 @@ li {
   text-decoration: none;
   display: block;
 }
-.c-nav-menu__link:hover {
+.c-nav-menu__link--hover:hover {
   color: var(--clr-text-secondary);
 }
 /*Active state styling*/
 .link--active {
   color: var(--clr-text-secondary);
+}
+/*Header button styling*/
+.c-header-btn {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*Styling for Desktop screens*/

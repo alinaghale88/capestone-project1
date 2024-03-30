@@ -21,7 +21,7 @@ const currentPageUrl = window.location.href; // Get the current page URL
 
 navLinks.forEach((link) => {
   // Check if the link href matches the current page URL
-  if (link.href === currentPageUrl) {
+  if (link.href === currentPageUrl && !link.href.includes('#')) {
     // Add a class to mark it as active
     link.classList.add("link--active");
   }
