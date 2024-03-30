@@ -23,33 +23,39 @@
       <!--Mobile Navbar-->
       <div class="c-mobile-navbar u-bg-primary l-py-0-5">
         <a href="index.html" class="l-flex l-pl-1"
-          ><img src="images/outback-nursery-site-logo.png" class="c-site-header__logo" alt="Outback Nursery Site Logo"></a
-        >
+          ><img
+            src="images/outback-nursery-site-logo.png"
+            class="c-site-header__logo"
+            alt="Outback Nursery Site Logo"
+        /></a>
         <a
           class="c-mobile-navbar__toggle l-pr-1"
           id="toggleButton"
           onclick="showNav()"
           ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
         ></a>
+      </div>
+      <nav class="c-menu-block u-bg-primary-light">
         <a
-          class="c-mobile-navbar__close l-pr-1"
+          class="c-mobile-navbar__close l-pr-1 l-py-0-5"
           id="closeButton"
           onclick="showNav()"
           style="display: none"
           ><i class="fa-solid fa-times fa-lg u-text-primary"></i
         ></a>
-      </div>
-      <nav class="c-menu-block u-bg-primary-light">
-        <ul class="c-nav-menu">
-            <li><a href="coming-soon.html">Products</a></li>
-            <li><a href="#">Resources</a></li>
-            <ul>
-                <li><a href="coming-soon.html">Blog</a></li>
-                <li><a href="coming-soon.html">FAQ</a></li>
-                <li><a href="coming-soon.html">Gift Certificate</a></li>
-            </ul>
-            <li><a href="coming-soon.html">About</a></li>
-            <li><a href="index.html/#contact">Contact</a></li>
+        <ul class="c-nav-menu l-mt-0">
+          <li><a href="coming-soon.html" class="c-nav-menu__link u-text-primary">Products</a></li>
+          <li class="c-nav-menu__dropdown"><a href="#" class="c-nav-menu__link u-text-primary" onclick="toggleDropdown()">
+                Resources <i class="fa-solid fa-caret-down u-text-primary l-pl-1"></i>
+              </a>
+          <ul class="c-nav-menu__dropdown-menu" id="resourcesDropdown" style="display: none;">
+            <li><a href="coming-soon.html" class="c-nav-menu__link u-text-primary">Blog</a></li>
+            <li><a href="coming-soon.html" class="c-nav-menu__link u-text-primary">FAQ</a></li>
+            <li><a href="coming-soon.html" class="c-nav-menu__link u-text-primary">Gift Certificate</a></li>
+          </ul>
+          </li>
+          <li><a href="coming-soon.html" class="c-nav-menu__link u-text-primary">About</a></li>
+          <li><a href="index.html/#contact" class="c-nav-menu__link u-text-primary">Contact</a></li>
         </ul>
       </nav>
     </header>

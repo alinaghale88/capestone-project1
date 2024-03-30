@@ -11,3 +11,28 @@ function showNav() {
     closeButton.style.display =
       closeButton.style.display === "none" ? "block" : "none";
   }
+
+// Code to set the active state
+const navLinks = document.querySelectorAll(
+  ".c-nav-menu__link"
+); // Get all navigation links
+
+const currentPageUrl = window.location.href; // Get the current page URL
+
+navLinks.forEach((link) => {
+  // Check if the link href matches the current page URL
+  if (link.href === currentPageUrl) {
+    // Add a class to mark it as active
+    link.classList.add("link--active");
+  }
+});
+
+// Code to handle dropdown toggle
+function toggleDropdown() {
+    var dropdownMenu = document.getElementById("resourcesDropdown");
+    if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+      dropdownMenu.style.display = "block";
+    } else {
+      dropdownMenu.style.display = "none";
+    }
+  }

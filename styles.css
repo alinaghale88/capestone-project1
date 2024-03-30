@@ -418,9 +418,15 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+.c-mobile-navbar__close {
+  text-align: right;
+}
 .c-menu-block {
   display: none;
-  width: var(--side-nav-width);
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 .c-menu-block--show-items {
   display: block;
@@ -430,6 +436,16 @@ li {
 }
 .c-site-header__logo {
   width: 125px;
+}
+.c-nav-menu__link {
+  text-decoration: none;
+}
+.c-nav-menu__link:hover {
+  color: var(--clr-text-secondary);
+}
+/*Active state styling*/
+.link--active {
+  color: var(--clr-text-secondary);
 }
 
 /*Styling for Desktop screens*/
