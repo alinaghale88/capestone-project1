@@ -428,3 +428,14 @@ li {
 .c-nav-menu {
   list-style-type: none;
 }
+.c-site-header__logo {
+  width: 125px;
+}
+
+/*Styling for Desktop screens*/
+@media screen and (min-width: 1200px) {
+  /*Styling for site header*/
+  .c-site-header__logo {
+    width: 160px;
+  }
+}
