@@ -418,9 +418,13 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-.c-nav-menu {
+.c-menu-block {
   display: none;
+  width: var(--side-nav-width);
 }
-.c-nav-menu--show-items {
+.c-menu-block--show-items {
   display: block;
+}
+.c-nav-menu {
+  list-style-type: none;
 }
