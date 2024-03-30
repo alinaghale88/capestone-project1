@@ -431,7 +431,7 @@ li {
 .c-menu-block--show-items {
   display: block;
 }
-.c-nav-menu {
+.c-nav-menu, .c-nav-menu__dropdown-menu {
   list-style-type: none;
 }
 .c-site-header__logo {
@@ -439,6 +439,7 @@ li {
 }
 .c-nav-menu__link {
   text-decoration: none;
+  display: block;
 }
 .c-nav-menu__link:hover {
   color: var(--clr-text-secondary);
