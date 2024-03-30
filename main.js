@@ -30,9 +30,11 @@ navLinks.forEach((link) => {
 // Code to handle dropdown toggle
 function toggleDropdown() {
     var dropdownMenu = document.getElementById("resourcesDropdown");
-    if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
-      dropdownMenu.style.display = "block";
-    } else {
-      dropdownMenu.style.display = "none";
+    if (window.innerWidth < 1200) { // Adjust the screen width according to your mobile breakpoint
+        if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+            dropdownMenu.style.display = "block";
+        } else {
+            dropdownMenu.style.display = "none";
+        }
     }
-  }
+}

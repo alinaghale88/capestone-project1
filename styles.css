@@ -98,7 +98,7 @@ li {
   background-color: var(--clr-bg-primary); /*Primary background color*/
 }
 
-.u-bg-secondary {
+.u-bg-secondary, .u-bg-secondary-dt {
   background-color: var(--clr-bg-secondary); /*Secondary background color*/
 }
 
@@ -230,6 +230,9 @@ li {
 }
 
 /*Classes for base layout*/
+.l-none {
+  display: none;
+}
 .l-block {
   display: block;
 }
@@ -253,6 +256,12 @@ li {
 }
 .l-justify-center {
   justify-content: center;
+}
+.l-justify-space-between {
+  justify-content: space-between;
+}
+.l-align-center {
+  align-items: center;
 }
 .l-vtl-alignment-top {
   vertical-align: top;
@@ -282,6 +291,9 @@ li {
 .l-mb-3-5 {
   margin-bottom: 3.5rem;
 }
+.l-mb-0 {
+  margin-bottom: 0;
+}
 .l-mt-3 {
   margin-top: 3rem;
 }
@@ -310,6 +322,9 @@ li {
 /*Padding*/
 .l-pl-1 {
   padding-left: 1rem;
+}
+.l-pl-0-5 {
+  padding-left: 0.5rem;
 }
 .l-pr-1 {
   padding-right: 1rem;
@@ -347,6 +362,45 @@ li {
   width: 100%;
 }
 
+/* Styling for index.html */
+
+/*Styling for site header*/
+.c-mobile-navbar__close {
+  text-align: right;
+}
+.c-menu-block {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+.c-menu-block--show-items {
+  display: block;
+}
+.c-nav-menu, .c-nav-menu__dropdown-menu, .c-social-menu {
+  list-style-type: none;
+}
+.c-site-header__logo {
+  width: 125px;
+}
+.c-nav-menu__link {
+  text-decoration: none;
+}
+.c-nav-menu__link--hover:hover, .c-social-menu__link:hover {
+  color: var(--clr-text-secondary);
+}
+/*Active state styling*/
+.link--active {
+  color: var(--clr-text-secondary);
+}
+/*Header button styling*/
+.c-header-btn {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
   /*Styling for site content on desktop*/
@@ -354,7 +408,7 @@ li {
     width: calc(100% - var(--side-nav-width));
   }
   .l-max-width-desktop {
-    max-width: 1240px;
+    max-width: 1170px;
   }
   .l-text-wrapper-desktop {
     max-width: 760px;
@@ -365,11 +419,27 @@ li {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+  .l-px-1-25-dt {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .l-py-1-dt {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .l-my-0-dt {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   /*Setting padding value for top nav menu to 0 in desktop*/
   .l-py-0-dt {
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .l-px-0-dt {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /*Base layout classes for desktop screen*/
@@ -414,56 +484,41 @@ li {
   .l-gap {
     gap: 175px;
   }
-}
+  .l-justify-center-dt {
+    justify-content: center;
+  }
+  .l-flex-dt {
+    display: flex;
+  }
+  .l-block-dt {
+    display: block;
+  }
 
-
-/* Styling for index.html */
-
-/*Styling for site header*/
-.c-mobile-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.c-mobile-navbar__close {
-  text-align: right;
-}
-.c-menu-block {
-  display: none;
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-.c-menu-block--show-items {
-  display: block;
-}
-.c-nav-menu, .c-nav-menu__dropdown-menu, .c-social-menu {
-  list-style-type: none;
-}
-.c-site-header__logo {
-  width: 125px;
-}
-.c-nav-menu__link {
-  text-decoration: none;
-}
-.c-nav-menu__link--hover:hover, .c-social-menu__link:hover {
-  color: var(--clr-text-secondary);
-}
-/*Active state styling*/
-.link--active {
-  color: var(--clr-text-secondary);
-}
-/*Header button styling*/
-.c-header-btn {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/*Styling for Desktop screens*/
-@media screen and (min-width: 1200px) {
+  /* Styling for index.html */
   /*Styling for site header*/
   .c-site-header__logo {
     width: 160px;
+  }
+  .c-mobile-navbar__toggle {
+    display: none;
+  }
+  .c-site-header__logo {
+    padding-left: 0;
+  }
+  .c-menu-block {
+    position: unset;
+  }
+  .c-nav-menu {
+    width: 80%;
+    gap: 50px;
+  }
+
+  /*Styling for dropdown menu*/
+  .c-nav-menu__dropdown:hover .c-nav-menu__dropdown-menu {
+    display: block!important;
+    position: absolute;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease;
   }
 }

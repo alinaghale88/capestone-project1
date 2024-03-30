@@ -21,11 +21,13 @@
   >
     <header class="c-site-header">
       <!--Mobile Navbar-->
-      <div class="c-mobile-navbar u-bg-primary l-py-0-5">
-        <a href="index.html" class="l-flex l-pl-1"
+      <div
+        class="c-mobile-navbar u-bg-primary l-py-0-5 l-flex l-justify-space-between l-align-center l-justify-center-dt"
+      >
+        <a href="index.html" class="l-flex"
           ><img
             src="images/outback-nursery-site-logo.png"
-            class="c-site-header__logo"
+            class="c-site-header__logo l-pl-1"
             alt="Outback Nursery Site Logo"
         /></a>
         <a
@@ -35,32 +37,95 @@
           ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
         ></a>
       </div>
-      <nav class="c-menu-block u-bg-primary-light">
-        <a
-          class="c-mobile-navbar__close l-pr-1 l-py-0-5"
-          id="closeButton"
-          onclick="showNav()"
-          style="display: none"
-          ><i class="fa-solid fa-times fa-lg u-text-primary"></i
-        ></a>
-        <ul class="c-nav-menu l-px-1">
-          <li><a href="coming-soon.html" class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block">Products</a></li>
-          <li class="c-nav-menu__dropdown"><a href="#" class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block" onclick="toggleDropdown()">
-                Resources <i class="fa-solid fa-caret-down u-text-primary l-pl-1"></i>
+      <nav class="c-menu-block u-bg-primary-light l-block-dt">
+        <div
+          class="c-wrapper l-max-width-desktop l-flex-dt l-justify-space-between l-mx-auto"
+        >
+          <a
+            class="c-mobile-navbar__close l-pr-1 l-py-0-5"
+            id="closeButton"
+            onclick="showNav()"
+            style="display: none"
+            ><i class="fa-solid fa-times fa-lg u-text-primary"></i
+          ></a>
+          <ul class="c-nav-menu l-px-1 l-flex-dt l-px-0-dt">
+            <li>
+              <a
+                href="coming-soon.html"
+                class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
+                >Products</a
+              >
+            </li>
+            <li class="c-nav-menu__dropdown">
+              <a
+                href="#"
+                class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
+                onclick="toggleDropdown()"
+              >
+                Resources
+                <i class="fa-solid fa-caret-down u-text-primary l-pl-0-5"></i>
               </a>
-          <ul class="c-nav-menu__dropdown-menu" id="resourcesDropdown" style="display: none;">
-            <li><a href="coming-soon.html" class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block">Blog</a></li>
-            <li><a href="coming-soon.html" class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block">FAQ</a></li>
-            <li><a href="coming-soon.html" class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block">Gift Certificate</a></li>
+              <ul
+                class="c-nav-menu__dropdown-menu u-bg-secondary-dt l-none l-px-0-dt"
+                id="resourcesDropdown"
+              >
+                <li>
+                  <a
+                    href="coming-soon.html"
+                    class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="coming-soon.html"
+                    class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="coming-soon.html"
+                    class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
+                    >Gift Certificate</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="coming-soon.html"
+                class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
+                >About</a
+              >
+            </li>
+            <li class="l-mt-2 l-mb-2 l-my-0-dt">
+              <a
+                href="index.html/#contact"
+                class="c-nav-menu__link c-header-btn u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-py-0-5 l-px-2-5-dt"
+                >Contact</a
+              >
+            </li>
           </ul>
-          </li>
-          <li><a href="coming-soon.html" class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block">About</a></li>
-          <li class="l-mt-2 l-mb-2"><a href="index.html/#contact" class="c-nav-menu__link c-header-btn u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-py-0-5">Contact</a></li>
-        </ul>
-        <ul class="c-social-menu l-px-1 l-flex l-justify-center">
-            <li><a href="https://www.facebook.com/profile.php?id=100045470087619" target="_blank" class="c-social-menu__link u-text-primary l-block l-pr-1 l-py-0-5"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="https://www.instagram.com/outbacknursery/?hl=en" target="_blank" class="c-social-menu__link u-text-primary l-block l-py-0-5"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
+          <ul class="c-social-menu l-px-1 l-flex l-justify-center l-px-0-dt">
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100045470087619"
+                target="_blank"
+                class="c-social-menu__link u-text-primary l-block l-pr-1-5 l-py-0-5"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/outbacknursery/?hl=en"
+                target="_blank"
+                class="c-social-menu__link u-text-primary l-block l-py-0-5"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main></main>
