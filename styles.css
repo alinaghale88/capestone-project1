@@ -251,6 +251,9 @@ li {
 .l-justify-flex-end {
   justify-content: flex-end;
 }
+.l-justify-center {
+  justify-content: center;
+}
 .l-vtl-alignment-top {
   vertical-align: top;
 }
@@ -435,7 +438,7 @@ li {
 .c-menu-block--show-items {
   display: block;
 }
-.c-nav-menu, .c-nav-menu__dropdown-menu {
+.c-nav-menu, .c-nav-menu__dropdown-menu, .c-social-menu {
   list-style-type: none;
 }
 .c-site-header__logo {
@@ -443,9 +446,8 @@ li {
 }
 .c-nav-menu__link {
   text-decoration: none;
-  display: block;
 }
-.c-nav-menu__link--hover:hover {
+.c-nav-menu__link--hover:hover, .c-social-menu__link:hover {
   color: var(--clr-text-secondary);
 }
 /*Active state styling*/
