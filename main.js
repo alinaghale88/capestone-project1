@@ -27,7 +27,7 @@ navLinks.forEach((link) => {
   }
 });
 
-// Code to handle dropdown toggle
+// Code to handle dropdown toggle in navigation menu
 function toggleDropdown() {
     var dropdownMenu = document.getElementById("resourcesDropdown");
     if (window.innerWidth < 1200) { // Adjust the screen width according to your mobile breakpoint
@@ -38,3 +38,26 @@ function toggleDropdown() {
         }
     }
 }
+
+// Function to toggle the visibility of the notice section
+function toggleNotice() {
+    var noticeSection = document.getElementById("noticeSection");
+    var dropdownButton = document.getElementById("dropdownButton");
+    
+    if (noticeSection.classList.contains("l-none")) {
+      noticeSection.classList.remove("l-none");
+      dropdownButton.style.display = "none";
+    } else {
+      noticeSection.classList.add("l-none");
+      dropdownButton.style.display = "block";
+    }
+  }
+  
+  // Function to hide the notice section
+  function hideNotice() {
+    var noticeSection = document.getElementById("noticeSection");
+    var dropdownButton = document.getElementById("dropdownButton");
+    
+    noticeSection.classList.add("l-none");
+    dropdownButton.style.display = "block";
+  }

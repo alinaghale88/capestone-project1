@@ -98,7 +98,7 @@ li {
   background-color: var(--clr-bg-primary); /*Primary background color*/
 }
 
-.u-bg-secondary, .u-bg-secondary-dt {
+.u-bg-secondary {
   background-color: var(--clr-bg-secondary); /*Secondary background color*/
 }
 
@@ -326,6 +326,9 @@ li {
 .l-pl-0-5 {
   padding-left: 0.5rem;
 }
+.l-pl-0-25 {
+  padding-left: 0.25rem;
+}
 .l-pr-1 {
   padding-right: 1rem;
 }
@@ -346,6 +349,9 @@ li {
 }
 .l-pt-1 {
   padding-top: 1rem;
+}
+.l-pb-0-25 {
+  padding-bottom: 0.25rem;
 }
 .l-pr-1-5 {
   padding-right: 1.5rem;
@@ -401,8 +407,25 @@ li {
   text-transform: uppercase;
 }
 
+/* Notice section styling*/
+.c-notice-dropdown {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.c-notice-section .c-wrapper {
+  text-align: center;
+}
+
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
+  /* Utility classes for colors in desktop view */
+  .u-bg-secondary-dt {
+    background-color: var(--clr-bg-secondary);
+  }
+
   /*Styling for site content on desktop*/
   .l-desktop-full-width {
     width: calc(100% - var(--side-nav-width));
@@ -426,6 +449,10 @@ li {
   .l-py-1-dt {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+  .l-py-1-5-dt {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .l-my-0-dt {
     margin-top: 0;
@@ -520,5 +547,15 @@ li {
     width: 250px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 0.3s ease;
+  }
+
+  /* Notice section styling */
+  .c-notice-dropdown {
+    right: 4%;
+    left: unset;
+  }
+  .c-notice-section__close-btn {
+    position: absolute;
+    right: 4%;
   }
 }

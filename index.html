@@ -19,10 +19,40 @@
   <body
     class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md"
   >
+    <!--Dropdown button-->
+    <span
+      id="dropdownButton"
+      onclick="toggleNotice()"
+      class="c-notice-dropdown u-bg-accent-dark"
+      ><i class="fa-solid fa-chevron-down l-pl-0-25" style="color: #f4ffff"></i
+    ></span>
+    <!--Notice Section-->
+    <div
+      class="c-notice-section u-bg-accent-dark u-text-primary-light l-none"
+      id="noticeSection"
+    >
+      <div
+        class="c-wrapper l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-py-1"
+      >
+        <span
+          onclick="hideNotice()"
+          class="c-notice-section__close-btn l-block l-pb-0-25"
+          ><i class="fa-solid fa-times fa-lg u-text-primary-light"></i
+        ></span>
+        <p class="c-notice-section__text">
+          Fruit trees have arrived! Limited quantities available - First-come,
+          first-served.
+          <a href="index.html/#contact" class="u-text-primary-light"
+            >Visit Us Today for Fresh Fruit Trees</a
+          >
+        </p>
+      </div>
+    </div>
+    <!--Site Header-->
     <header class="c-site-header">
       <!--Mobile Navbar-->
       <div
-        class="c-mobile-navbar u-bg-primary l-py-0-5 l-flex l-justify-space-between l-align-center l-justify-center-dt"
+        class="c-mobile-navbar u-bg-primary l-py-0-5 l-flex l-justify-space-between l-align-center l-justify-center-dt l-py-1-5-dt"
       >
         <a href="index.html" class="l-flex"
           ><img
