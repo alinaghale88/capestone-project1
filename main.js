@@ -41,27 +41,36 @@ function toggleDropdown() {
   }
 }
 
+// Function to show the notice section when the page loads
+document.addEventListener('DOMContentLoaded', function () {
+  var noticeSection = document.getElementById("noticeSection");
+  var dropdownButton = document.getElementById("dropdownButton");
+
+  noticeSection.style.display = "block"; // Display the notice section
+  dropdownButton.style.display = "none"; // Hide the toggle button
+});
+
 // Function to toggle the visibility of the notice section
 function toggleNotice() {
   var noticeSection = document.getElementById("noticeSection");
   var dropdownButton = document.getElementById("dropdownButton");
 
-  if (noticeSection.classList.contains("l-none")) {
-    noticeSection.classList.remove("l-none");
-    dropdownButton.style.display = "none";
+  if (noticeSection.style.display === "none" || noticeSection.style.display === "") {
+    noticeSection.style.display = "block"; // Show the notice section
+    dropdownButton.style.display = "none"; // Hide the toggle button
   } else {
-    noticeSection.classList.add("l-none");
-    dropdownButton.style.display = "block";
+    noticeSection.style.display = "none"; // Hide the notice section
+    dropdownButton.style.display = "block"; // Show the toggle button
   }
 }
 
-// Function to hide the notice section
+// Function to hide the notice section and show the toggle button
 function hideNotice() {
   var noticeSection = document.getElementById("noticeSection");
   var dropdownButton = document.getElementById("dropdownButton");
 
-  noticeSection.classList.add("l-none");
-  dropdownButton.style.display = "block";
+  noticeSection.style.display = "none"; // Hide the notice section
+  dropdownButton.style.display = "block"; // Show the toggle button
 }
 
 // Code for the hero section slider
