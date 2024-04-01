@@ -409,7 +409,7 @@ li {
   list-style-type: none;
 }
 .c-site-header__logo {
-  width: 130px;
+  width: 150px;
 }
 .c-nav-menu__link {
   text-decoration: none;
@@ -607,7 +607,7 @@ li {
   /* Styling for index.html */
   /*Styling for site header*/
   .c-site-header__logo {
-    width: 160px;
+    width: 195px;
   }
   .c-mobile-navbar__toggle {
     display: none;
