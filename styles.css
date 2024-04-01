@@ -18,6 +18,9 @@
   --clr-bg-primary-dark: #b5f6eb;
   --clr-bg-accent-light: #ff9e77;
   --clr-bg-accent-dark: #7a1700;
+  --clr-bg-overlay: #000000;
+  --clr-bg-dropdown: #ffffff;
+
 
   /*Font variables*/
   --heading-font: "Cabin", sans-serif;
@@ -266,6 +269,9 @@ li {
 .l-vtl-alignment-top {
   vertical-align: top;
 }
+.l-grow-shrink-basis {
+  flex: 0 0 100%;
+}
 .l-gap {
   gap: 8px;
 }
@@ -336,9 +342,17 @@ li {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.l-px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .l-py-1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.l-py-0-75 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .l-py-0-5 {
   padding-top: 0.5rem;
@@ -350,8 +364,14 @@ li {
 .l-pt-1 {
   padding-top: 1rem;
 }
+.l-pt-1-5 {
+  padding-top: 1.5rem;
+}
 .l-pb-0-25 {
   padding-bottom: 0.25rem;
+}
+.l-pb-4 {
+  padding-bottom: 4rem;
 }
 .l-pr-1-5 {
   padding-right: 1.5rem;
@@ -389,7 +409,7 @@ li {
   list-style-type: none;
 }
 .c-site-header__logo {
-  width: 125px;
+  width: 130px;
 }
 .c-nav-menu__link {
   text-decoration: none;
@@ -401,10 +421,11 @@ li {
 .link--active {
   color: var(--clr-text-secondary);
 }
-/*Header button styling*/
-.c-header-btn {
+/*CTA button styling*/
+.c-cta-button {
   text-align: center;
   text-transform: uppercase;
+  text-decoration: unset;
 }
 
 /* Notice section styling*/
@@ -419,11 +440,63 @@ li {
   text-align: center;
 }
 
+/* Hero section styling */
+/* Customize the hero section */
+.c-hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-slider {
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.c-slider__slide {
+  position: relative;
+}
+
+.c-slider__slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.c-slider__navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.c-slider__navigation-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--clr-bg-primary-light);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.c-slider__navigation-dot.c-slider__slide--active {
+  background-color: var(--clr-accent);
+}
+
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
   /* Utility classes for colors in desktop view */
   .u-bg-secondary-dt {
     background-color: var(--clr-bg-secondary);
+  }
+  .u-bg-overlay-dt {
+    background-color: var(--clr-bg-overlay); /* Background color to be used for adding overlay effect in desktop */
+  }
+  .u-bg-dropdown-dt {
+    background-color: var(--clr-bg-dropdown); /* Background color to be used for dropdown menu in desktop */
+  }
+  .u-text-primary-light-dt {
+    color: var(--clr-text-primary-light); /*Primary text color in light shade for desktop*/
   }
 
   /*Styling for site content on desktop*/
@@ -432,6 +505,10 @@ li {
   }
   .l-max-width-desktop {
     max-width: 1170px;
+  }
+  .l-fixed-width-desktop {
+    width: 1170px;
+    max-width: unset;
   }
   .l-text-wrapper-desktop {
     max-width: 760px;
@@ -457,6 +534,9 @@ li {
   .l-my-0-dt {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .l-mt-2-5-dt {
+    margin-top: 2.5rem;
   }
 
   /*Setting padding value for top nav menu to 0 in desktop*/
@@ -520,6 +600,9 @@ li {
   .l-block-dt {
     display: block;
   }
+  .l-inline-block-dt {
+    display: inline-block;
+  }
 
   /* Styling for index.html */
   /*Styling for site header*/
@@ -547,6 +630,7 @@ li {
     width: 250px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 0.3s ease;
+    z-index: 1;
   }
 
   /* Notice section styling */
@@ -557,5 +641,22 @@ li {
   .c-notice-section__close-btn {
     position: absolute;
     right: 4%;
+  }
+
+  /* Styling hero section for desktop view*/
+  .c-slider-overlay, .c-slider-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .c-slider-overlay {
+    opacity: 0.5;
+  }
+
+  .c-slider-caption-holder {
+    text-align: right;
   }
 }
