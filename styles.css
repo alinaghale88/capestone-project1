@@ -125,6 +125,10 @@ li {
   ); /*Primary background color in dark shade*/
 }
 
+.u-text-primary-dark {
+  color: var(--clr-bg-primary-dark); /* Primary text color in dark shade */
+}
+
 .u-bg-accent-light {
   background-color: var(
     --clr-bg-accent-light
@@ -266,6 +270,9 @@ li {
 .l-align-center {
   align-items: center;
 }
+.l-align-end {
+  align-items: flex-end;
+}
 .l-vtl-alignment-top {
   vertical-align: top;
 }
@@ -282,6 +289,15 @@ li {
   margin-left: auto;
   margin-right: auto;
 }
+.l-ml-0-5 {
+  margin-left: 0.5rem;
+}
+.l-mr-0-5 {
+  margin-right: 0.5rem;
+}
+.l-mr-2 {
+  margin-right: 2rem;
+}
 .l-mb-2 {
   margin-bottom: 2rem;
 }
@@ -296,6 +312,12 @@ li {
 }
 .l-mb-3-5 {
   margin-bottom: 3.5rem;
+}
+.l-mb-0-75 {
+  margin-bottom: 0.75rem;
+}
+.l-mb-0-5 {
+  margin-bottom: 0.5rem;
 }
 .l-mb-0 {
   margin-bottom: 0;
@@ -511,6 +533,12 @@ li {
 .c-section__title-normal {
   text-transform: none;
 }
+.c-gift-section__link, .c-gift-section__pagination-link {
+  text-decoration: none;
+}
+.c-gift-section__pagination-link {
+  text-transform: uppercase;
+}
 
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
@@ -566,6 +594,12 @@ li {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+  .l-mr-0-dt {
+    margin-right: 0;
+  }
+  .l-ml-2-dt {
+    margin-left: 2rem;
+  }
   .l-my-0-dt {
     margin-top: 0;
     margin-bottom: 0;
@@ -575,6 +609,9 @@ li {
   }
   .l-mb-2-dt {
     margin-bottom: 2rem;
+  }
+  .l-mt-0-dt {
+    margin-top: 0;
   }
 
   /*Setting padding value for top nav menu to 0 in desktop*/
@@ -697,5 +734,10 @@ li {
   /* Setting up banner slide height */
   .c-slider__slide {
     max-height: 640px;
+  }
+
+  /* Styling for Gift Card section */
+  .c-gift-section-steps {
+    width: 60%;
   }
 }

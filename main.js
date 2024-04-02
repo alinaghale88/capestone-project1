@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Code for the Gift card section
 document.addEventListener("DOMContentLoaded", function () {
-  const steps = document.querySelectorAll(".c-steps");
+  const steps = document.querySelectorAll(".c-gift-section-steps");
   let currentStep = 0;
 
   function showStep(stepIndex) {
