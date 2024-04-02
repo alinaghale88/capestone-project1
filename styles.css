@@ -761,4 +761,9 @@ li {
   .c-gift-section-steps {
     width: 60%;
   }
+
+  /* Styling for Services section */
+  .c-services-block {
+    width: 30.5%;
+  }
 }
