@@ -15,7 +15,7 @@
   --clr-accent: #ba2d0b;
   --clr-bg-primary-light: #f4ffff;
   --clr-text-primary-light: #f4ffff;
-  --clr-bg-primary-dark: #b5f6eb;
+  --clr-bg-primary-dark: #017E5D;
   --clr-bg-accent-light: #ff9e77;
   --clr-bg-accent-dark: #7a1700;
   --clr-bg-overlay: #000000;
@@ -401,6 +401,7 @@ li {
   height: 100%;
   width: 100%;
   overflow-y: auto;
+  z-index: 999;
 }
 .c-menu-block--show-items {
   display: block;
@@ -417,6 +418,10 @@ li {
 .c-nav-menu__link--hover:hover, .c-social-menu__link:hover {
   color: var(--clr-text-secondary);
 }
+.c-nav-menu__cta-btn:hover {
+  background-color: var(--clr-accent);
+}
+
 /*Active state styling*/
 .link--active {
   color: var(--clr-text-secondary);
@@ -483,6 +488,10 @@ li {
   background-color: var(--clr-accent);
 }
 
+.c-hero-section__cta-btn:hover {
+  background-color: var(--clr-bg-primary-dark);
+}
+
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
   /* Utility classes for colors in desktop view */
@@ -513,6 +522,9 @@ li {
   .l-text-wrapper-desktop {
     max-width: 760px;
   }
+  .l-caption-text-wrapper-dt {
+    max-width: 560px;
+  }
 
   /*Base layout classes for desktop*/
   .l-px-2-5-dt {
@@ -522,6 +534,9 @@ li {
   .l-px-1-25-dt {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+  .l-pt-4-dt {
+    padding-top: 4rem;
   }
   .l-py-1-dt {
     padding-top: 1rem;
@@ -654,9 +669,5 @@ li {
 
   .c-slider-overlay {
     opacity: 0.5;
-  }
-
-  .c-slider-caption-holder {
-    text-align: right;
   }
 }
