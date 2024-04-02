@@ -502,6 +502,16 @@ li {
   text-align: center;
 }
 
+/* Styling for homepage section title */
+.c-section__title {
+  text-transform: capitalize;
+}
+
+/* Styling for Gift Card section */
+.c-section__title-normal {
+  text-transform: none;
+}
+
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
   /* Utility classes for colors in desktop view */
