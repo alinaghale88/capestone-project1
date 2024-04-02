@@ -519,6 +519,17 @@ li {
   background-color: var(--clr-bg-primary-dark);
 }
 
+/* Styling for Gift Card section */
+.c-section__title-normal {
+  text-transform: none;
+}
+.c-gift-section__link, .c-gift-section__pagination-link {
+  text-decoration: none;
+}
+.c-gift-section__pagination-link {
+  text-transform: uppercase;
+}
+
 /* Styling for About section */
 .c-about-section {
   text-align: center;
@@ -529,15 +540,12 @@ li {
   text-transform: capitalize;
 }
 
-/* Styling for Gift Card section */
-.c-section__title-normal {
-  text-transform: none;
+/* Styling for Services section */
+.c-services-section-intro {
+  text-align: center;
 }
-.c-gift-section__link, .c-gift-section__pagination-link {
-  text-decoration: none;
-}
-.c-gift-section__pagination-link {
-  text-transform: uppercase;
+.c-services-section__icon {
+  width: 65px;
 }
 
 /*Styling for desktop screen*/
