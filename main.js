@@ -183,3 +183,18 @@ document.addEventListener("DOMContentLoaded", function () {
   showStep(currentStep);
   updatePaginationLinks();
 });
+
+// JavaScript for FAQ accordion
+function toggleFAQ(button) {
+  const answer = button.parentElement.nextElementSibling;
+
+  // Toggle active class to button
+  button.classList.toggle('active');
+
+  // Toggle answer visibility
+  if (answer.style.display === 'block') {
+    answer.style.display = 'none';
+  } else {
+    answer.style.display = 'block';
+  }
+}
