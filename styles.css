@@ -367,6 +367,9 @@ li {
 .l-pt-1-5 {
   padding-top: 1.5rem;
 }
+.l-pt-4 {
+  padding-top: 4rem;
+}
 .l-pb-0-25 {
   padding-bottom: 0.25rem;
 }
@@ -494,6 +497,11 @@ li {
   background-color: var(--clr-bg-primary-dark);
 }
 
+/* Styling for About section */
+.c-about-section {
+  text-align: center;
+}
+
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
   /* Utility classes for colors in desktop view */
@@ -554,6 +562,9 @@ li {
   }
   .l-mt-2-5-dt {
     margin-top: 2.5rem;
+  }
+  .l-mb-2-dt {
+    margin-bottom: 2rem;
   }
 
   /*Setting padding value for top nav menu to 0 in desktop*/
