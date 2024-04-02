@@ -118,3 +118,68 @@ document.addEventListener('DOMContentLoaded', function () {
       dots.push(dot);
   });
 });
+
+// Code for the Gift card section
+document.addEventListener("DOMContentLoaded", function () {
+  const steps = document.querySelectorAll(".c-steps");
+  let currentStep = 0;
+
+  function showStep(stepIndex) {
+    steps.forEach((step, index) => {
+      if (index === stepIndex) {
+        step.style.display = "block";
+      } else {
+        step.style.display = "none";
+      }
+    });
+  }
+
+  function updatePaginationLinks() {
+    const prevLink = document.getElementById("prev");
+    const nextLink = document.getElementById("next");
+
+    if (currentStep === 0) {
+      prevLink.style.display = "none";
+    } else {
+      prevLink.style.display = "inline";
+    }
+
+    if (currentStep === steps.length - 1) {
+      nextLink.style.display = "none";
+    } else {
+      nextLink.style.display = "inline";
+    }
+  }
+
+  function goToNextStep() {
+    if (currentStep < steps.length - 1) {
+      currentStep++;
+      showStep(currentStep);
+      updatePaginationLinks();
+    }
+  }
+
+  function goToPrevStep() {
+    if (currentStep > 0) {
+      currentStep--;
+      showStep(currentStep);
+      updatePaginationLinks();
+    }
+  }
+
+  const nextLink = document.getElementById("next");
+  const prevLink = document.getElementById("prev");
+
+  nextLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    goToNextStep();
+  });
+
+  prevLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    goToPrevStep();
+  });
+
+  showStep(currentStep);
+  updatePaginationLinks();
+});
