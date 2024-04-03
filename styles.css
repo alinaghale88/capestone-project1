@@ -275,6 +275,9 @@ li {
 .l-justify-space-between {
   justify-content: space-between;
 }
+.l-justify-space-evenly {
+  justify-content: space-evenly;
+}
 .l-align-center {
   align-items: center;
 }
@@ -412,6 +415,12 @@ li {
 }
 .l-pb-0-25 {
   padding-bottom: 0.25rem;
+}
+.l-pb-2 {
+  padding-bottom: 2rem;
+}
+.l-pb-3 {
+  padding-bottom: 3rem;
 }
 .l-pb-4 {
   padding-bottom: 4rem;
@@ -616,6 +625,14 @@ li {
   background-color: var(--clr-accent);
   color: var(--clr-text-primary-light);
   border: 2px solid var(--clr-accent);
+}
+
+/* Styling for Contact section */
+.c-contact-section__title {
+  text-align: center;
+}
+.c-contact-details {
+  border-bottom: 2px dashed var(--clr-bg-accent-light);
 }
 
 /*Styling for desktop screen*/
@@ -860,4 +877,7 @@ li {
   .c-services-block {
     width: 33%;
   }
+
+  /* Styling for Contact section */
+  
 }
