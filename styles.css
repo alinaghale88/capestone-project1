@@ -559,6 +559,11 @@ li {
   background-color: var(--clr-accent);
 }
 
+/* Styling for Blog section */
+.c-blog-section-intro {
+  text-align: center;
+}
+
 /* Styling for About section */
 .c-about-section {
   text-align: center;
