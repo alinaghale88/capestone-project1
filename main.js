@@ -185,16 +185,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // JavaScript for FAQ accordion
-function toggleFAQ(button) {
-  const answer = button.parentElement.nextElementSibling;
-
-  // Toggle active class to button
-  button.classList.toggle('active');
-
-  // Toggle answer visibility
-  if (answer.style.display === 'block') {
-    answer.style.display = 'none';
+function toggleFAQ(element) {
+  var faqAnswer = element.nextElementSibling;
+  var chevronDown = element.querySelector('.fa-chevron-down');
+  var timesIcon = element.querySelector('.fa-times');
+  
+  if (faqAnswer.style.display === "none") {
+    faqAnswer.style.display = "block";
+    chevronDown.style.display = "none";
+    timesIcon.style.display = "inline";
   } else {
-    answer.style.display = 'block';
+    faqAnswer.style.display = "none";
+    chevronDown.style.display = "inline";
+    timesIcon.style.display = "none";
   }
 }

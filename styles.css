@@ -415,6 +415,9 @@ li {
 .l-pb-4 {
   padding-bottom: 4rem;
 }
+.l-pb-5 {
+  padding-bottom: 5rem;
+}
 .l-pr-1-5 {
   padding-right: 1.5rem;
 }
@@ -547,6 +550,21 @@ li {
   text-transform: uppercase;
 }
 
+/* Styling for FAQ section */
+.c-faq-section__icon {
+  text-align: center;
+}
+.c-faq-section-btn-block {
+  text-align: center;
+}
+.c-faq-section__cta-btn {
+  border: 2px solid var(--clr-bg-primary-light);
+}
+.c-faq-section__cta-btn:hover {
+  border: 2px solid var(--clr-accent);
+  background-color: var(--clr-accent);
+}
+
 /* Styling for About section */
 .c-about-section {
   text-align: center;
@@ -654,6 +672,9 @@ li {
   }
   .l-mb-2-dt {
     margin-bottom: 2rem;
+  }
+  .l-mb-0-dt {
+    margin-bottom: 0;
   }
   .l-mt-0-dt {
     margin-top: 0;
@@ -783,7 +804,7 @@ li {
 
   /* Styling for Gift Card section */
   .c-gift-section-steps {
-    width: 60%;
+    max-width: 760px;
   }
 
   /* Styling for Services section */
@@ -793,6 +814,6 @@ li {
 
   /* Styling for Social(Connect with Us) section */
   .c-social-section__text {
-    width: 60%;
+    max-width: 760px;
   }
 }
