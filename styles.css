@@ -635,6 +635,25 @@ li {
   border-bottom: 2px dashed var(--clr-bg-accent-light);
 }
 
+/* Styling for Contact Form */
+.c-contact-form__input {
+  border: 1px solid var(--clr-bg-secondary);
+}
+.c-contact-form__title {
+  text-align: center;
+}
+.c-contact-section__cta-btn:hover {
+  background-color: var(--clr-bg-primary-dark);
+}
+.c-contact-section__cta-btn {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.c-contact-form-btn-wrapper {
+  text-align: center;
+}
+
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
   /* Utility classes for colors in desktop view */
@@ -876,8 +895,10 @@ li {
   /* Styling for Services section */
   .c-services-block {
     width: 33%;
-  }
+  }  
 
-  /* Styling for Contact section */
-  
+  /* Styling for Contact Form section */
+  .c-contact-section__cta-btn {
+    width: unset;
+  }
 }

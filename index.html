@@ -608,7 +608,7 @@
           >
             Visit us today
           </h2>
-          <div class="c-contact-details l-flex-dt l-justify-space-evenly l-pb-3">
+          <div class="c-contact-details l-flex-dt l-justify-space-evenly l-pb-3 l-mb-3">
             <!--Location details-->
             <div class="c-location-block l-mb-2-5 l-mb-0-dt">
               <span class="l-block l-mb-0-5"
@@ -625,6 +625,7 @@
                 6016 Headquarters Rd, Courtenay, BC V9J 1M7
               </p>
             </div>
+            <!--Opening hour details-->
             <div class="c-hrs-block">
               <span class="l-block l-mb-0-5"
                 ><i
@@ -639,6 +640,25 @@
               <p class="u-text-primary u-body-lg">
                 9:00 AM - 5:00 PM (Everyday)
               </p>
+            </div>
+          </div>
+          <div class="c-contact-form">
+            <h3 class="c-contact-form__title u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-2">Email us for personalized support</h3>
+            <!--Contact Form-->
+            <div class="c-contact-form-wrapper l-text-wrapper-desktop l-mx-auto">
+              <form action="/submit-form" method="post">
+                <input class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary" type="text" id="name" name="name" placeholder="Your Name" required>
+            
+                <input class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary" type="text" id="email" name="email" placeholder="Your Email" required>
+            
+                <input class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary" type="text" id="question" name="question" placeholder="Ask any question">
+            
+                <textarea class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary" id="message" name="message" placeholder="Your Message" style="height:200px" required></textarea>
+            
+                <div class="c-contact-form-btn-wrapper">
+                <input class="c-contact-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-body-lg u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt" type="submit" value="Submit">
+                </div>
+              </form>
             </div>
           </div>
         </div>
