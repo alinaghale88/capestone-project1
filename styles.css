@@ -374,6 +374,9 @@ li {
 .l-pl-0-25 {
   padding-left: 0.25rem;
 }
+.l-pl-0 {
+  padding-left: 0;
+}
 .l-pr-1 {
   padding-right: 1rem;
 }
@@ -413,8 +416,17 @@ li {
 .l-pt-4 {
   padding-top: 4rem;
 }
+.l-pt-2-5 {
+  padding-top: 2.5rem;
+}
+.l-pt-2 {
+  padding-top: 2rem;
+}
 .l-pb-0-25 {
   padding-bottom: 0.25rem;
+}
+.l-pb-1 {
+  padding-bottom: 1rem;
 }
 .l-pb-2 {
   padding-bottom: 2rem;
@@ -654,6 +666,20 @@ li {
   text-align: center;
 }
 
+/* Styling for Footer section */
+.c-site-footer__link {
+  text-decoration: none;
+}
+.c-site-footer__list {
+  list-style-type: none;
+}
+.c-site-footer__map {
+  height: 250px;
+}
+.c-footer-copyright {
+  border-top: 2px solid var(--clr-bg-accent-light);
+}
+
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
   /* Utility classes for colors in desktop view */
@@ -705,6 +731,9 @@ li {
   }
   .l-pt-7-dt {
     padding-top: 7rem;
+  }
+  .l-pt-0-dt {
+    padding-top: 0;
   }
   .l-py-1-dt {
     padding-top: 1rem;
@@ -900,5 +929,10 @@ li {
   /* Styling for Contact Form section */
   .c-contact-section__cta-btn {
     width: unset;
+  }
+
+  /* Styling for site footer column */
+  .c-site-footer-column {
+    width: 33%;
   }
 }
