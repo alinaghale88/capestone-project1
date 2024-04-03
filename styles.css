@@ -575,6 +575,9 @@ li {
 .c-blog-post__cta {
   text-transform: uppercase;
 }
+.c-blog-section__cta-btn:hover {
+  background-color: var(--clr-bg-primary-dark);
+}
 
 /* Styling for About section */
 .c-about-section {
@@ -833,10 +836,10 @@ li {
 
   /* Styling for Blog section */
   .c-blog-post__thumbnail-big {
-    height: 380px;
+    height: 360px;
   }
   .c-blog-post__thumbnail-small {
-    height: 140px;
+    height: 150px;
   }
   .c-blog-post__image {
     height: 100%;
@@ -846,7 +849,10 @@ li {
     width: 50%;
   }
   .c-blog-post__thumbnail {
-    width: 45%;
+    flex: 0 0 45%;
+  }
+  .c-blog-section__btn-holder {
+    text-align: center;
   }
 
   /* Styling for Services section */
