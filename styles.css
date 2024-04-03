@@ -540,9 +540,6 @@ li {
 }
 
 /* Styling for Gift Card section */
-.c-section__title-normal {
-  text-transform: none;
-}
 .c-gift-section__link, .c-gift-section__pagination-link {
   text-decoration: none;
 }
