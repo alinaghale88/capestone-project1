@@ -551,9 +551,6 @@ li {
 .c-faq-section__icon {
   text-align: center;
 }
-.c-faq-section-btn-block {
-  text-align: center;
-}
 .c-faq-section__cta-btn {
   border: 2px solid var(--clr-bg-primary-light);
 }
@@ -628,7 +625,7 @@ li {
     max-width: unset;
   }
   .l-text-wrapper-desktop {
-    max-width: 760px;
+    max-width: 800px;
   }
   .l-caption-text-wrapper-dt {
     max-width: 560px;
@@ -807,10 +804,5 @@ li {
   /* Styling for Services section */
   .c-services-block {
     width: 30.5%;
-  }
-
-  /* Styling for Social(Connect with Us) section */
-  .c-social-section__text {
-    max-width: 760px;
   }
 }
