@@ -677,6 +677,9 @@ li {
   .l-mr-0-dt {
     margin-right: 0;
   }
+  .l-mr-2-dt {
+    margin-right: 2rem;
+  }
   .l-ml-2-dt {
     margin-left: 2rem;
   }
@@ -761,6 +764,9 @@ li {
   .l-inline-block-dt {
     display: inline-block;
   }
+  .l-block-gap {
+    gap: 45px;
+  }
 
   /* Styling for index.html */
   /*Styling for site header*/
@@ -825,8 +831,26 @@ li {
     max-width: 760px;
   }
 
+  /* Styling for Blog section */
+  .c-blog-post__thumbnail-big {
+    height: 380px;
+  }
+  .c-blog-post__thumbnail-small {
+    height: 140px;
+  }
+  .c-blog-post__image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .c-blog-post-col {
+    width: 50%;
+  }
+  .c-blog-post__thumbnail {
+    width: 45%;
+  }
+
   /* Styling for Services section */
   .c-services-block {
-    width: 30.5%;
+    width: 33%;
   }
 }
