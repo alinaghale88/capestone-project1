@@ -42,7 +42,7 @@ function toggleDropdown() {
 }
 
 // Function to show the notice section when the page loads
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   var noticeSection = document.getElementById("noticeSection");
   var dropdownButton = document.getElementById("dropdownButton");
 
@@ -55,7 +55,10 @@ function toggleNotice() {
   var noticeSection = document.getElementById("noticeSection");
   var dropdownButton = document.getElementById("dropdownButton");
 
-  if (noticeSection.style.display === "none" || noticeSection.style.display === "") {
+  if (
+    noticeSection.style.display === "none" ||
+    noticeSection.style.display === ""
+  ) {
     noticeSection.style.display = "block"; // Show the notice section
     dropdownButton.style.display = "none"; // Hide the toggle button
   } else {
@@ -74,48 +77,48 @@ function hideNotice() {
 }
 
 // Code for the hero section slider
-document.addEventListener('DOMContentLoaded', function () {
-  const slides = document.querySelectorAll('.c-slider__slide');
-  const dotsContainer = document.querySelector('.c-slider__navigation');
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".c-slider__slide");
+  const dotsContainer = document.querySelector(".c-slider__navigation");
   const dots = [];
 
   let currentIndex = 0;
   let interval;
 
   function showSlide(index) {
-      slides.forEach((slide, i) => {
-          slide.style.transform = `translateX(-${index * 100}%)`;
-      });
+    slides.forEach((slide, i) => {
+      slide.style.transform = `translateX(-${index * 100}%)`;
+    });
 
-      dots.forEach((dot, i) => {
-          dot.classList.remove('c-slider__slide--active');
-          if (i === index) {
-              dot.classList.add('c-slider__slide--active');
-          }
-      });
+    dots.forEach((dot, i) => {
+      dot.classList.remove("c-slider__slide--active");
+      if (i === index) {
+        dot.classList.add("c-slider__slide--active");
+      }
+    });
   }
 
   function nextSlide() {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showSlide(currentIndex);
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
   }
 
   interval = setInterval(nextSlide, 3000);
 
   slides.forEach((slide, i) => {
-      const dot = document.createElement('div');
-      dot.classList.add('c-slider__navigation-dot');
-      if (i === 0) {
-          dot.classList.add('c-slider__slide--active');
-      }
-      dot.addEventListener('click', () => {
-          clearInterval(interval);
-          currentIndex = i;
-          showSlide(currentIndex);
-          interval = setInterval(nextSlide, 3000);
-      });
-      dotsContainer.appendChild(dot);
-      dots.push(dot);
+    const dot = document.createElement("div");
+    dot.classList.add("c-slider__navigation-dot");
+    if (i === 0) {
+      dot.classList.add("c-slider__slide--active");
+    }
+    dot.addEventListener("click", () => {
+      clearInterval(interval);
+      currentIndex = i;
+      showSlide(currentIndex);
+      interval = setInterval(nextSlide, 3000);
+    });
+    dotsContainer.appendChild(dot);
+    dots.push(dot);
   });
 });
 
@@ -187,9 +190,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // JavaScript for FAQ accordion
 function toggleFAQ(element) {
   var faqAnswer = element.nextElementSibling;
-  var chevronDown = element.querySelector('.fa-chevron-down');
-  var timesIcon = element.querySelector('.fa-times');
-  
+  var chevronDown = element.querySelector(".fa-chevron-down");
+  var timesIcon = element.querySelector(".fa-times");
+
   if (faqAnswer.style.display === "none") {
     faqAnswer.style.display = "block";
     chevronDown.style.display = "none";

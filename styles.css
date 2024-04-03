@@ -15,12 +15,11 @@
   --clr-accent: #ba2d0b;
   --clr-bg-primary-light: #f4ffff;
   --clr-text-primary-light: #f4ffff;
-  --clr-bg-primary-dark: #017E5D;
+  --clr-bg-primary-dark: #017e5d;
   --clr-bg-accent-light: #ff9e77;
   --clr-bg-accent-dark: #7a1700;
   --clr-bg-overlay: #000000;
   --clr-bg-dropdown: #ffffff;
-
 
   /*Font variables*/
   --heading-font: "Cabin", sans-serif;
@@ -142,7 +141,9 @@ li {
 }
 
 .u-text-accent-dark {
-  color: var(--clr-bg-accent-dark); /* Accent color of dark shade to be used for social icons*/
+  color: var(
+    --clr-bg-accent-dark
+  ); /* Accent color of dark shade to be used for social icons*/
 }
 
 /*Utility classes for font family*/
@@ -451,7 +452,9 @@ li {
 .c-menu-block--show-items {
   display: block;
 }
-.c-nav-menu, .c-nav-menu__dropdown-menu, .c-social-menu {
+.c-nav-menu,
+.c-nav-menu__dropdown-menu,
+.c-social-menu {
   list-style-type: none;
 }
 .c-site-header__logo {
@@ -460,7 +463,8 @@ li {
 .c-nav-menu__link {
   text-decoration: none;
 }
-.c-nav-menu__link--hover:hover, .c-social-menu__link:hover {
+.c-nav-menu__link--hover:hover,
+.c-social-menu__link:hover {
   color: var(--clr-text-secondary);
 }
 .c-nav-menu__cta-btn:hover {
@@ -540,7 +544,8 @@ li {
 }
 
 /* Styling for Gift Card section */
-.c-gift-section__link, .c-gift-section__pagination-link {
+.c-gift-section__link,
+.c-gift-section__pagination-link {
   text-decoration: none;
 }
 .c-gift-section__pagination-link {
@@ -562,6 +567,13 @@ li {
 /* Styling for Blog section */
 .c-blog-section-intro {
   text-align: center;
+}
+.c-blog-post__title,
+.c-blog-post__cta {
+  text-decoration: none;
+}
+.c-blog-post__cta {
+  text-transform: uppercase;
 }
 
 /* Styling for About section */
@@ -609,13 +621,19 @@ li {
     background-color: var(--clr-bg-secondary);
   }
   .u-bg-overlay-dt {
-    background-color: var(--clr-bg-overlay); /* Background color to be used for adding overlay effect in desktop */
+    background-color: var(
+      --clr-bg-overlay
+    ); /* Background color to be used for adding overlay effect in desktop */
   }
   .u-bg-dropdown-dt {
-    background-color: var(--clr-bg-dropdown); /* Background color to be used for dropdown menu in desktop */
+    background-color: var(
+      --clr-bg-dropdown
+    ); /* Background color to be used for dropdown menu in desktop */
   }
   .u-text-primary-light-dt {
-    color: var(--clr-text-primary-light); /*Primary text color in light shade for desktop*/
+    color: var(
+      --clr-text-primary-light
+    ); /*Primary text color in light shade for desktop*/
   }
 
   /*Styling for site content on desktop*/
@@ -765,7 +783,7 @@ li {
 
   /*Styling for dropdown menu*/
   .c-nav-menu__dropdown:hover .c-nav-menu__dropdown-menu {
-    display: block!important;
+    display: block !important;
     position: absolute;
     width: 250px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -784,7 +802,8 @@ li {
   }
 
   /* Styling hero section for desktop view*/
-  .c-slider-overlay, .c-slider-caption {
+  .c-slider-overlay,
+  .c-slider-caption {
     position: absolute;
     top: 0;
     left: 0;

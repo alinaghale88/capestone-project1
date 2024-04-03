@@ -39,7 +39,8 @@
   padding: 0;
 }
 .c-top-navbar__link,
-.c-side-navbar__link, .c-side-navbar__link-category {
+.c-side-navbar__link,
+.c-side-navbar__link-category {
   text-decoration: none;
   color: var(--clr-text-primary);
 }
