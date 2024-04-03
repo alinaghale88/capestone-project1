@@ -147,6 +147,19 @@
   width: 160px;
 }
 
+/* Styling for Navbars page*/
+.c-navbars-logo {
+  width: 120px;
+}
+.c-navbars-header {
+  position: static;
+}
+
+/* Styling for code snippet */
+.c-code-snippet {
+  overflow-x: auto;
+}
+
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
   .c-mobile-navbar__toggle {
