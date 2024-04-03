@@ -604,6 +604,12 @@ li {
 .c-about-section {
   text-align: center;
 }
+.c-about-section__cta-btn:hover {
+  background-color: var(--clr-bg-primary-dark);
+}
+.c-about-section__cta-btn:hover {
+  background-color: var(--clr-bg-primary-dark);
+}
 
 /* Styling for homepage section title */
 .c-section__title {
@@ -622,6 +628,10 @@ li {
 }
 
 /* Styling for Social (Connect with Us) section*/
+.c-social-section {
+  position: relative;
+  z-index: 1;
+}
 .c-social-section__icons {
   gap: 1rem;
 }
@@ -924,7 +934,7 @@ li {
   /* Styling for Services section */
   .c-services-block {
     width: 33%;
-  }  
+  }
 
   /* Styling for Contact Form section */
   .c-contact-section__cta-btn {

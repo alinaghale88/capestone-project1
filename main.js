@@ -1,3 +1,5 @@
+// Sourced from ChatGPT
+
 // Code to make hamburger menu functional
 function showNav() {
   var element1 = document.getElementsByClassName("c-menu-block");
