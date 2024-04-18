@@ -190,18 +190,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // JavaScript for FAQ accordion
-function toggleFAQ(element) {
-  var faqAnswer = element.nextElementSibling;
-  var chevronDown = element.querySelector(".fa-chevron-down");
-  var timesIcon = element.querySelector(".fa-times");
+const accordions = document.querySelectorAll(".c-faq-accordion");
 
-  if (faqAnswer.style.display === "none") {
-    faqAnswer.style.display = "block";
-    chevronDown.style.display = "none";
-    timesIcon.style.display = "inline";
-  } else {
-    faqAnswer.style.display = "none";
-    chevronDown.style.display = "inline";
-    timesIcon.style.display = "none";
-  }
-}
+accordions.forEach((accordion) => {
+  const header = accordion.querySelector(".c-faq-question");
+  const content = accordion.querySelector(".c-faq-answer");
+  const icon = accordion.querySelector(".c-faq__icon");
+
+  icon.addEventListener("click", () => {
+    // Toggle the accordion content
+    content.style.display =
+      content.style.display === "block" ? "none" : "block";
+
+    // Toggle the icon
+    icon.classList.toggle("fa-plus");
+    icon.classList.toggle("fa-minus");
+  });
+});

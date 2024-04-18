@@ -108,6 +108,10 @@ li {
   background-color: var(--clr-accent); /*Accent color*/
 }
 
+.u-text-accent {
+  color: var(--clr-accent);
+}
+
 .u-bg-primary-light {
   background-color: var(
     --clr-bg-primary-light
@@ -292,6 +296,9 @@ li {
 }
 .l-gap {
   gap: 8px;
+}
+.l-faq-gap {
+  gap: 2.5rem;
 }
 
 /*Base spacing classes*/
@@ -579,15 +586,25 @@ li {
 }
 
 /* Styling for FAQ section */
-.c-faq-section__icon {
-  text-align: center;
+.c-faq-accordion {
+  border: 2px solid var(--clr-bg-primary-dark);
 }
-.c-faq-section__cta-btn {
-  border: 2px solid var(--clr-bg-primary-light);
+.c-faq-answer {
+  display: none;
 }
-.c-faq-section__cta-btn:hover {
+.c-faq__icon {
+  cursor: pointer;
+}
+.c-faq__cta-btn {
+  border: 2px solid var(--clr-accent);
+}
+.c-faq__cta-btn:hover {
   border: 2px solid var(--clr-accent);
   background-color: var(--clr-accent);
+  color: var(--clr-text-primary-light);
+}
+.c-faq__btn-holder {
+  text-align: center;
 }
 
 /* Styling for Blog section */
@@ -913,6 +930,11 @@ li {
   /* Styling for Gift Card section */
   .c-gift-section-steps {
     max-width: 760px;
+  }
+
+  /* Stying for FAQ section */
+  .c-faq-col {
+    width: calc(50% - 0.75rem);
   }
 
   /* Styling for Blog section */
