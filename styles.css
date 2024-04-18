@@ -489,7 +489,8 @@ li {
   color: var(--clr-text-secondary);
 }
 .c-nav-menu__cta-btn:hover {
-  background-color: var(--clr-accent);
+  background-color: var(--clr-bg-primary-dark);
+  color: var(--clr-text-primary-light);
 }
 
 /*Active state styling*/
@@ -501,6 +502,10 @@ li {
   text-align: center;
   text-transform: uppercase;
   text-decoration: unset;
+}
+.c-cta-button-2 {
+  text-transform: capitalize;
+  border: 2px solid var(--clr-bg-primary-dark);
 }
 
 /* Notice section styling*/
