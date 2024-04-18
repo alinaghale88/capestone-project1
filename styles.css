@@ -711,6 +711,9 @@ li {
 .c-footer-copyright {
   border-top: 2px solid var(--clr-bg-accent-light);
 }
+.c-mobile-navbar__toggle {
+  display: block!important;
+}
 
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
@@ -875,8 +878,12 @@ li {
     width: 195px;
   }
   .c-mobile-navbar__toggle {
-    display: none;
+    display: none!important;
   }
+  .c-mobile-navbar__close {
+    display: none!important;
+  }
+
   .c-site-header__logo {
     padding-left: 0;
   }

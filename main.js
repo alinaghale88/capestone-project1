@@ -207,3 +207,23 @@ accordions.forEach((accordion) => {
     icon.classList.toggle("fa-minus");
   });
 });
+
+
+// Function to reset navigation menu state when screen size changes
+function resetNavMenu() {
+  var dropdownMenu = document.getElementById("resourcesDropdown");
+  var toggleButton = document.getElementById("toggleButton");
+
+  if (window.innerWidth >= 1200) { // Adjust the screen width according to your desktop breakpoint
+    // Reset dropdown menu state
+    dropdownMenu.style.display = "none";
+    // Reset toggle button state
+    toggleButton.style.display = "none";
+  } else {
+    // Reset toggle button state
+    toggleButton.style.display = "block";
+  }
+}
+
+// Call resetNavMenu when the window is resized
+window.addEventListener("resize", resetNavMenu);
