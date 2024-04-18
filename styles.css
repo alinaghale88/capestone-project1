@@ -621,6 +621,13 @@ li {
 .c-blog-section__cta-btn:hover {
   background-color: var(--clr-bg-primary-dark);
 }
+.c-blog-post__thumbnail {
+  height: 230px;
+}
+.c-blog-post__image {
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Styling for About section */
 .c-about-section {
