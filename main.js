@@ -208,13 +208,13 @@ accordions.forEach((accordion) => {
   });
 });
 
-
 // Function to reset navigation menu state when screen size changes
 function resetNavMenu() {
   var dropdownMenu = document.getElementById("resourcesDropdown");
   var toggleButton = document.getElementById("toggleButton");
 
-  if (window.innerWidth >= 1200) { // Adjust the screen width according to your desktop breakpoint
+  if (window.innerWidth >= 1200) {
+    // Adjust the screen width according to your desktop breakpoint
     // Reset dropdown menu state
     dropdownMenu.style.display = "none";
     // Reset toggle button state

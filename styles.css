@@ -478,13 +478,14 @@ li {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(244, 255, 255, 0.9); 
+  background-color: rgba(244, 255, 255, 0.9);
   z-index: 1; /* Ensure the overlay is above the background image */
 }
 
-.c-faq-section-container, .c-about-section-container {
-  position: relative; 
-  z-index: 2; 
+.c-faq-section-container,
+.c-about-section-container {
+  position: relative;
+  z-index: 2;
 }
 
 /*Styling for site header*/
@@ -621,10 +622,12 @@ li {
 .c-faq__icon {
   cursor: pointer;
 }
-.c-faq__cta-btn, .c-about-section__cta-btn {
+.c-faq__cta-btn,
+.c-about-section__cta-btn {
   border: 2px solid var(--clr-accent);
 }
-.c-faq__cta-btn:hover, .c-about-section__cta-btn:hover {
+.c-faq__cta-btn:hover,
+.c-about-section__cta-btn:hover {
   border: 2px solid var(--clr-accent);
   background-color: var(--clr-accent);
   color: var(--clr-text-primary-light);
@@ -736,7 +739,7 @@ li {
   border-top: 2px solid var(--clr-bg-accent-light);
 }
 .c-mobile-navbar__toggle {
-  display: block!important;
+  display: block !important;
 }
 
 /*Styling for desktop screen*/
@@ -902,10 +905,10 @@ li {
     width: 195px;
   }
   .c-mobile-navbar__toggle {
-    display: none!important;
+    display: none !important;
   }
   .c-mobile-navbar__close {
-    display: none!important;
+    display: none !important;
   }
 
   .c-site-header__logo {
