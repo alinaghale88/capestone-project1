@@ -6,6 +6,9 @@
   left: 0;
   z-index: 999;
 }
+.c-logo-ds {
+  text-decoration: none;
+}
 .c-mobile-navbar {
   height: var(--header-height);
 }
@@ -63,7 +66,7 @@
 
 /*Styling for page title container*/
 .c-site-title-container {
-  height: 160px;
+  min-height: 160px;
 }
 
 /*Styling for colour palette table*/
@@ -201,5 +204,10 @@
   /* Styling for Images page */
   .c-image-container {
     max-width: 480px;
+  }
+
+  /* Styling for Design System page */
+  .c-two-col-content {
+    width: calc(50% - 1rem);
   }
 }
