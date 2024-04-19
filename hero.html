@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Component</title>
+    <title>Hero and Carousel Component</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="design-system.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -165,7 +165,7 @@
         <h1
           class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-2-5-dt u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
         >
-          Interactive
+          Hero and Carousel
         </h1>
       </div>
       <div
@@ -178,54 +178,74 @@
             Design
           </h2>
           <p class="l-text-wrapper-desktop">
-            We have a collection of buttons that includes the CTA button,
-            carefully crafted to enhance user engagement and streamline
-            navigation across our website.
+            The hero section serves as the focal point of a webpage, immediately
+            capturing attention and conveying key messages to visitors.
+            Meanwhile, carousels offer a versatile way to showcase multiple
+            pieces of content within limited screen space, enabling engaging
+            storytelling and promotion.
           </p>
           <!--Generated from ChatGPT-->
 
-          <!--Button layout-->
+          <!--Navbar layout-->
           <div class="l-mt-1-5">
-            <a
-              href="#contact-us"
-              class="c-nav-menu__link c-nav-menu__cta-btn c-cta-button c-cta-button-2 u-text-primary-dark u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-0-75 l-px-1-25-dt"
-              >Contact us</a
-            >
-          </div>
-          <div class="l-mt-1-5">
-            <a
-              href="coming-soon.html"
-              class="c-hero-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt"
-              >Discover our botanical treasure</a
-            >
-          </div>
-          <div class="l-mt-1-5">
-            <a
-              href="coming-soon.html"
-              class="c-about-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-accent u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt"
-              >How we started</a
-            >
-          </div>
-          <div class="l-mt-1-5 c-ds-icon-block">
-            <div
-              class="c-social-section__icons l-flex l-mt-2-5 l-mt-0-dt u-bg-primary-dark l-p-0-5-0-75"
-            >
-              <a
-                href="https://www.facebook.com/profile.php?id=100045470087619"
-                target="_blank"
-                class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
-                ><i class="fa-brands fa-facebook-f"
-                  ><span class="c-sr-only">Facebook</span></i
-                ></a
+            <section class="c-hero-section u-bg-primary">
+              <!--Slider container-->
+              <div class="c-slider l-flex">
+                <div
+                  class="c-slider__slide l-grow-shrink-basis c-slider__slide--active"
+                >
+                  <img
+                    src="images/outback-nursery-trees.jpg"
+                    alt="Outback Nursery Trees image"
+                  />
+                  <div class="c-slider-overlay u-bg-overlay-dt"></div>
+                </div>
+                <div class="c-slider__slide l-grow-shrink-basis">
+                  <img
+                    src="images/outback-nursery-shrubs.jpg"
+                    alt="Outback Nursery Shrubs image"
+                  />
+                  <div class="c-slider-overlay u-bg-overlay-dt"></div>
+                </div>
+                <div class="c-slider__slide l-grow-shrink-basis">
+                  <img
+                    src="images/outback-nursery-plants.jpg"
+                    alt="Outback Nursery Plants image"
+                  />
+                  <div class="c-slider-overlay u-bg-overlay-dt"></div>
+                </div>
+                <!--Slider navigation-->
+                <div class="c-slider__navigation"></div>
+              </div>
+              <!--Slider/Banner caption-->
+              <div
+                class="c-slider-caption l-flex-dt l-direction-column l-justify-center l-px-1 l-pt-1-5 l-pt-7-dt l-pb-4"
               >
-              <a
-                href="https://www.instagram.com/outbacknursery/?hl=en"
-                target="_blank"
-                class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
-                ><i class="fa-brands fa-instagram"></i
-                ><span class="c-sr-only">Instagram</span></a
-              >
-            </div>
+                <div
+                  class="c-slider-caption-holder l-max-width-mobile l-fixed-width-desktop l-mx-auto"
+                >
+                  <h1
+                    class="l-caption-text-wrapper-dt u-text-primary-light-dt u-heading-font u-heading-bold u-heading-xl-mb u-heading-xl-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-1-25"
+                  >
+                    Welcome to Outback Nursery &amp; Garden Center
+                  </h1>
+                  <p
+                    class="l-caption-text-wrapper-dt u-text-primary-light-dt u-body-lg"
+                  >
+                    Explore our diverse botanical collection and find your
+                    perfect plant companion. Elevate your outdoor space with our
+                    quality foliage, from resilient succulents to elegant
+                    flowering shrubs. Find inspiration and authenticity for your
+                    garden oasis.
+                  </p>
+                  <a
+                    href="coming-soon.html"
+                    class="c-hero-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt"
+                    >Discover our botanical treasure</a
+                  >
+                </div>
+              </div>
+            </section>
           </div>
         </section>
 
@@ -237,71 +257,75 @@
           </h2>
           <p class="l-text-wrapper-desktop">
             Below is the HTML code snippet illustrating the structure of our
-            buttons in the exact same order as displayed above.
+            Hero/Carousel section:
           </p>
           <!--Generated from ChatGPT-->
           <div class="l-mt-1-5">
             <pre class="c-code-snippet">
-&lt;a href=&quot;#contact-us&quot; class=&quot;c-nav-menu__link c-nav-menu__cta-btn c-cta-button c-cta-button-2 u-text-primary-dark u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-0-75 l-px-1-25-dt&quot;&gt;Contact us&lt;/a&gt;
-            </pre>
-          </div>
-          <div class="l-mt-1-5">
-            <pre class="c-code-snippet">
-         
-&lt;a href=&quot;coming-soon.html&quot; class=&quot;c-hero-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt&quot;&gt;Discover our botanical treasure&lt;/a&gt;
-            </pre>
-          </div>
-          <div class="l-mt-1-5">
-            <pre class="c-code-snippet">
-&lt;a href=&quot;coming-soon.html&quot; class=&quot;c-about-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-accent u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt&quot;&gt;How we started&lt;/a&gt;
-            </pre>
-          </div>
-          <div class="l-mt-1-5">
-            <pre class="c-code-snippet">
-&lt;div class=&quot;c-social-section__icons l-flex l-mt-2-5 l-mt-0-dt&quot;&gt;
-    &lt;a
-    href=&quot;https://www.facebook.com/profile.php?id=100045470087619&quot;
-    target=&quot;_blank&quot;
-    class=&quot;c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md&quot;
-    &gt;&lt;i class=&quot;fa-brands fa-facebook-f&quot;
-        &gt;&lt;span class=&quot;c-sr-only&quot;&gt;Facebook&lt;/span&gt;&lt;/i
-    &gt;&lt;/a
+&lt;section class="c-hero-section u-bg-primary"&gt;
+&lt;!--Slider container--&gt;
+&lt;div class="c-slider l-flex"&gt;
+    &lt;div
+    class="c-slider__slide l-grow-shrink-basis c-slider__slide--active"
     &gt;
-    &lt;a
-    href=&quot;https://www.instagram.com/outbacknursery/?hl=en&quot;
-    target=&quot;_blank&quot;
-    class=&quot;c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md&quot;
-    &gt;&lt;i class=&quot;fa-brands fa-instagram&quot;&gt;&lt;/i
-    &gt;&lt;span class=&quot;c-sr-only&quot;&gt;Instagram&lt;/span&gt;&lt;/a
+    &lt;img
+        src="images/outback-nursery-trees.jpg"
+        alt="Outback Nursery Trees image"
+    /&gt;
+    &lt;div class="c-slider-overlay u-bg-overlay-dt"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="c-slider__slide l-grow-shrink-basis"&gt;
+    &lt;img
+        src="images/outback-nursery-shrubs.jpg"
+        alt="Outback Nursery Shrubs image"
+    /&gt;
+    &lt;div class="c-slider-overlay u-bg-overlay-dt"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="c-slider__slide l-grow-shrink-basis"&gt;
+    &lt;img
+        src="images/outback-nursery-plants.jpg"
+        alt="Outback Nursery Plants image"
+    /&gt;
+    &lt;div class="c-slider-overlay u-bg-overlay-dt"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--Slider navigation--&gt;
+    &lt;div class="c-slider__navigation"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Slider/Banner caption--&gt;
+&lt;div
+    class="c-slider-caption l-flex-dt l-direction-column l-justify-center l-px-1 l-pt-1-5 l-pt-7-dt l-pb-4"
+&gt;
+    &lt;div
+    class="c-slider-caption-holder l-max-width-mobile l-fixed-width-desktop l-mx-auto"
     &gt;
+    &lt;h1
+        class="l-caption-text-wrapper-dt u-text-primary-light-dt u-heading-font u-heading-bold u-heading-xl-mb u-heading-xl-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-1-25"
+    &gt;
+        Welcome to Outback Nursery &amp; Garden Center
+    &lt;/h1&gt;
+    &lt;p
+        class="l-caption-text-wrapper-dt u-text-primary-light-dt u-body-lg"
+    &gt;
+        Explore our diverse botanical collection and find your perfect
+        plant companion. Elevate your outdoor space with our quality
+        foliage, from resilient succulents to elegant flowering shrubs.
+        Find inspiration and authenticity for your garden oasis.
+    &lt;/p&gt;
+    &lt;a
+        href="coming-soon.html"
+        class="c-hero-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt"
+        &gt;Discover our botanical treasure&lt;/a
+    &gt;
+    &lt;/div&gt;
 &lt;/div&gt;
-            </pre>
-          </div>
-          <div class="l-mt-1-5">
-            <pre class="c-code-snippet">
-&lt;div class="c-social-section__icons l-flex l-mt-2-5 l-mt-0-dt"&gt;
-  &lt;a
-    href="https://www.facebook.com/profile.php?id=100045470087619"
-    target="_blank"
-    class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
-    &gt;&lt;i class="fa-brands fa-facebook-f"
-      &gt;&lt;span class="c-sr-only"&gt;Facebook&lt;/span&gt;&lt;/i
-    &gt;&lt;/a
-  &gt;
-  &lt;a
-    href="https://www.instagram.com/outbacknursery/?hl=en"
-    target="_blank"
-    class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
-    &gt;&lt;i class="fa-brands fa-instagram"&gt;&lt;/i
-    &gt;&lt;span class="c-sr-only"&gt;Instagram&lt;/span&gt;&lt;/a
-  &gt;
-&lt;/div&gt;
-
+&lt;/section&gt;
+        
             </pre>
           </div>
         </section>
       </div>
     </main>
+    <script src="main.js"></script>
     <script src="design-system.js"></script>
   </body>
 </html>
