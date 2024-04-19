@@ -462,7 +462,29 @@ li {
   width: 100%;
 }
 
-/* Styling for index.html */
+/* Styling for fixed image background */
+.u-fixed-bg-image {
+  background-image: url(images/plant-background-image.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.u-fixed-bg-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 255, 255, 0.9); 
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.c-faq-section-container, .c-about-section-container {
+  position: relative; 
+  z-index: 2; 
+}
 
 /*Styling for site header*/
 .c-mobile-navbar__close {
@@ -586,6 +608,9 @@ li {
 }
 
 /* Styling for FAQ section */
+.c-faq-section-intro {
+  text-align: center;
+}
 .c-faq-accordion {
   border: 2px solid var(--clr-bg-primary-dark);
 }
@@ -595,10 +620,10 @@ li {
 .c-faq__icon {
   cursor: pointer;
 }
-.c-faq__cta-btn {
+.c-faq__cta-btn, .c-about-section__cta-btn {
   border: 2px solid var(--clr-accent);
 }
-.c-faq__cta-btn:hover {
+.c-faq__cta-btn:hover, .c-about-section__cta-btn:hover {
   border: 2px solid var(--clr-accent);
   background-color: var(--clr-accent);
   color: var(--clr-text-primary-light);
@@ -632,12 +657,6 @@ li {
 /* Styling for About section */
 .c-about-section {
   text-align: center;
-}
-.c-about-section__cta-btn:hover {
-  background-color: var(--clr-bg-primary-dark);
-}
-.c-about-section__cta-btn:hover {
-  background-color: var(--clr-bg-primary-dark);
 }
 
 /* Styling for homepage section title */
