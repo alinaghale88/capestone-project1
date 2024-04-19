@@ -692,9 +692,9 @@ li {
   text-decoration: none;
 }
 .c-social-section__icon:hover {
-  background-color: var(--clr-accent);
-  color: var(--clr-text-primary-light);
-  border: 2px solid var(--clr-accent);
+  background-color: var(--clr-text-primary-light);
+  color: var(--clr-accent);
+  border: 2px solid var(--clr-text-primary-light);
 }
 
 /* Styling for Contact section */
