@@ -163,6 +163,11 @@
   overflow-x: auto;
 }
 
+/* Styling for the icon block in Interactive page */
+.c-ds-icon-block {
+  display: inline-block;
+}
+
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
   .c-mobile-navbar__toggle {

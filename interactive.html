@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagination Component</title>
+    <title>Interactive Component</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="design-system.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -165,7 +165,7 @@
         <h1
           class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-2-5-dt u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
         >
-          Pagination
+          Interactive
         </h1>
       </div>
       <div
@@ -178,30 +178,51 @@
             Design
           </h2>
           <p class="l-text-wrapper-desktop">
-            The redesigned Outback Nursery website uses a set of Next and
-            Previous pagination for helping site visitors navigate through the
-            steps for obtaining a gift card.
+            We have a collection of buttons that includes the CTA button, carefully crafted to enhance
+            user engagement and streamline navigation across our website.
           </p>
           <!--Generated from ChatGPT-->
 
-          <!--Navbar layout-->
+          <!--Button layout-->
           <div class="l-mt-1-5">
-            <div class="c-gift-section__pagination l-mt-2-5 l-mt-0-dt">
-              <a
-                class="c-gift-section__pagination-link u-text-secondary u-body-bold l-mr-2 l-mr-0-dt"
-                href="#"
-                id="prev"
-                style="display: none"
-                ><i class="fa-solid fa-arrow-left-long l-mr-0-5"></i>
-                Previous</a
-              >
-              <a
-                class="c-gift-section__pagination-link u-text-secondary u-body-bold l-ml-2-dt"
-                href="#"
-                id="next"
-                >Next <i class="fa-solid fa-arrow-right-long l-ml-0-5"></i
-              ></a>
-            </div>
+            <a
+              href="#contact-us"
+              class="c-nav-menu__link c-nav-menu__cta-btn c-cta-button c-cta-button-2 u-text-primary-dark u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-0-75 l-px-1-25-dt"
+              >Contact us</a
+            >
+          </div>
+          <div class="l-mt-1-5">
+            <a
+              href="coming-soon.html"
+              class="c-hero-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt"
+              >Discover our botanical treasure</a
+            >
+          </div>
+          <div class="l-mt-1-5">
+            <a
+            href="coming-soon.html"
+            class="c-about-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-accent u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt"
+            >How we started</a
+          >
+          </div>
+          <div class="l-mt-1-5 c-ds-icon-block">
+            <div class="c-social-section__icons l-flex l-mt-2-5 l-mt-0-dt u-bg-primary-dark l-p-0-5-0-75">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100045470087619"
+                  target="_blank"
+                  class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
+                  ><i class="fa-brands fa-facebook-f"
+                    ><span class="c-sr-only">Facebook</span></i
+                  ></a
+                >
+                <a
+                  href="https://www.instagram.com/outbacknursery/?hl=en"
+                  target="_blank"
+                  class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
+                  ><i class="fa-brands fa-instagram"></i
+                  ><span class="c-sr-only">Instagram</span></a
+                >
+              </div>
           </div>
         </section>
 
@@ -212,24 +233,70 @@
             HTML Structure
           </h2>
           <p class="l-text-wrapper-desktop">
-            Below is the HTML code snippet illustrating the structure of our
-            site pagination:
+            Below is the HTML code snippet illustrating the structure of our buttons in the exact same order as displayed above.
           </p>
           <!--Generated from ChatGPT-->
           <div class="l-mt-1-5">
             <pre class="c-code-snippet">
-&lt;div class=&quot;c-gift-section__pagination l-mt-2-5 l-mt-0-dt&quot;&gt;
-    &lt;a class=&quot;c-gift-section__pagination-link u-text-secondary u-body-bold l-mr-2 l-mr-0-dt&quot; href=&quot;#&quot; id=&quot;prev&quot; style=&quot;display: none&quot;&gt;
-        &lt;i class=&quot;fa-solid fa-arrow-left-long l-mr-0-5&quot;&gt;&lt;/i&gt;Previous&lt;/a&gt;
-    &lt;a class=&quot;c-gift-section__pagination-link u-text-secondary u-body-bold l-ml-2-dt&quot; href=&quot;#&quot; id=&quot;next&quot;&gt;Next &lt;i class=&quot;fa-solid fa-arrow-right-long l-ml-0-5&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#contact-us&quot; class=&quot;c-nav-menu__link c-nav-menu__cta-btn c-cta-button c-cta-button-2 u-text-primary-dark u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-0-75 l-px-1-25-dt&quot;&gt;Contact us&lt;/a&gt;
+            </pre>
+          </div>
+          <div class="l-mt-1-5">
+            <pre class="c-code-snippet">         
+&lt;a href=&quot;coming-soon.html&quot; class=&quot;c-hero-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt&quot;&gt;Discover our botanical treasure&lt;/a&gt;
+            </pre>
+          </div>
+          <div class="l-mt-1-5">
+            <pre class="c-code-snippet">
+&lt;a href=&quot;coming-soon.html&quot; class=&quot;c-about-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-accent u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt&quot;&gt;How we started&lt;/a&gt;
+            </pre>
+          </div>
+          <div class="l-mt-1-5">
+            <pre class="c-code-snippet">
+&lt;div class=&quot;c-social-section__icons l-flex l-mt-2-5 l-mt-0-dt&quot;&gt;
+    &lt;a
+    href=&quot;https://www.facebook.com/profile.php?id=100045470087619&quot;
+    target=&quot;_blank&quot;
+    class=&quot;c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md&quot;
+    &gt;&lt;i class=&quot;fa-brands fa-facebook-f&quot;
+        &gt;&lt;span class=&quot;c-sr-only&quot;&gt;Facebook&lt;/span&gt;&lt;/i
+    &gt;&lt;/a
+    &gt;
+    &lt;a
+    href=&quot;https://www.instagram.com/outbacknursery/?hl=en&quot;
+    target=&quot;_blank&quot;
+    class=&quot;c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md&quot;
+    &gt;&lt;i class=&quot;fa-brands fa-instagram&quot;&gt;&lt;/i
+    &gt;&lt;span class=&quot;c-sr-only&quot;&gt;Instagram&lt;/span&gt;&lt;/a
+    &gt;
 &lt;/div&gt;
-              
+            </pre>
+          </div>
+          <div class="l-mt-1-5">
+            <pre class="c-code-snippet">
+&lt;div class="c-social-section__icons l-flex l-mt-2-5 l-mt-0-dt"&gt;
+  &lt;a
+    href="https://www.facebook.com/profile.php?id=100045470087619"
+    target="_blank"
+    class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
+    &gt;&lt;i class="fa-brands fa-facebook-f"
+      &gt;&lt;span class="c-sr-only"&gt;Facebook&lt;/span&gt;&lt;/i
+    &gt;&lt;/a
+  &gt;
+  &lt;a
+    href="https://www.instagram.com/outbacknursery/?hl=en"
+    target="_blank"
+    class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
+    &gt;&lt;i class="fa-brands fa-instagram"&gt;&lt;/i
+    &gt;&lt;span class="c-sr-only"&gt;Instagram&lt;/span&gt;&lt;/a
+  &gt;
+&lt;/div&gt;
+
             </pre>
           </div>
         </section>
       </div>
     </main>
     <script src="design-system.js"></script>
-    <script src="main.js"></script>
   </body>
 </html>
