@@ -166,7 +166,7 @@
 /*Styling for Desktop screens*/
 @media screen and (min-width: 1200px) {
   .c-mobile-navbar__toggle {
-    display: none !important;
+    display: none;
   }
   .c-top-navbar,
   .c-side-navbar {

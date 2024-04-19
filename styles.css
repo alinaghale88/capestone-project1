@@ -746,7 +746,10 @@ li {
   border-top: 2px solid var(--clr-bg-accent-light);
 }
 .c-mobile-navbar__toggle {
-  display: block !important;
+  display: block;
+}
+.c-toggle-home {
+  display: block!important;
 }
 /* Hide icon text from view */
 .c-sr-only {
