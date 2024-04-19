@@ -475,6 +475,7 @@ li {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(244, 255, 255, 0.9); 
@@ -700,9 +701,6 @@ li {
 /* Styling for Contact section */
 .c-contact-section__title {
   text-align: center;
-}
-.c-contact-details {
-  border-bottom: 2px dashed var(--clr-bg-accent-light);
 }
 
 /* Styling for Contact Form */
