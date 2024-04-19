@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="design-system.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/588bcee0c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md"
+  >
+    <header class="c-site-header">
+      <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
+      <div class="c-desktop-header">
+        <!--Mobile Navbar-->
+        <div class="c-mobile-navbar u-bg-primary l-pl-1">
+          <a href="design-system.html" class="c-logo-ds"
+            ><span class="u-heading-font u-heading-lg-mb u-text-primary u-heading-bold"
+              >Design System</span
+            ></a
+          >
+          <a
+            class="c-mobile-navbar__toggle l-pr-1"
+            id="toggleButton"
+            onclick="showNav()"
+            ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
+          ></a>
+          <a
+            class="c-mobile-navbar__close l-pr-1"
+            id="closeButton"
+            onclick="showNav()"
+            style="display: none"
+            ><i class="fa-solid fa-times fa-lg u-text-primary"></i
+          ></a>
+        </div>
+        <!--Top Navbar-->
+        <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
+          <ul class="c-top-navbar__menu">
+            <li class="l-py-0-dt l-pr-1-5">
+              <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
+                >About Me</a
+              >
+            </li>
+            <li class="l-py-0-dt">
+              <a id="demoLink" class="c-top-navbar__link" href="index.html"
+                >Demo Site</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--Side Navbar-->
+      <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
+        <ul class="c-side-navbar__menu">
+          <li>
+            <a id="brandingLink" class="c-side-navbar__link-category" href="#"
+              >Branding</a
+            >
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a id="colorsLink" class="c-side-navbar__link" href="colours.html"
+                >01 Colours</a
+              >
+            </li>
+            <li>
+              <a
+                id="typographyLink"
+                class="c-side-navbar__link"
+                href="typography.html"
+                >02 Typography</a
+              >
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link-category" href="#">Utilities</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="spacing.html">03 Spacing</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="containers.html"
+                >04 Containers</a
+              >
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="images.html">05 Images</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="interactive.html">06 Interactive</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link-category" href="#">Navigation</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="navbars.html">07 Navbars</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="breadcrumbs.html">08 Breadcrumbs</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="pagination.html">09 Pagination</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link-category" href="#">Blocks</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="hero.html">10 Hero and Carousel</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="footer.html">11 Footer</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link-category" href="#">Components</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="cards.html">12 Cards</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="forms.html">13 Forms</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="accordion.html">14 Accordion</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="lists.html">15 Lists</a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <main class="c-site-content l-full-width l-desktop-full-width">
+      <div
+        class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end"
+      >
+        <h1
+          class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-2-5-dt u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
+        >
+          Pagination
+        </h1>
+      </div>
+      <div
+        class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-px-2-5-dt"
+      >
+        <section>
+          <h2
+            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
+          >
+            Design
+          </h2>
+          <p class="l-text-wrapper-desktop">
+            The navbar consist of various components, including links to
+            different pages, dropdown menu, a CTA button and social media links.
+          </p>
+          <!--Generated from ChatGPT-->
+
+          <!--Navbar layout-->
+          <div class="l-mt-1-5">
+            <section class="c-section c-gift-section u-bg-primary">
+                <div
+                  class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-5"
+                >
+                  <h2
+                    class="c-section__title l-text-wrapper-desktop u-text-primary u-heading-font u-heading-bold u-heading-lg-mb u-heading-lg-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-2 l-mb-2"
+                  >
+                    Give the gift of greenery: gift certificates available in just 3
+                    easy steps!
+                  </h2>
+                  <div
+                    class="c-gift-section__details l-flex-dt l-justify-space-between l-align-center"
+                  >
+                    <div id="step1" class="c-gift-section-steps">
+                      <span
+                        class="c-step-counter l-block u-heading-font u-body-md u-body-bold u-text-primary-dark l-mb-0-5"
+                        >Step 1</span
+                      >
+                      <h3
+                        class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
+                      >
+                        Email us your details
+                      </h3>
+                      <p class="u-text-primary u-body-md">
+                        Send an email to
+                        <a
+                          class="c-gift-section__link u-text-secondary"
+                          href="mailto:name@email.com"
+                          >info@outbacknursery.ca</a
+                        >
+                        - as a way to introduce yourself.
+                      </p>
+                    </div>
+                    <div id="step2" class="c-gift-section-steps" style="display: none">
+                      <span
+                        class="c-step-counter l-block u-heading-font u-body-md u-body-bold u-text-primary-dark l-mb-0-5"
+                        >Step 2</span
+                      >
+                      <h3
+                        class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
+                      >
+                        Make your payment
+                      </h3>
+                      <p class="u-text-primary u-body-md">
+                        Send an E-transfer to
+                        <a
+                          class="c-gift-section__link u-text-secondary u-body-md"
+                          href="mailto:name@email.com"
+                          >info@outbacknursery.ca</a
+                        >
+                        with your chosen amount
+                      </p>
+                    </div>
+                    <div id="step3" class="c-gift-section-steps" style="display: none">
+                      <span
+                        class="c-step-counter l-block u-heading-font u-body-md u-body-bold u-text-primary-dark l-mb-0-5"
+                        >Step 3</span
+                      >
+                      <h3
+                        class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
+                      >
+                        Receive your voucher
+                      </h3>
+                      <p class="u-text-primary u-body-md">
+                        We will scan a voucher and email it back to you or another email
+                        of your choosing
+                      </p>
+                    </div>
+                    <div class="c-gift-section__pagination l-mt-2-5 l-mt-0-dt">
+                      <a
+                        class="c-gift-section__pagination-link u-text-secondary u-body-bold l-mr-2 l-mr-0-dt"
+                        href="#"
+                        id="prev"
+                        style="display: none"
+                        ><i class="fa-solid fa-arrow-left-long l-mr-0-5"></i>
+                        Previous</a
+                      >
+                      <a
+                        class="c-gift-section__pagination-link u-text-secondary u-body-bold l-ml-2-dt"
+                        href="#"
+                        id="next"
+                        >Next <i class="fa-solid fa-arrow-right-long l-ml-0-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+          </div>
+        </section>
+
+        <section>
+          <h2
+            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
+          >
+            HTML Structure
+          </h2>
+          <p class="l-text-wrapper-desktop">
+            Below is the HTML code snippet illustrating the structure of our
+            navbar:
+          </p>
+          <!--Generated from ChatGPT-->
+          <div class="l-mt-1-5">
+            <pre class="c-code-snippet">
+&lt;section class=&quot;c-section c-gift-section u-bg-primary&quot;&gt;
+&lt;div
+    class=&quot;l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-5&quot;
+&gt;
+    &lt;h2
+    class=&quot;c-section__title l-text-wrapper-desktop u-text-primary u-heading-font u-heading-bold u-heading-lg-mb u-heading-lg-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-2 l-mb-2&quot;
+    &gt;
+    Give the gift of greenery: gift certificates available in just 3
+    easy steps!
+    &lt;/h2&gt;
+    &lt;div
+    class=&quot;c-gift-section__details l-flex-dt l-justify-space-between l-align-center&quot;
+    &gt;
+    &lt;div id=&quot;step1&quot; class=&quot;c-gift-section-steps&quot;&gt;
+        &lt;span
+        class=&quot;c-step-counter l-block u-heading-font u-body-md u-body-bold u-text-primary-dark l-mb-0-5&quot;
+        &gt;Step 1&lt;/span
+        &gt;
+        &lt;h3
+        class=&quot;u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75&quot;
+        &gt;
+        Email us your details
+        &lt;/h3&gt;
+        &lt;p class=&quot;u-text-primary u-body-md&quot;&gt;
+        Send an email to
+        &lt;a
+            class=&quot;c-gift-section__link u-text-secondary&quot;
+            href=&quot;mailto:name@email.com&quot;
+            &gt;info@outbacknursery.ca&lt;/a
+        &gt;
+        - as a way to introduce yourself.
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div
+        id=&quot;step2&quot;
+        class=&quot;c-gift-section-steps&quot;
+        style=&quot;display: none&quot;
+    &gt;
+        &lt;span
+        class=&quot;c-step-counter l-block u-heading-font u-body-md u-body-bold u-text-primary-dark l-mb-0-5&quot;
+        &gt;Step 2&lt;/span
+        &gt;
+        &lt;h3
+        class=&quot;u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75&quot;
+        &gt;
+        Make your payment
+        &lt;/h3&gt;
+        &lt;p class=&quot;u-text-primary u-body-md&quot;&gt;
+        Send an E-transfer to
+        &lt;a
+            class=&quot;c-gift-section__link u-text-secondary u-body-md&quot;
+            href=&quot;mailto:name@email.com&quot;
+            &gt;info@outbacknursery.ca&lt;/a
+        &gt;
+        with your chosen amount
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div
+        id=&quot;step3&quot;
+        class=&quot;c-gift-section-steps&quot;
+        style=&quot;display: none&quot;
+    &gt;
+        &lt;span
+        class=&quot;c-step-counter l-block u-heading-font u-body-md u-body-bold u-text-primary-dark l-mb-0-5&quot;
+        &gt;Step 3&lt;/span
+        &gt;
+        &lt;h3
+        class=&quot;u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75&quot;
+        &gt;
+        Receive your voucher
+        &lt;/h3&gt;
+        &lt;p class=&quot;u-text-primary u-body-md&quot;&gt;
+        We will scan a voucher and email it back to you or another email
+        of your choosing
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div
+        class=&quot;c-gift-section__pagination l-mt-2-5 l-mt-0-dt&quot;
+    &gt;
+        &lt;a
+        class=&quot;c-gift-section__pagination-link u-text-secondary u-body-bold l-mr-2 l-mr-0-dt&quot;
+        href=&quot;#&quot;
+        id=&quot;prev&quot;
+        style=&quot;display: none&quot;
+        &gt;&lt;i class=&quot;fa-solid fa-arrow-left-long l-mr-0-5&quot;&gt;&lt;/i&gt;
+        Previous&lt;/a
+        &gt;
+        &lt;a
+        class=&quot;c-gift-section__pagination-link u-text-secondary u-body-bold l-ml-2-dt&quot;
+        href=&quot;#&quot;
+        id=&quot;next&quot;
+        &gt;Next &lt;i class=&quot;fa-solid fa-arrow-right-long l-ml-0-5&quot;&gt;&lt;/i
+        &gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+              
+            </pre>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="design-system.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
