@@ -190,6 +190,7 @@
   }
   .c-site-content {
     left: var(--side-nav-width);
+    z-index: 9999;
   }
   .c-site-content-no-sidenav {
     left: 0;
