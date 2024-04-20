@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="design-system.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/588bcee0c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md"
+  >
+    <header class="c-site-header">
+      <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
+      <div class="c-desktop-header">
+        <!--Mobile Navbar-->
+        <div class="c-mobile-navbar u-bg-primary l-pl-1">
+          <a href="design-system.html" class="c-logo-ds"
+            ><span
+              class="u-heading-font u-heading-lg-mb u-text-primary u-heading-bold"
+              >Design System</span
+            ></a
+          >
+          <a
+            class="c-mobile-navbar__toggle l-pr-1"
+            id="toggleButton"
+            onclick="showNav()"
+            ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
+          ></a>
+          <a
+            class="c-mobile-navbar__close l-pr-1"
+            id="closeButton"
+            onclick="showNav()"
+            style="display: none"
+            ><i class="fa-solid fa-times fa-lg u-text-primary"></i
+          ></a>
+        </div>
+        <!--Top Navbar-->
+        <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
+          <ul class="c-top-navbar__menu">
+            <li class="l-py-0-dt l-pr-1-5">
+              <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
+                >About Me</a
+              >
+            </li>
+            <li class="l-py-0-dt">
+              <a id="demoLink" class="c-top-navbar__link" href="index.html"
+                >Demo Site</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--Side Navbar-->
+      <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
+        <ul class="c-side-navbar__menu">
+          <li>
+            <a id="brandingLink" class="c-side-navbar__link-category" href="#"
+              >Branding</a
+            >
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a id="colorsLink" class="c-side-navbar__link" href="colours.html"
+                >01 Colours</a
+              >
+            </li>
+            <li>
+              <a
+                id="typographyLink"
+                class="c-side-navbar__link"
+                href="typography.html"
+                >02 Typography</a
+              >
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link-category" href="#">Utilities</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="spacing.html">03 Spacing</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="containers.html"
+                >04 Containers</a
+              >
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="images.html">05 Images</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="interactive.html"
+                >06 Interactive</a
+              >
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link-category" href="#">Navigation</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="navbars.html">07 Navbars</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="breadcrumbs.html"
+                >08 Breadcrumbs</a
+              >
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="pagination.html"
+                >09 Pagination</a
+              >
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link-category" href="#">Blocks</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="hero.html"
+                >10 Hero and Carousel</a
+              >
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="footer.html">11 Footer</a>
+            </li>
+          </ul>
+          <li>
+            <a class="c-side-navbar__link-category" href="#">Components</a>
+          </li>
+          <ul class="c-side-navbar__sub-menu">
+            <li>
+              <a class="c-side-navbar__link" href="cards.html">12 Cards</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="forms.html">13 Forms</a>
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="accordion.html"
+                >14 Accordion</a
+              >
+            </li>
+            <li>
+              <a class="c-side-navbar__link" href="lists.html">15 Lists</a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <main class="c-site-content l-full-width l-desktop-full-width">
+      <div
+        class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end"
+      >
+        <h1
+          class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-2-5-dt u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
+        >
+          Footer
+        </h1>
+      </div>
+      <div
+        class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-px-2-5-dt"
+      >
+        <section>
+          <h2
+            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
+          >
+            Design
+          </h2>
+          <p class="l-text-wrapper-desktop">
+            From the company details to resources links, and an embedded Google map, the footer offers a centralized hub for
+            essential resources and actions, empowering users to explore,
+            engage, and connect with your brand beyond the primary content.
+          </p>
+          <!--Generated from ChatGPT-->
+
+          <!--Navbar layout-->
+          <div class="l-mt-1-5">
+            <div class="c-site-footer u-bg-secondary">
+              <div
+                class="c-site-footer-top l-flex-dt l-block-gap l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-4"
+              >
+                <div class="c-site-footer-column">
+                  <h3
+                    class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
+                  >
+                    About Us
+                  </h3>
+                  <p>
+                    Outback Nursery is one of the largest garden centres on
+                    Vancouver Island. Our nursery is situated on a 6 acre
+                    property and offers 5 overflowing greenhouses (30x170ft);
+                    almost 23,000 square feet.
+                  </p>
+                </div>
+                <div class="c-site-footer-column l-pt-2-5 l-pt-0-dt">
+                  <h3
+                    class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
+                  >
+                    Our Favorite Websites
+                  </h3>
+                  <ul class="c-site-footer__list l-pl-0">
+                    <li>
+                      <a
+                        class="c-site-footer__link u-text-secondary"
+                        href="https://www.rhs.org.uk"
+                        target="_blank"
+                        >rhs.org.uk</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="c-site-footer__link u-text-secondary"
+                        href="https://www.gardenia.net"
+                        target="_blank"
+                        >gardenia.net</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="c-site-footer__link u-text-secondary"
+                        href="https://www.finegardening.com"
+                        target="_blank"
+                        >finegardening.com</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="c-site-footer__link u-text-secondary"
+                        href="https://www.pinterest.com"
+                        target="_blank"
+                        >pinterest.com</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="c-site-footer__link u-text-secondary"
+                        href="https://www.houzz.com"
+                        target="_blank"
+                        >houzz.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="c-site-footer-column l-pt-2 l-pt-0-dt">
+                  <h3
+                    class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-1-25"
+                  >
+                    Google Map
+                  </h3>
+                  <iframe
+                    class="c-site-footer__map l-full-width"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10311.229474873362!2d-125.0508448!3d49.7520682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1712140421689!5m2!1sen!2sca"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+              <div
+                class="c-footer-copyright l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-1 l-pb-1"
+              >
+                <p class="l-pb-0-25">©2024 North Island College</p>
+                <p>
+                  This is a fictional website that was designed and coded as an
+                  educational exercise. It is not intended to be seen outside of
+                  the class environment. None of the content and images were
+                  approved by the business owner.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2
+            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
+          >
+            HTML Structure
+          </h2>
+          <p class="l-text-wrapper-desktop">
+            Below is the HTML code snippet illustrating the structure of our
+            Footer section:
+          </p>
+          <!--Generated from ChatGPT-->
+          <div class="l-mt-1-5">
+            <pre class="c-code-snippet">
+&lt;div class="c-site-footer u-bg-secondary"&gt;
+&lt;div
+    class="c-site-footer-top l-flex-dt l-block-gap l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-4"
+&gt;
+    &lt;div class="c-site-footer-column"&gt;
+    &lt;h3
+        class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
+    &gt;
+        About Us
+    &lt;/h3&gt;
+    &lt;p&gt;
+        Outback Nursery is one of the largest garden centres on
+        Vancouver Island. Our nursery is situated on a 6 acre
+        property and offers 5 overflowing greenhouses (30x170ft);
+        almost 23,000 square feet.
+    &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="c-site-footer-column l-pt-2-5 l-pt-0-dt"&gt;
+    &lt;h3
+        class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
+    &gt;
+        Our Favorite Websites
+    &lt;/h3&gt;
+    &lt;ul class="c-site-footer__list l-pl-0"&gt;
+        &lt;li&gt;
+        &lt;a
+            class="c-site-footer__link u-text-secondary"
+            href="https://www.rhs.org.uk"
+            target="_blank"
+            &gt;rhs.org.uk&lt;/a
+        &gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a
+            class="c-site-footer__link u-text-secondary"
+            href="https://www.gardenia.net"
+            target="_blank"
+            &gt;gardenia.net&lt;/a
+        &gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a
+            class="c-site-footer__link u-text-secondary"
+            href="https://www.finegardening.com"
+            target="_blank"
+            &gt;finegardening.com&lt;/a
+        &gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a
+            class="c-site-footer__link u-text-secondary"
+            href="https://www.pinterest.com"
+            target="_blank"
+            &gt;pinterest.com&lt;/a
+        &gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a
+            class="c-site-footer__link u-text-secondary"
+            href="https://www.houzz.com"
+            target="_blank"
+            &gt;houzz.com&lt;/a
+        &gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="c-site-footer-column l-pt-2 l-pt-0-dt"&gt;
+    &lt;h3
+        class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-1-25"
+    &gt;
+        Google Map
+    &lt;/h3&gt;
+    &lt;iframe
+        class="c-site-footer__map l-full-width"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10311.229474873362!2d-125.0508448!3d49.7520682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1712140421689!5m2!1sen!2sca"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+    &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div
+    class="c-footer-copyright l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-1 l-pb-1"
+&gt;
+    &lt;p class="l-pb-0-25"&gt;©2024 North Island College&lt;/p&gt;
+    &lt;p&gt;
+    This is a fictional website that was designed and coded as an
+    educational exercise. It is not intended to be seen outside of
+    the class environment. None of the content and images were
+    approved by the business owner.
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;         
+            </pre>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="main.js"></script>
+    <script src="design-system.js"></script>
+  </body>
+</html>
