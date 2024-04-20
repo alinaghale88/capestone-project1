@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cards page</title>
+    <title>Forms page</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="design-system.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -165,7 +165,7 @@
         <h1
           class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-2-5-dt u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
         >
-          Cards
+          Forms
         </h1>
       </div>
       <div
@@ -178,32 +178,71 @@
             Design
           </h2>
           <p class="l-text-wrapper-desktop">
-            Our design principles for the Cards Block emphasize consistency,
-            hierarchy, and clarity. We advocate for cohesive visual styling,
-            including consistent spacing, typography, and color usage across
-            card components to maintain a unified look and feel.
+            Our design principles for the Forms Block prioritize usability,
+            accessibility, and clarity. We advocate for user-friendly form
+            layouts that guide users through the input process logically and
+            intuitively, minimizing friction and errors along the way.
           </p>
           <!--Generated from ChatGPT-->
 
-          <!--Card layout-->
+          <!--Form layout-->
           <div class="l-mt-1-5">
-            <div class="c-services-block u-bg-primary l-py-2 l-px-2 l-mb-2">
-              <span class="l-block l-mb-0-5"
-                ><img
-                  class="c-services-section__icon"
-                  src="images/delivery-service-icon.png"
-                  alt="Delivery service icon"
-              /></span>
-              <h3
-                class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-              >
-                Delivery and Planting Services
-              </h3>
-              <p class="u-text-primary u-body-lg">
-                Let us handle delivery and planting for your trees and shrubs.
-                Receive personalized recommendations for optimal growth and
-                aesthetics.
-              </p>
+            <div
+              class="c-contact-form-wrapper l-text-wrapper-desktop l-mx-auto"
+            >
+              <form action="coming-soon.html" method="post">
+                <label for="name" class="u-text-secondary u-body-lg"
+                  >Name:</label
+                >
+                <input
+                  class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name here"
+                  required
+                />
+                <label for="email" class="u-text-secondary u-body-lg"
+                  >Email:</label
+                >
+                <input
+                  class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email here"
+                  required
+                />
+                <label for="question" class="u-text-secondary u-body-lg"
+                  >Ask any Question:</label
+                >
+                <input
+                  class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
+                  type="text"
+                  id="question"
+                  name="question"
+                  placeholder="Enter your question here"
+                />
+                <label for="message" class="u-text-secondary u-body-lg"
+                  >Message:</label
+                >
+                <textarea
+                  class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
+                  id="message"
+                  name="message"
+                  placeholder="Enter your message here"
+                  style="height: 200px"
+                  required
+                ></textarea>
+
+                <div class="c-contact-form-btn-wrapper">
+                  <input
+                    class="c-contact-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-body-lg u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt"
+                    type="submit"
+                    value="Submit"
+                  />
+                </div>
+              </form>
             </div>
           </div>
         </section>
@@ -216,23 +255,27 @@
           </h2>
           <p class="l-text-wrapper-desktop">
             Below is the HTML code snippet illustrating the structure of our
-            Card block:
+            Form block:
           </p>
           <!--Generated from ChatGPT-->
           <div class="l-mt-1-5">
             <pre class="c-code-snippet">
-&lt;div class="c-services-block u-bg-primary l-py-2 l-px-2 l-mb-2"&gt;
-    &lt;span class="l-block l-mb-0-5"&gt;
-        &lt;img class="c-services-section__icon" src="images/delivery-service-icon.png" alt="Delivery service icon" /&gt;
-    &lt;/span&gt;
-    &lt;h3 class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"&gt;
-        Delivery and Planting Services
-    &lt;/h3&gt;
-    &lt;p class="u-text-primary u-body-lg"&gt;
-        Let us handle delivery and planting for your trees and shrubs.
-        Receive personalized recommendations for optimal growth and aesthetics.
-    &lt;/p&gt;
-&lt;/div&gt;
+&lt;div class="c-contact-form-wrapper l-text-wrapper-desktop l-mx-auto"&gt;
+    &lt;form action="coming-soon.html" method="post"&gt;
+        &lt;label for="name" class="u-text-secondary u-body-lg"&gt;Name:&lt;/label&gt;
+        &lt;input class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary" type="text" id="name" name="name" placeholder="Enter your name here" required /&gt;
+        &lt;label for="email" class="u-text-secondary u-body-lg"&gt;Email:&lt;/label&gt;
+        &lt;input class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary" type="text" id="email" name="email" placeholder="Enter your email here" required /&gt;
+        &lt;label for="question" class="u-text-secondary u-body-lg"&gt;Ask any Question:&lt;/label&gt;
+        &lt;input class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary" type="text" id="question" name="question" placeholder="Enter your question here" /&gt;
+        &lt;label for="message" class="u-text-secondary u-body-lg"&gt;Message:&lt;/label&gt;
+        &lt;textarea class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary" id="message" name="message" placeholder="Enter your message here" style="height: 200px" required&gt;&lt;/textarea&gt;
+
+        &lt;div class="c-contact-form-btn-wrapper"&gt;
+            &lt;input class="c-contact-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-body-lg u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt" type="submit" value="Submit" /&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;         
             </pre>
           </div>
         </section>
