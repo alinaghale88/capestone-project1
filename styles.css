@@ -255,6 +255,9 @@ li {
 .l-inline-block {
   display: inline-block;
 }
+.l-inline {
+  display: inline;
+}
 .l-flex {
   display: flex;
 }
@@ -375,6 +378,10 @@ li {
 }
 .l-mt-0-25 {
   margin-top: 0.25rem;
+}
+.l-my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*Padding*/
@@ -762,6 +769,23 @@ li {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* Styling for the breadcrumbs block */
+.c-breadcrumbs__list {
+  list-style: none;
+}
+.c-breadcrumbs__list-item:not(:last-child):after {
+  content: "/";
+  color: var(--clr-accent);
+  margin: 0 0.25rem;
+}
+.c-breadcrumbs__link {
+  text-decoration: none;
+}
+.c-breadcrumbs__link:hover {
+  text-decoration: underline;
+}
+
 
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
