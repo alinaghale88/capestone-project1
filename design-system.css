@@ -155,7 +155,8 @@
   width: 120px;
 }
 .c-navbars-header {
-  position: static;
+  position: relative;
+  z-index: 1;
 }
 
 /* Styling for code snippet */
@@ -177,6 +178,10 @@
   .c-side-navbar {
     display: block;
   }
+
+  .c-side-navbar {
+    position: absolute;
+  }
   /*Hides side navbar in About Me page in desktop view*/
   .c-side-navbar--inactive {
     display: none;
@@ -195,7 +200,6 @@
   }
   .c-site-content {
     left: var(--side-nav-width);
-    z-index: 9999;
   }
   .c-site-content-no-sidenav {
     left: 0;
