@@ -83,29 +83,33 @@ li {
 
 /*Utility classes for all the colors*/
 .u-text-primary {
-  color: var(--clr-text-primary); /*Primary text color*/
+  color: var(--clr-text-primary);
+  /*Primary text color*/
 }
 
 .u-text-primary-as-bg {
-  background-color: var(
-    --clr-text-primary-bg
-  ); /*Primary text color to be used as background-color*/
+  background-color: var(--clr-text-primary-bg);
+  /*Primary text color to be used as background-color*/
 }
 
 .u-text-secondary {
-  color: var(--clr-text-secondary); /*Secondary text color*/
+  color: var(--clr-text-secondary);
+  /*Secondary text color*/
 }
 
 .u-bg-primary {
-  background-color: var(--clr-bg-primary); /*Primary background color*/
+  background-color: var(--clr-bg-primary);
+  /*Primary background color*/
 }
 
 .u-bg-secondary {
-  background-color: var(--clr-bg-secondary); /*Secondary background color*/
+  background-color: var(--clr-bg-secondary);
+  /*Secondary background color*/
 }
 
 .u-accent {
-  background-color: var(--clr-accent); /*Accent color*/
+  background-color: var(--clr-accent);
+  /*Accent color*/
 }
 
 .u-text-accent {
@@ -113,102 +117,117 @@ li {
 }
 
 .u-bg-primary-light {
-  background-color: var(
-    --clr-bg-primary-light
-  ); /*Primary background color in light shade*/
+  background-color: var(--clr-bg-primary-light);
+  /*Primary background color in light shade*/
 }
 
 .u-text-primary-light {
-  color: var(--clr-text-primary-light); /*Primary text color in light shade*/
+  color: var(--clr-text-primary-light);
+  /*Primary text color in light shade*/
 }
 
 .u-bg-primary-dark {
-  background-color: var(
-    --clr-bg-primary-dark
-  ); /*Primary background color in dark shade*/
+  background-color: var(--clr-bg-primary-dark);
+  /*Primary background color in dark shade*/
 }
 
 .u-text-primary-dark {
-  color: var(--clr-bg-primary-dark); /* Primary text color in dark shade */
+  color: var(--clr-bg-primary-dark);
+  /* Primary text color in dark shade */
 }
 
 .u-bg-accent-light {
-  background-color: var(
-    --clr-bg-accent-light
-  ); /*Accent color to be used as background in light shade*/
+  background-color: var(--clr-bg-accent-light);
+  /*Accent color to be used as background in light shade*/
 }
 
 .u-bg-accent-dark {
-  background-color: var(
-    --clr-bg-accent-dark
-  ); /*Accent color to be used as background in dark shade*/
+  background-color: var(--clr-bg-accent-dark);
+  /*Accent color to be used as background in dark shade*/
 }
 
 .u-text-accent-dark {
-  color: var(
-    --clr-bg-accent-dark
-  ); /* Accent color of dark shade to be used for social icons*/
+  color: var(--clr-bg-accent-dark);
+  /* Accent color of dark shade to be used for social icons*/
 }
 
 /*Utility classes for font family*/
 .u-heading-font {
-  font-family: var(--heading-font); /*Cabin font-family*/
+  font-family: var(--heading-font);
+  /*Cabin font-family*/
 }
+
 .u-body-font {
-  font-family: var(--body-font); /*Playfair Display font-family*/
+  font-family: var(--body-font);
+  /*Playfair Display font-family*/
 }
+
 .u-heading-xl-mb {
-  font-size: var(
-    --heading-size-xl-mb
-  ); /*Heading size for h1 element in mobile view*/
+  font-size: var(--heading-size-xl-mb);
+  /*Heading size for h1 element in mobile view*/
 }
+
 .u-heading-lg-mb {
-  font-size: var(
-    --heading-size-lg-mb
-  ); /*Heading size for h2 elements in mobile view*/
+  font-size: var(--heading-size-lg-mb);
+  /*Heading size for h2 elements in mobile view*/
 }
+
 .u-heading-md {
-  font-size: var(
-    --heading-size-md
-  ); /*Heading size for h3 elements in desktop & mobile view*/
+  font-size: var(--heading-size-md);
+  /*Heading size for h3 elements in desktop & mobile view*/
 }
+
 .u-heading-sm {
-  font-size: var(
-    --heading-size-sm
-  ); /*Heading size for h4 elements in desktop & mobile view*/
+  font-size: var(--heading-size-sm);
+  /*Heading size for h4 elements in desktop & mobile view*/
 }
+
 .u-body-lg {
-  font-size: var(
-    --body-size-lg
-  ); /*FAQ title, Name in Testimonials, Contact form labels, section content*/
+  font-size: var(--body-size-lg);
+  /*FAQ title, Name in Testimonials, Contact form labels, section content*/
 }
+
 .u-body-md {
-  font-size: var(--body-size-md); /*Blog content, excerpt, meta info*/
+  font-size: var(--body-size-md);
+  /*Blog content, excerpt, meta info*/
 }
+
 .u-heading-bold {
-  font-weight: var(--heading-weight-bold); /*Font weight: 700*/
+  font-weight: var(--heading-weight-bold);
+  /*Font weight: 700*/
 }
+
 .u-heading-regular {
-  font-weight: var(--heading-weight-regular); /*Font weight: 400*/
+  font-weight: var(--heading-weight-regular);
+  /*Font weight: 400*/
 }
+
 .u-body-bold {
-  font-weight: var(--body-weight-bold); /*Font weight: 700*/
+  font-weight: var(--body-weight-bold);
+  /*Font weight: 700*/
 }
+
 .u-body-regular {
-  font-weight: var(--body-weight-regular); /*Font weight: 400*/
+  font-weight: var(--body-weight-regular);
+  /*Font weight: 400*/
 }
+
 .u-heading-line-height-md {
   line-height: var(--heading-line-height-md);
 }
+
 .u-body-line-height {
   line-height: var(--body-line-height);
 }
+
 .u-letter-spacing-heading {
   letter-spacing: var(--letter-spacing-heading);
 }
+
 .u-letter-spacing-normal {
   letter-spacing: var(--letter-spacing-normal);
 }
+
 .u-letter-spacing-cabin-normal {
   letter-spacing: var(--letter-spacing-cabin-normal);
 }
@@ -217,30 +236,39 @@ li {
 .u-heading-xl-dt-tp {
   font-size: var(--heading-size-xl-dt);
 }
+
 .u-heading-line-height-xl-tp {
   line-height: var(--heading-line-height-xl-dt);
 }
+
 .u-letter-spacing-xl-dt-tp {
   letter-spacing: var(--letter-spacing-xl-dt);
 }
+
 .u-heading-lg-dt-tp {
   font-size: var(--heading-size-lg-dt);
 }
+
 .u-heading-line-height-lg-tp {
   line-height: var(--heading-line-height-lg-dt);
 }
+
 .u-letter-spacing-lg-dt-tp {
   letter-spacing: var(--letter-spacing-lg-dt);
 }
+
 .u-heading-xl-mb-tp {
   font-size: var(--heading-size-xl-mb);
 }
+
 .u-heading-lg-mb-tp {
   font-size: var(--heading-size-lg-mb);
 }
+
 .u-heading-line-height-md-tp {
   line-height: var(--heading-line-height-md);
 }
+
 .u-letter-spacing-heading-tp {
   letter-spacing: var(--letter-spacing-heading);
 }
@@ -249,57 +277,75 @@ li {
 .l-none {
   display: none;
 }
+
 .l-block {
   display: block;
 }
+
 .l-inline-block {
   display: inline-block;
 }
+
 .l-inline {
   display: inline;
 }
+
 .l-flex {
   display: flex;
 }
+
 .l-direction-row {
   flex-direction: row;
 }
+
 .l-direction-column {
   flex-direction: column;
 }
+
 .l-wrap {
   flex-wrap: wrap;
 }
+
 .l-content-width {
   width: 100%;
 }
+
 .l-justify-flex-end {
   justify-content: flex-end;
 }
+
 .l-justify-center {
   justify-content: center;
 }
+
 .l-justify-space-between {
   justify-content: space-between;
 }
+
 .l-justify-space-evenly {
   justify-content: space-evenly;
 }
+
 .l-align-center {
   align-items: center;
 }
+
 .l-align-end {
   align-items: flex-end;
 }
+
 .l-vtl-alignment-top {
   vertical-align: top;
 }
+
 .l-grow-shrink-basis {
   flex: 0 0 100%;
 }
+
 .l-gap {
   gap: 8px;
 }
+
 .l-faq-gap {
   gap: 2.5rem;
 }
@@ -310,75 +356,99 @@ li {
   margin-left: auto;
   margin-right: auto;
 }
+
 .l-ml-0-5 {
   margin-left: 0.5rem;
 }
+
 .l-mr-0-5 {
   margin-right: 0.5rem;
 }
+
 .l-mr-2 {
   margin-right: 2rem;
 }
+
 .l-mb-2-5 {
   margin-bottom: 2.5rem;
 }
+
 .l-mb-2 {
   margin-bottom: 2rem;
 }
+
 .l-mb-1-5 {
   margin-bottom: 1.5rem;
 }
+
 .l-mb-1-25 {
   margin-bottom: 1.25rem;
 }
+
 .l-mb-1 {
   margin-bottom: 1rem;
 }
+
 .l-mb-3-5 {
   margin-bottom: 3.5rem;
 }
+
 .l-mb-3 {
   margin-bottom: 3rem;
 }
+
 .l-mb-0-75 {
   margin-bottom: 0.75rem;
 }
+
 .l-mb-0-5 {
   margin-bottom: 0.5rem;
 }
+
 .l-mb-0 {
   margin-bottom: 0;
 }
+
 .l-mt-3 {
   margin-top: 3rem;
 }
+
 .l-mt-3-5 {
   margin-top: 3.5rem;
 }
+
 .l-mt-2-5 {
   margin-top: 2.5rem;
 }
+
 .l-mt-2 {
   margin-top: 2rem;
 }
+
 .l-mt-1-5 {
   margin-top: 1.5rem;
 }
+
 .l-mt-1-25 {
   margin-top: 1.25rem;
 }
+
 .l-mt-1 {
   margin-top: 1rem;
 }
+
 .l-mt-0 {
   margin-top: 0;
 }
+
 .l-mt-0-5 {
   margin-top: 0.5rem;
 }
+
 .l-mt-0-25 {
   margin-top: 0.25rem;
 }
+
 .l-my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -388,81 +458,105 @@ li {
 .l-pl-1 {
   padding-left: 1rem;
 }
+
 .l-pl-0-5 {
   padding-left: 0.5rem;
 }
+
 .l-pl-0-25 {
   padding-left: 0.25rem;
 }
+
 .l-pl-0 {
   padding-left: 0;
 }
+
 .l-pr-1 {
   padding-right: 1rem;
 }
+
 .l-px-1 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 .l-px-2 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
 .l-py-2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
 .l-py-1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 .l-py-0-75 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+
 .l-py-0-5 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
 .l-pt-0-5 {
   padding-top: 0.5rem;
 }
+
 .l-pt-1 {
   padding-top: 1rem;
 }
+
 .l-pt-1-5 {
   padding-top: 1.5rem;
 }
+
 .l-pt-4 {
   padding-top: 4rem;
 }
+
 .l-pt-2-5 {
   padding-top: 2.5rem;
 }
+
 .l-pt-2 {
   padding-top: 2rem;
 }
+
 .l-pb-0-25 {
   padding-bottom: 0.25rem;
 }
+
 .l-pb-1 {
   padding-bottom: 1rem;
 }
+
 .l-pb-2 {
   padding-bottom: 2rem;
 }
+
 .l-pb-3 {
   padding-bottom: 3rem;
 }
+
 .l-pb-4 {
   padding-bottom: 4rem;
 }
+
 .l-pb-5 {
   padding-bottom: 5rem;
 }
+
 .l-pr-1-5 {
   padding-right: 1.5rem;
 }
+
 .l-p-0-5-0-75 {
   padding: 0.5rem 0.75rem;
 }
@@ -471,6 +565,7 @@ li {
 .l-max-width-mobile {
   max-width: 480px;
 }
+
 .l-full-width {
   width: 100%;
 }
@@ -484,6 +579,7 @@ li {
   background-position: center;
   position: relative;
 }
+
 .u-fixed-bg-image::before {
   content: "";
   position: absolute;
@@ -493,7 +589,8 @@ li {
   width: 100%;
   height: 100%;
   background-color: rgba(244, 255, 255, 0.9);
-  z-index: 1; /* Ensure the overlay is above the background image */
+  z-index: 1;
+  /* Ensure the overlay is above the background image */
 }
 
 .c-faq-section-container,
@@ -506,6 +603,7 @@ li {
 .c-mobile-navbar__close {
   text-align: right;
 }
+
 .c-menu-block {
   display: none;
   position: fixed;
@@ -515,24 +613,30 @@ li {
   overflow-y: auto;
   z-index: 999;
 }
+
 .c-menu-block--show-items {
   display: block;
 }
+
 .c-nav-menu,
 .c-nav-menu__dropdown-menu,
 .c-social-menu {
   list-style-type: none;
 }
+
 .c-site-header__logo {
   width: 150px;
 }
+
 .c-nav-menu__link {
   text-decoration: none;
 }
+
 .c-nav-menu__link--hover:hover,
 .c-social-menu__link:hover {
   color: var(--clr-text-secondary);
 }
+
 .c-nav-menu__cta-btn:hover {
   background-color: var(--clr-bg-primary-dark);
   color: var(--clr-text-primary-light);
@@ -542,12 +646,14 @@ li {
 .link--active {
   color: var(--clr-text-secondary);
 }
+
 /*CTA button styling*/
 .c-cta-button {
   text-align: center;
   text-transform: uppercase;
   text-decoration: unset;
 }
+
 .c-cta-button-2 {
   text-transform: capitalize;
   border: 2px solid var(--clr-bg-primary-dark);
@@ -561,6 +667,7 @@ li {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .c-notice-section .c-wrapper {
   text-align: center;
 }
@@ -619,6 +726,7 @@ li {
 .c-gift-section__pagination-link {
   text-decoration: none;
 }
+
 .c-gift-section__pagination-link {
   text-transform: uppercase;
 }
@@ -627,25 +735,31 @@ li {
 .c-faq-section-intro {
   text-align: center;
 }
+
 .c-faq-accordion {
   border: 2px solid var(--clr-bg-primary-dark);
 }
+
 .c-faq-answer {
   display: none;
 }
+
 .c-faq__icon {
   cursor: pointer;
 }
+
 .c-faq__cta-btn,
 .c-about-section__cta-btn {
   border: 2px solid var(--clr-accent);
 }
+
 .c-faq__cta-btn:hover,
 .c-about-section__cta-btn:hover {
   border: 2px solid var(--clr-accent);
   background-color: var(--clr-accent);
   color: var(--clr-text-primary-light);
 }
+
 .c-faq__btn-holder {
   text-align: center;
 }
@@ -654,19 +768,24 @@ li {
 .c-blog-section-intro {
   text-align: center;
 }
+
 .c-blog-post__title,
 .c-blog-post__cta {
   text-decoration: none;
 }
+
 .c-blog-post__cta {
   text-transform: uppercase;
 }
+
 .c-blog-section__cta-btn:hover {
   background-color: var(--clr-bg-primary-dark);
 }
+
 .c-blog-post__thumbnail {
   height: 230px;
 }
+
 .c-blog-post__image {
   height: 100%;
   object-fit: cover;
@@ -686,9 +805,11 @@ li {
 .c-services-section-intro {
   text-align: center;
 }
+
 .c-services-section__icon {
   width: 65px;
 }
+
 .c-services-block {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -698,9 +819,11 @@ li {
   position: relative;
   z-index: 1;
 }
+
 .c-social-section__icons {
   gap: 1rem;
 }
+
 .c-social-section__icon {
   width: 50px;
   height: 50px;
@@ -709,6 +832,7 @@ li {
   transition: ease 0.2s;
   text-decoration: none;
 }
+
 .c-social-section__icon:hover {
   background-color: var(--clr-text-primary-light);
   color: var(--clr-accent);
@@ -724,17 +848,21 @@ li {
 .c-contact-form__input {
   border: 1px solid var(--clr-bg-secondary);
 }
+
 .c-contact-form__title {
   text-align: center;
 }
+
 .c-contact-section__cta-btn:hover {
   background-color: var(--clr-bg-primary-dark);
 }
+
 .c-contact-section__cta-btn {
   border: none;
   cursor: pointer;
   width: 100%;
 }
+
 .c-contact-form-btn-wrapper {
   text-align: center;
 }
@@ -743,21 +871,27 @@ li {
 .c-site-footer__link {
   text-decoration: none;
 }
+
 .c-site-footer__list {
   list-style-type: none;
 }
+
 .c-site-footer__map {
   height: 250px;
 }
+
 .c-footer-copyright {
   border-top: 2px solid var(--clr-bg-accent-light);
 }
+
 .c-mobile-navbar__toggle {
   display: block;
 }
+
 .c-toggle-home {
-  display: block!important;
+  display: block !important;
 }
+
 /* Hide icon text from view */
 .c-sr-only {
   position: absolute;
@@ -774,14 +908,17 @@ li {
 .c-breadcrumbs__list {
   list-style: none;
 }
+
 .c-breadcrumbs__list-item:not(:last-child):after {
   content: "/";
   color: var(--clr-accent);
   margin: 0 0.25rem;
 }
+
 .c-breadcrumbs__link {
   text-decoration: none;
 }
+
 .c-breadcrumbs__link:hover {
   text-decoration: underline;
 }
@@ -789,40 +926,45 @@ li {
 
 /*Styling for desktop screen*/
 @media screen and (min-width: 1200px) {
+
   /* Utility classes for colors in desktop view */
   .u-bg-secondary-dt {
     background-color: var(--clr-bg-secondary);
   }
+
   .u-bg-overlay-dt {
-    background-color: var(
-      --clr-bg-overlay
-    ); /* Background color to be used for adding overlay effect in desktop */
+    background-color: var(--clr-bg-overlay);
+    /* Background color to be used for adding overlay effect in desktop */
   }
+
   .u-bg-dropdown-dt {
-    background-color: var(
-      --clr-bg-dropdown
-    ); /* Background color to be used for dropdown menu in desktop */
+    background-color: var(--clr-bg-dropdown);
+    /* Background color to be used for dropdown menu in desktop */
   }
+
   .u-text-primary-light-dt {
-    color: var(
-      --clr-text-primary-light
-    ); /*Primary text color in light shade for desktop*/
+    color: var(--clr-text-primary-light);
+    /*Primary text color in light shade for desktop*/
   }
 
   /*Styling for site content on desktop*/
   .l-desktop-full-width {
     width: calc(100% - var(--side-nav-width));
   }
+
   .l-max-width-desktop {
     max-width: 1170px;
   }
+
   .l-fixed-width-desktop {
     width: 1170px;
     max-width: unset;
   }
+
   .l-text-wrapper-desktop {
     max-width: 760px;
   }
+
   .l-caption-text-wrapper-dt {
     max-width: 560px;
   }
@@ -832,46 +974,59 @@ li {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+
   .l-px-1-25-dt {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+
   .l-pt-7-dt {
     padding-top: 7rem;
   }
+
   .l-pt-0-dt {
     padding-top: 0;
   }
+
   .l-py-1-dt {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
   .l-py-1-5-dt {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+
   .l-mr-0-dt {
     margin-right: 0;
   }
+
   .l-mr-2-dt {
     margin-right: 2rem;
   }
+
   .l-ml-2-dt {
     margin-left: 2rem;
   }
+
   .l-my-0-dt {
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .l-mt-2-5-dt {
     margin-top: 2.5rem;
   }
+
   .l-mb-2-dt {
     margin-bottom: 2rem;
   }
+
   .l-mb-0-dt {
     margin-bottom: 0;
   }
+
   .l-mt-0-dt {
     margin-top: 0;
   }
@@ -881,6 +1036,7 @@ li {
     padding-top: 0;
     padding-bottom: 0;
   }
+
   .l-px-0-dt {
     padding-left: 0;
     padding-right: 0;
@@ -895,26 +1051,28 @@ li {
 
   /*For H1*/
   .u-heading-xl-dt {
-    font-size: var(
-      --heading-size-xl-dt
-    ); /*Heading size for h1 element (Page title) in desktop view*/
+    font-size: var(--heading-size-xl-dt);
+    /*Heading size for h1 element (Page title) in desktop view*/
   }
+
   .u-heading-line-height-xl {
     line-height: var(--heading-line-height-xl-dt);
   }
+
   .u-letter-spacing-xl-dt {
     letter-spacing: var(--letter-spacing-xl-dt);
   }
 
   /*For H2*/
   .u-heading-lg-dt {
-    font-size: var(
-      --heading-size-lg-dt
-    ); /*Heading size for h2 elements in desktop view*/
+    font-size: var(--heading-size-lg-dt);
+    /*Heading size for h2 elements in desktop view*/
   }
+
   .u-heading-line-height-lg {
     line-height: var(--heading-line-height-lg-dt);
   }
+
   .u-letter-spacing-lg-dt {
     letter-spacing: var(--letter-spacing-lg-dt);
   }
@@ -928,30 +1086,37 @@ li {
   .l-gap {
     gap: 175px;
   }
+
   .l-justify-center-dt {
     justify-content: center;
   }
+
   .l-flex-dt {
     display: flex;
   }
+
   .l-block-dt {
     display: block;
   }
+
   .l-inline-block-dt {
     display: inline-block;
   }
+
   .l-block-gap {
     gap: 45px;
   }
 
-  /* Styling for index.html */
+  /* Styling for demo-site.html */
   /*Styling for site header*/
   .c-site-header__logo {
     width: 195px;
   }
+
   .c-mobile-navbar__toggle {
     display: none !important;
   }
+
   .c-mobile-navbar__close {
     display: none !important;
   }
@@ -959,9 +1124,11 @@ li {
   .c-site-header__logo {
     padding-left: 0;
   }
+
   .c-menu-block {
     position: unset;
   }
+
   .c-nav-menu {
     width: 80%;
     gap: 50px;
@@ -982,6 +1149,7 @@ li {
     right: 4%;
     left: unset;
   }
+
   .c-notice-section__close-btn {
     position: absolute;
     right: 4%;
@@ -1020,19 +1188,24 @@ li {
   .c-blog-post__thumbnail-big {
     height: 360px;
   }
+
   .c-blog-post__thumbnail-small {
     height: 150px;
   }
+
   .c-blog-post__image {
     height: 100%;
     object-fit: cover;
   }
+
   .c-blog-post-col {
     width: 50%;
   }
+
   .c-blog-post__thumbnail {
     flex: 0 0 45%;
   }
+
   .c-blog-section__btn-holder {
     text-align: center;
   }

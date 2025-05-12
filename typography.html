@@ -1,709 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="design-system.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/588bcee0c3.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body
-    class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md"
-  >
-    <header class="c-site-header">
-      <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
-      <div class="c-desktop-header">
-        <!--Mobile Navbar-->
-        <div class="c-mobile-navbar u-bg-primary l-pl-1">
-          <a href="design-system.html" class="c-logo-ds"
-            ><span
-              class="u-heading-font u-heading-lg-mb u-text-primary u-heading-bold"
-              >Design System</span
-            ></a
-          >
-          <a
-            class="c-mobile-navbar__toggle l-pr-1"
-            id="toggleButton"
-            onclick="showNav()"
-            ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
-          ></a>
-          <a
-            class="c-mobile-navbar__close l-pr-1"
-            id="closeButton"
-            onclick="showNav()"
-            style="display: none"
-            ><i class="fa-solid fa-times fa-lg u-text-primary"></i
-          ></a>
-        </div>
-        <!--Top Navbar-->
-        <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
-          <ul class="c-top-navbar__menu">
-            <li class="l-py-0-dt l-pr-1-5">
-              <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
-                >About Me</a
-              >
-            </li>
-            <li class="l-py-0-dt">
-              <a id="demoLink" class="c-top-navbar__link" href="index.html"
-                >Demo Site</a
-              >
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="design-system.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/588bcee0c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md">
+  <header class="c-site-header">
+    <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
+    <div class="c-desktop-header">
+      <!--Mobile Navbar-->
+      <div class="c-mobile-navbar u-bg-primary l-pl-1">
+        <a href="index.html" class="c-logo-ds"><span
+            class="u-heading-font u-heading-lg-mb u-text-primary u-heading-bold">Design System</span></a>
+        <a class="c-mobile-navbar__toggle l-pr-1" id="toggleButton" onclick="showNav()"><i
+            class="fa-solid fa-bars fa-lg u-text-primary"></i></a>
+        <a class="c-mobile-navbar__close l-pr-1" id="closeButton" onclick="showNav()" style="display: none"><i
+            class="fa-solid fa-times fa-lg u-text-primary"></i></a>
       </div>
-      <!--Side Navbar-->
-      <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
-        <ul class="c-side-navbar__menu">
-          <li>
-            <a id="brandingLink" class="c-side-navbar__link-category" href="#"
-              >Branding</a
-            >
+      <!--Top Navbar-->
+      <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
+        <ul class="c-top-navbar__menu">
+          <li class="l-py-0-dt l-pr-1-5">
+            <a id="aboutLink" class="c-top-navbar__link" href="about-me.html">About Me</a>
           </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a id="colorsLink" class="c-side-navbar__link" href="colours.html"
-                >01 Colours</a
-              >
-            </li>
-            <li>
-              <a
-                id="typographyLink"
-                class="c-side-navbar__link"
-                href="typography.html"
-                >02 Typography</a
-              >
-            </li>
-          </ul>
-          <li>
-            <a class="c-side-navbar__link-category" href="#">Utilities</a>
+          <li class="l-py-0-dt">
+            <a id="demoLink" class="c-top-navbar__link" href="demo-site.html">Demo Site</a>
           </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a class="c-side-navbar__link" href="spacing.html">03 Spacing</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="containers.html"
-                >04 Containers</a
-              >
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="images.html">05 Images</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="interactive.html"
-                >06 Interactive</a
-              >
-            </li>
-          </ul>
-          <li>
-            <a class="c-side-navbar__link-category" href="#">Navigation</a>
-          </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a class="c-side-navbar__link" href="navbars.html">07 Navbars</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="breadcrumbs.html"
-                >08 Breadcrumbs</a
-              >
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="pagination.html"
-                >09 Pagination</a
-              >
-            </li>
-          </ul>
-          <li>
-            <a class="c-side-navbar__link-category" href="#">Blocks</a>
-          </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a class="c-side-navbar__link" href="hero.html"
-                >10 Hero and Carousel</a
-              >
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="footer.html">11 Footer</a>
-            </li>
-          </ul>
-          <li>
-            <a class="c-side-navbar__link-category" href="#">Components</a>
-          </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a class="c-side-navbar__link" href="cards.html">12 Cards</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="forms.html">13 Forms</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="accordion.html"
-                >14 Accordion</a
-              >
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="lists.html">15 Lists</a>
-            </li>
-          </ul>
         </ul>
       </nav>
-    </header>
-    <main class="c-site-content l-full-width l-desktop-full-width">
-      <div
-        class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end"
-      >
-        <h1
-          class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-2-5-dt u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
-        >
-          Typography
-        </h1>
-      </div>
-      <div
-        class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-px-2-5-dt"
-      >
-        <section>
-          <h2
-            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
-          >
-            Type Illustration
-          </h2>
-          <p class="l-text-wrapper-desktop">
-            Explore our Type Illustration table showcasing the Playfair Display
-            Cabin fonts. From A to Z, a to z and 0 to 9, discover both regular
-            and bold variations, offering a comprehensive view of our typography
-            palette.
-          </p>
-          <!--Generated from ChatGPT-->
-          <div class="c-table-scroll">
-            <table
-              class="c-typography-table c-typography-alphabets-table l-mt-1-5"
-            >
-              <caption>
-                Type illustration of two weights of the Cabin font
-              </caption>
-              <tbody>
-                <tr>
-                  <td
-                    rowspan="3"
-                    class="u-heading-font u-heading-bold u-heading-xl-dt-tp u-heading-line-height"
-                  >
-                    Aa
-                  </td>
-                  <td class="u-heading-font u-heading-bold u-heading-sm">
-                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-                  </td>
-                  <td
-                    rowspan="3"
-                    class="u-heading-font u-heading-bold u-heading-sm"
-                  >
-                    Bold
-                  </td>
-                </tr>
-                <tr>
-                  <td class="u-heading-font u-heading-bold u-heading-sm">
-                    a b c d e f g h i j k l m n o p q r s t u v w x y z
-                  </td>
-                </tr>
-                <tr>
-                  <td class="u-heading-font u-heading-bold u-heading-sm">
-                    1 2 3 4 5 6 7 8 9 0
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    rowspan="3"
-                    class="u-heading-font u-heading-regular u-heading-xl-dt-tp"
-                  >
-                    Aa
-                  </td>
-                  <td
-                    class="c-typography-table__regular-caps u-heading-font u-heading-regular u-heading-sm"
-                  >
-                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-                  </td>
-                  <td
-                    rowspan="3"
-                    class="u-heading-font u-heading-regular u-heading-sm"
-                  >
-                    Regular
-                  </td>
-                </tr>
-                <tr>
-                  <td class="u-heading-font u-heading-regular u-heading-sm">
-                    a b c d e f g h i j k l m n o p q r s t u v w x y z
-                  </td>
-                </tr>
-                <tr>
-                  <td class="u-heading-font u-heading-regular u-heading-sm">
-                    1 2 3 4 5 6 7 8 9 0
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="c-table-scroll">
-            <table
-              class="c-typography-table c-typography-alphabets-table l-mt-2-5"
-            >
-              <caption>
-                Type illustration of two weights of the Playfair Display font
-              </caption>
-              <tbody>
-                <tr>
-                  <td
-                    rowspan="3"
-                    class="u-body-font u-body-bold u-heading-xl-dt-tp"
-                  >
-                    Aa
-                  </td>
-                  <td class="u-body-font u-body-bold u-heading-sm">
-                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-                  </td>
-                  <td rowspan="3" class="u-body-font u-body-bold u-heading-sm">
-                    Bold
-                  </td>
-                </tr>
-                <tr>
-                  <td class="u-body-font u-body-bold u-heading-sm">
-                    a b c d e f g h i j k l m n o p q r s t u v w x y z
-                  </td>
-                </tr>
-                <tr>
-                  <td class="u-body-font u-body-bold u-body-md">
-                    1 2 3 4 5 6 7 8 9 0
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    rowspan="3"
-                    class="u-body-font u-body-regular u-heading-xl-dt-tp"
-                  >
-                    Aa
-                  </td>
-                  <td
-                    class="c-typography-table__regular-caps u-body-font u-body-regular u-body-md"
-                  >
-                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-                  </td>
-                  <td rowspan="3">Regular</td>
-                </tr>
-                <tr>
-                  <td class="u-body-font u-body-regular u-body-md">
-                    a b c d e f g h i j k l m n o p q r s t u v w x y z
-                  </td>
-                </tr>
-                <tr>
-                  <td class="u-body-font u-body-regular u-body-md">
-                    1 2 3 4 5 6 7 8 9 0
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-        <section>
-          <h2
-            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
-          >
-            Heading &amp; Body Text Hierarchy
-          </h2>
-          <p class="l-text-wrapper-desktop">
-            The table below reflects the hierarchy of all the heading and body
-            text elements that will be used in the Outback Nursery website
-            redesign.
-          </p>
-          <div class="c-table-scroll">
-            <table class="c-typography-table l-mt-1-5">
-              <caption>
-                Heading Type Hierarchy for Desktop and Mobile view
-              </caption>
-              <tbody>
-                <tr>
-                  <!--For Desktop-->
-                  <td>
-                    <span
-                      class="l-block u-heading-font u-heading-bold u-heading-xl-dt-tp u-heading-line-height-xl-tp u-letter-spacing-xl-dt-tp"
-                    >
-                      Heading 1
-                    </span>
-                    <span
-                      class="l-block u-heading-font u-heading-bold u-heading-lg-dt-tp u-heading-line-height-lg-tp u-letter-spacing-lg-dt-tp"
-                    >
-                      Heading 2
-                    </span>
-                    <span
-                      class="l-block u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading"
-                    >
-                      Heading 3
-                    </span>
-                    <span
-                      class="l-block u-heading-font u-heading-bold u-heading-sm u-body-line-height u-letter-spacing-heading"
-                    >
-                      Heading 4
-                    </span>
-                  </td>
-                  <!--For Mobile-->
-                  <td>
-                    <span
-                      class="l-block u-heading-font u-heading-bold u-heading-xl-mb-tp u-heading-line-height-lg-tp u-letter-spacing-lg-dt-tp"
-                    >
-                      Heading 1
-                    </span>
-                    <span
-                      class="l-block u-heading-font u-heading-bold u-heading-lg-mb-tp u-heading-line-height-md-tp u-letter-spacing-heading-tp"
-                    >
-                      Heading 2
-                    </span>
-                    <span
-                      class="l-block u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading"
-                    >
-                      Heading 3
-                    </span>
-                    <span
-                      class="l-block u-heading-font u-heading-bold u-heading-sm u-body-line-height u-letter-spacing-heading"
-                    >
-                      Heading 4
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-        <section class="c-table-scroll">
-          <table class="c-typography-table l-mt-2-5">
+    </div>
+    <!--Side Navbar-->
+    <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
+      <ul class="c-side-navbar__menu">
+        <li>
+          <a id="brandingLink" class="c-side-navbar__link-category" href="#">Branding</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a id="colorsLink" class="c-side-navbar__link" href="colours.html">01 Colours</a>
+          </li>
+          <li>
+            <a id="typographyLink" class="c-side-navbar__link" href="typography.html">02 Typography</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Utilities</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="spacing.html">03 Spacing</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="containers.html">04 Containers</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="images.html">05 Images</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="interactive.html">06 Interactive</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Navigation</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="navbars.html">07 Navbars</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="breadcrumbs.html">08 Breadcrumbs</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="pagination.html">09 Pagination</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Blocks</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="hero.html">10 Hero and Carousel</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="footer.html">11 Footer</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Components</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="cards.html">12 Cards</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="forms.html">13 Forms</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="accordion.html">14 Accordion</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="lists.html">15 Lists</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+  <main class="c-site-content l-full-width l-desktop-full-width">
+    <div class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end">
+      <h1
+        class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-2-5-dt u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt">
+        Typography
+      </h1>
+    </div>
+    <div class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-px-2-5-dt">
+      <section>
+        <h2
+          class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt">
+          Type Illustration
+        </h2>
+        <p class="l-text-wrapper-desktop">
+          Explore our Type Illustration table showcasing the Playfair Display
+          Cabin fonts. From A to Z, a to z and 0 to 9, discover both regular
+          and bold variations, offering a comprehensive view of our typography
+          palette.
+        </p>
+        <!--Generated from ChatGPT-->
+        <div class="c-table-scroll">
+          <table class="c-typography-table c-typography-alphabets-table l-mt-1-5">
             <caption>
-              Body Text Sample
+              Type illustration of two weights of the Cabin font
             </caption>
             <tbody>
               <tr>
-                <td>
-                  <p
-                    class="u-body-font u-body-bold u-body-lg u-body-line-height u-letter-spacing-normal"
-                  >
-                    Large body text
-                  </p>
-                  <p
-                    class="u-body-font u-body-regular u-body-md u-body-line-height u-letter-spacing-normal"
-                  >
-                    Medium body text
-                  </p>
+                <td rowspan="3" class="u-heading-font u-heading-bold u-heading-xl-dt-tp u-heading-line-height">
+                  Aa
+                </td>
+                <td class="u-heading-font u-heading-bold u-heading-sm">
+                  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                </td>
+                <td rowspan="3" class="u-heading-font u-heading-bold u-heading-sm">
+                  Bold
+                </td>
+              </tr>
+              <tr>
+                <td class="u-heading-font u-heading-bold u-heading-sm">
+                  a b c d e f g h i j k l m n o p q r s t u v w x y z
+                </td>
+              </tr>
+              <tr>
+                <td class="u-heading-font u-heading-bold u-heading-sm">
+                  1 2 3 4 5 6 7 8 9 0
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="u-heading-font u-heading-regular u-heading-xl-dt-tp">
+                  Aa
+                </td>
+                <td class="c-typography-table__regular-caps u-heading-font u-heading-regular u-heading-sm">
+                  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                </td>
+                <td rowspan="3" class="u-heading-font u-heading-regular u-heading-sm">
+                  Regular
+                </td>
+              </tr>
+              <tr>
+                <td class="u-heading-font u-heading-regular u-heading-sm">
+                  a b c d e f g h i j k l m n o p q r s t u v w x y z
+                </td>
+              </tr>
+              <tr>
+                <td class="u-heading-font u-heading-regular u-heading-sm">
+                  1 2 3 4 5 6 7 8 9 0
                 </td>
               </tr>
             </tbody>
           </table>
-        </section>
-        <!--Fonts use case table-->
-        <section>
-          <h2
-            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
-          >
-            Fonts Table
-          </h2>
-          <p class="l-text-wrapper-desktop">
-            The Fonts Table showcases individual Typeface along with its
-            designated class name. From the timeless elegance of Playfair
-            Display to the clean simplicity of Cabin, each font is meticulously
-            paired with its corresponding class name, facilitating seamless
-            integration into the website's design.
-          </p>
-          <!--Generated from ChatGPT-->
-          <div class="c-table-scroll">
-            <!--Table data for Cabin Typeface (H1 element in desktop view)-->
-            <div class="c-type-block">
-              <div class="l-mt-1-5">
-                <span
-                  class="u-heading-font u-heading-bold u-heading-xl-dt-tp u-heading-line-height-xl-tp u-letter-spacing-xl-dt-tp"
-                  >Aa</span
-                >
-              </div>
-              <div class="l-mt-1 l-mb-1-5">
-                <table>
-                  <tbody class="l-vtl-alignment-top">
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute">
-                        Utility classes:
-                      </td>
-                      <td class="c-type-details__value">
-                        <ul class="l-mt-0">
-                          <li>u-heading-font</li>
-                          <li>u-heading-bold</li>
-                          <li>u-heading-xl-dt</li>
-                          <li>u-heading-line-height-xl</li>
-                          <li>u-letter-spacing-xl-dt</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
-                      <td class="c-colour-details__value l-pt-0-5">
-                        H1 element (Page title) in desktop view
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+        </div>
+        <div class="c-table-scroll">
+          <table class="c-typography-table c-typography-alphabets-table l-mt-2-5">
+            <caption>
+              Type illustration of two weights of the Playfair Display font
+            </caption>
+            <tbody>
+              <tr>
+                <td rowspan="3" class="u-body-font u-body-bold u-heading-xl-dt-tp">
+                  Aa
+                </td>
+                <td class="u-body-font u-body-bold u-heading-sm">
+                  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                </td>
+                <td rowspan="3" class="u-body-font u-body-bold u-heading-sm">
+                  Bold
+                </td>
+              </tr>
+              <tr>
+                <td class="u-body-font u-body-bold u-heading-sm">
+                  a b c d e f g h i j k l m n o p q r s t u v w x y z
+                </td>
+              </tr>
+              <tr>
+                <td class="u-body-font u-body-bold u-body-md">
+                  1 2 3 4 5 6 7 8 9 0
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="u-body-font u-body-regular u-heading-xl-dt-tp">
+                  Aa
+                </td>
+                <td class="c-typography-table__regular-caps u-body-font u-body-regular u-body-md">
+                  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                </td>
+                <td rowspan="3">Regular</td>
+              </tr>
+              <tr>
+                <td class="u-body-font u-body-regular u-body-md">
+                  a b c d e f g h i j k l m n o p q r s t u v w x y z
+                </td>
+              </tr>
+              <tr>
+                <td class="u-body-font u-body-regular u-body-md">
+                  1 2 3 4 5 6 7 8 9 0
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2
+          class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt">
+          Heading &amp; Body Text Hierarchy
+        </h2>
+        <p class="l-text-wrapper-desktop">
+          The table below reflects the hierarchy of all the heading and body
+          text elements that will be used in the Outback Nursery website
+          redesign.
+        </p>
+        <div class="c-table-scroll">
+          <table class="c-typography-table l-mt-1-5">
+            <caption>
+              Heading Type Hierarchy for Desktop and Mobile view
+            </caption>
+            <tbody>
+              <tr>
+                <!--For Desktop-->
+                <td>
+                  <span
+                    class="l-block u-heading-font u-heading-bold u-heading-xl-dt-tp u-heading-line-height-xl-tp u-letter-spacing-xl-dt-tp">
+                    Heading 1
+                  </span>
+                  <span
+                    class="l-block u-heading-font u-heading-bold u-heading-lg-dt-tp u-heading-line-height-lg-tp u-letter-spacing-lg-dt-tp">
+                    Heading 2
+                  </span>
+                  <span
+                    class="l-block u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading">
+                    Heading 3
+                  </span>
+                  <span
+                    class="l-block u-heading-font u-heading-bold u-heading-sm u-body-line-height u-letter-spacing-heading">
+                    Heading 4
+                  </span>
+                </td>
+                <!--For Mobile-->
+                <td>
+                  <span
+                    class="l-block u-heading-font u-heading-bold u-heading-xl-mb-tp u-heading-line-height-lg-tp u-letter-spacing-lg-dt-tp">
+                    Heading 1
+                  </span>
+                  <span
+                    class="l-block u-heading-font u-heading-bold u-heading-lg-mb-tp u-heading-line-height-md-tp u-letter-spacing-heading-tp">
+                    Heading 2
+                  </span>
+                  <span
+                    class="l-block u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading">
+                    Heading 3
+                  </span>
+                  <span
+                    class="l-block u-heading-font u-heading-bold u-heading-sm u-body-line-height u-letter-spacing-heading">
+                    Heading 4
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="c-table-scroll">
+        <table class="c-typography-table l-mt-2-5">
+          <caption>
+            Body Text Sample
+          </caption>
+          <tbody>
+            <tr>
+              <td>
+                <p class="u-body-font u-body-bold u-body-lg u-body-line-height u-letter-spacing-normal">
+                  Large body text
+                </p>
+                <p class="u-body-font u-body-regular u-body-md u-body-line-height u-letter-spacing-normal">
+                  Medium body text
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!--Fonts use case table-->
+      <section>
+        <h2
+          class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt">
+          Fonts Table
+        </h2>
+        <p class="l-text-wrapper-desktop">
+          The Fonts Table showcases individual Typeface along with its
+          designated class name. From the timeless elegance of Playfair
+          Display to the clean simplicity of Cabin, each font is meticulously
+          paired with its corresponding class name, facilitating seamless
+          integration into the website's design.
+        </p>
+        <!--Generated from ChatGPT-->
+        <div class="c-table-scroll">
+          <!--Table data for Cabin Typeface (H1 element in desktop view)-->
+          <div class="c-type-block">
+            <div class="l-mt-1-5">
+              <span
+                class="u-heading-font u-heading-bold u-heading-xl-dt-tp u-heading-line-height-xl-tp u-letter-spacing-xl-dt-tp">Aa</span>
             </div>
-            <!--Table data for Cabin Typeface (H1 element in mobile view & H2 elements in desktop view)-->
-            <div class="c-type-block">
-              <div class="l-mt-1-5">
-                <span
-                  class="u-heading-font u-heading-bold u-heading-xl-mb-tp u-heading-line-height-lg-tp u-letter-spacing-lg-dt-tp"
-                  >Aa</span
-                >
-              </div>
-              <div class="l-mt-1 l-mb-1-5">
-                <table>
-                  <tbody class="l-vtl-alignment-top">
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute">
-                        Utility classes:
-                      </td>
-                      <td class="c-type-details__value">
-                        <ul class="l-mt-0">
-                          <li>u-heading-font</li>
-                          <li>u-heading-bold</li>
-                          <li>u-heading-xl-mb</li>
-                          <li>u-heading-line-height-lg</li>
-                          <li>u-letter-spacing-lg-dt</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
-                      <td class="c-colour-details__value l-pt-0-5">
-                        H1 element (Page title) in mobile view, H2 elements in
-                        desktop view
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!--Table data for Cabin Typeface (H2 elements in mobile view)-->
-            <div class="c-type-block">
-              <div class="l-mt-1-5">
-                <span
-                  class="u-heading-font u-heading-bold u-heading-lg-mb-tp u-heading-line-height-md-tp u-letter-spacing-heading-tp"
-                  >Aa</span
-                >
-              </div>
-              <div class="l-mt-1 l-mb-1-5">
-                <table>
-                  <tbody class="l-vtl-alignment-top">
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute">
-                        Utility classes:
-                      </td>
-                      <td class="c-type-details__value">
-                        <ul class="l-mt-0">
-                          <li>u-heading-font</li>
-                          <li>u-heading-bold</li>
-                          <li>u-heading-lg-mb</li>
-                          <li>u-heading-line-height-md</li>
-                          <li>u-letter-spacing-heading</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
-                      <td class="c-colour-details__value l-pt-0-5">
-                        H2 elements in mobile view
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!--Table data for Cabin Typeface (H3 elements in desktop & mobile view)-->
-            <div class="c-type-block">
-              <div class="l-mt-1-5">
-                <span
-                  class="u-heading-font u-heading-bold u-heading-md u-heading-line-height-md u-letter-spacing-heading"
-                  >Aa</span
-                >
-              </div>
-              <div class="l-mt-1 l-mb-1-5">
-                <table>
-                  <tbody class="l-vtl-alignment-top">
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute">
-                        Utility classes:
-                      </td>
-                      <td class="c-type-details__value">
-                        <ul class="l-mt-0">
-                          <li>u-heading-font</li>
-                          <li>u-heading-bold</li>
-                          <li>u-heading-md</li>
-                          <li>u-heading-line-height-md</li>
-                          <li>u-letter-spacing-heading</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
-                      <td class="c-colour-details__value l-pt-0-5">
-                        H3 elements in desktop and mobile
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!--Table data for Cabin Typeface (H4 elements in desktop & mobile view)-->
-            <div class="c-type-block">
-              <div class="l-mt-1-5">
-                <span
-                  class="u-heading-font u-heading-bold u-heading-sm u-body-line-height u-letter-spacing-heading"
-                  >Aa</span
-                >
-              </div>
-              <div class="l-mt-1 l-mb-1-5">
-                <table>
-                  <tbody class="l-vtl-alignment-top">
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute">
-                        Utility classes:
-                      </td>
-                      <td class="c-type-details__value">
-                        <ul class="l-mt-0">
-                          <li>u-heading-font</li>
-                          <li>u-heading-bold</li>
-                          <li>u-heading-sm</li>
-                          <li>u-body-line-height</li>
-                          <li>u-letter-spacing-heading</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
-                      <td class="c-colour-details__value l-pt-0-5">
-                        H4 elements in desktop and mobile
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!--Table data for Playfair Display Typeface (large body text - bold)-->
-            <div class="c-type-block">
-              <div class="l-mt-1-5">
-                <span
-                  class="u-body-font u-body-bold u-body-lg u-body-line-height u-letter-spacing-normal"
-                  >Aa</span
-                >
-              </div>
-              <div class="l-mt-1 l-mb-1-5">
-                <table>
-                  <tbody class="l-vtl-alignment-top">
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute">
-                        Utility classes:
-                      </td>
-                      <td class="c-type-details__value">
-                        <ul class="l-mt-0">
-                          <li>u-body-font</li>
-                          <li>u-body-bold</li>
-                          <li>u-body-lg</li>
-                          <li>u-body-line-height</li>
-                          <li>u-letter-spacing-normal</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
-                      <td class="c-colour-details__value l-pt-0-5">
-                        FAQ title, Name in Testimonials
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!--Table data for Playfair Display Typeface (large body text - regular)-->
-            <div class="c-type-block">
-              <div class="l-mt-1-5">
-                <span
-                  class="u-body-font u-body-regular u-body-lg u-body-line-height u-letter-spacing-normal"
-                  >Aa</span
-                >
-              </div>
-              <div class="l-mt-1 l-mb-1-5">
-                <table>
-                  <tbody class="l-vtl-alignment-top">
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute">
-                        Utility classes:
-                      </td>
-                      <td class="c-type-details__value">
-                        <ul class="l-mt-0">
-                          <li>u-body-font</li>
-                          <li>u-body-regular</li>
-                          <li>u-body-lg</li>
-                          <li>u-body-line-height</li>
-                          <li>u-letter-spacing-normal</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
-                      <td class="c-colour-details__value l-pt-0-5">
-                        Contact form labels, section content
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!--Table data for Playfair Display Typeface (medium body text)-->
-            <div class="c-type-block l-mb-3-5">
-              <div class="l-mt-1-5">
-                <span
-                  class="u-body-font u-body-regular u-body-md u-body-line-height u-letter-spacing-normal"
-                  >Aa</span
-                >
-              </div>
-              <div class="l-mt-1 l-mb-1-5">
-                <table>
-                  <tbody class="l-vtl-alignment-top">
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute">
-                        Utility classes:
-                      </td>
-                      <td class="c-type-details__value">
-                        <ul class="l-mt-0">
-                          <li>u-body-font</li>
-                          <li>u-body-regular</li>
-                          <li>u-body-md</li>
-                          <li>u-body-line-height</li>
-                          <li>u-letter-spacing-normal</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="l-flex l-direction-column l-table-dt">
-                      <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
-                      <td class="c-colour-details__value l-pt-0-5">
-                        Blog content, excerpt, meta info
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <div class="l-mt-1 l-mb-1-5">
+              <table>
+                <tbody class="l-vtl-alignment-top">
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute">
+                      Utility classes:
+                    </td>
+                    <td class="c-type-details__value">
+                      <ul class="l-mt-0">
+                        <li>u-heading-font</li>
+                        <li>u-heading-bold</li>
+                        <li>u-heading-xl-dt</li>
+                        <li>u-heading-line-height-xl</li>
+                        <li>u-letter-spacing-xl-dt</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
+                    <td class="c-colour-details__value l-pt-0-5">
+                      H1 element (Page title) in desktop view
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-        </section>
-      </div>
-    </main>
-    <script src="design-system.js"></script>
-  </body>
+          <!--Table data for Cabin Typeface (H1 element in mobile view & H2 elements in desktop view)-->
+          <div class="c-type-block">
+            <div class="l-mt-1-5">
+              <span
+                class="u-heading-font u-heading-bold u-heading-xl-mb-tp u-heading-line-height-lg-tp u-letter-spacing-lg-dt-tp">Aa</span>
+            </div>
+            <div class="l-mt-1 l-mb-1-5">
+              <table>
+                <tbody class="l-vtl-alignment-top">
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute">
+                      Utility classes:
+                    </td>
+                    <td class="c-type-details__value">
+                      <ul class="l-mt-0">
+                        <li>u-heading-font</li>
+                        <li>u-heading-bold</li>
+                        <li>u-heading-xl-mb</li>
+                        <li>u-heading-line-height-lg</li>
+                        <li>u-letter-spacing-lg-dt</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
+                    <td class="c-colour-details__value l-pt-0-5">
+                      H1 element (Page title) in mobile view, H2 elements in
+                      desktop view
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--Table data for Cabin Typeface (H2 elements in mobile view)-->
+          <div class="c-type-block">
+            <div class="l-mt-1-5">
+              <span
+                class="u-heading-font u-heading-bold u-heading-lg-mb-tp u-heading-line-height-md-tp u-letter-spacing-heading-tp">Aa</span>
+            </div>
+            <div class="l-mt-1 l-mb-1-5">
+              <table>
+                <tbody class="l-vtl-alignment-top">
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute">
+                      Utility classes:
+                    </td>
+                    <td class="c-type-details__value">
+                      <ul class="l-mt-0">
+                        <li>u-heading-font</li>
+                        <li>u-heading-bold</li>
+                        <li>u-heading-lg-mb</li>
+                        <li>u-heading-line-height-md</li>
+                        <li>u-letter-spacing-heading</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
+                    <td class="c-colour-details__value l-pt-0-5">
+                      H2 elements in mobile view
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--Table data for Cabin Typeface (H3 elements in desktop & mobile view)-->
+          <div class="c-type-block">
+            <div class="l-mt-1-5">
+              <span
+                class="u-heading-font u-heading-bold u-heading-md u-heading-line-height-md u-letter-spacing-heading">Aa</span>
+            </div>
+            <div class="l-mt-1 l-mb-1-5">
+              <table>
+                <tbody class="l-vtl-alignment-top">
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute">
+                      Utility classes:
+                    </td>
+                    <td class="c-type-details__value">
+                      <ul class="l-mt-0">
+                        <li>u-heading-font</li>
+                        <li>u-heading-bold</li>
+                        <li>u-heading-md</li>
+                        <li>u-heading-line-height-md</li>
+                        <li>u-letter-spacing-heading</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
+                    <td class="c-colour-details__value l-pt-0-5">
+                      H3 elements in desktop and mobile
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--Table data for Cabin Typeface (H4 elements in desktop & mobile view)-->
+          <div class="c-type-block">
+            <div class="l-mt-1-5">
+              <span
+                class="u-heading-font u-heading-bold u-heading-sm u-body-line-height u-letter-spacing-heading">Aa</span>
+            </div>
+            <div class="l-mt-1 l-mb-1-5">
+              <table>
+                <tbody class="l-vtl-alignment-top">
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute">
+                      Utility classes:
+                    </td>
+                    <td class="c-type-details__value">
+                      <ul class="l-mt-0">
+                        <li>u-heading-font</li>
+                        <li>u-heading-bold</li>
+                        <li>u-heading-sm</li>
+                        <li>u-body-line-height</li>
+                        <li>u-letter-spacing-heading</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
+                    <td class="c-colour-details__value l-pt-0-5">
+                      H4 elements in desktop and mobile
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--Table data for Playfair Display Typeface (large body text - bold)-->
+          <div class="c-type-block">
+            <div class="l-mt-1-5">
+              <span class="u-body-font u-body-bold u-body-lg u-body-line-height u-letter-spacing-normal">Aa</span>
+            </div>
+            <div class="l-mt-1 l-mb-1-5">
+              <table>
+                <tbody class="l-vtl-alignment-top">
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute">
+                      Utility classes:
+                    </td>
+                    <td class="c-type-details__value">
+                      <ul class="l-mt-0">
+                        <li>u-body-font</li>
+                        <li>u-body-bold</li>
+                        <li>u-body-lg</li>
+                        <li>u-body-line-height</li>
+                        <li>u-letter-spacing-normal</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
+                    <td class="c-colour-details__value l-pt-0-5">
+                      FAQ title, Name in Testimonials
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--Table data for Playfair Display Typeface (large body text - regular)-->
+          <div class="c-type-block">
+            <div class="l-mt-1-5">
+              <span class="u-body-font u-body-regular u-body-lg u-body-line-height u-letter-spacing-normal">Aa</span>
+            </div>
+            <div class="l-mt-1 l-mb-1-5">
+              <table>
+                <tbody class="l-vtl-alignment-top">
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute">
+                      Utility classes:
+                    </td>
+                    <td class="c-type-details__value">
+                      <ul class="l-mt-0">
+                        <li>u-body-font</li>
+                        <li>u-body-regular</li>
+                        <li>u-body-lg</li>
+                        <li>u-body-line-height</li>
+                        <li>u-letter-spacing-normal</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
+                    <td class="c-colour-details__value l-pt-0-5">
+                      Contact form labels, section content
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--Table data for Playfair Display Typeface (medium body text)-->
+          <div class="c-type-block l-mb-3-5">
+            <div class="l-mt-1-5">
+              <span class="u-body-font u-body-regular u-body-md u-body-line-height u-letter-spacing-normal">Aa</span>
+            </div>
+            <div class="l-mt-1 l-mb-1-5">
+              <table>
+                <tbody class="l-vtl-alignment-top">
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute">
+                      Utility classes:
+                    </td>
+                    <td class="c-type-details__value">
+                      <ul class="l-mt-0">
+                        <li>u-body-font</li>
+                        <li>u-body-regular</li>
+                        <li>u-body-md</li>
+                        <li>u-body-line-height</li>
+                        <li>u-letter-spacing-normal</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="l-flex l-direction-column l-table-dt">
+                    <td class="c-type-details__attribute l-pt-0-5">Uses:</td>
+                    <td class="c-colour-details__value l-pt-0-5">
+                      Blog content, excerpt, meta info
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="design-system.js"></script>
+</body>
+
 </html>

@@ -1,916 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/588bcee0c3.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body
-    class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
-  >
-    <!--Dropdown button-->
-    <span
-      id="dropdownButton"
-      onclick="toggleNotice()"
-      class="c-notice-dropdown u-bg-accent-dark"
-      ><i class="fa-solid fa-chevron-down l-pl-0-25" style="color: #f4ffff"></i
-    ></span>
-    <!--Notice Section-->
-    <div
-      class="c-notice-section u-bg-accent-dark u-text-primary-light"
-      id="noticeSection"
-    >
-      <div
-        class="c-wrapper l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-py-1"
-      >
-        <span
-          onclick="hideNotice()"
-          class="c-notice-section__close-btn l-block l-pb-0-25"
-          ><i class="fa-solid fa-times fa-lg u-text-primary-light"></i
-        ></span>
-        <p class="c-notice-section__text">
-          Fruit trees have arrived! Limited quantities available - First-come,
-          first-served.
-          <a
-            href="#contact-us"
-            class="c-notice-section__cta-btn u-text-primary-light"
-            >Visit Us Today for Fresh Fruit Trees</a
-          >
-        </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design System</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="design-system.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/588bcee0c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md">
+  <header class="c-site-header">
+    <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
+    <div class="c-desktop-header">
+      <!--Mobile Navbar-->
+      <div class="c-mobile-navbar u-bg-primary l-pl-1">
+        <a href="index.html" class="c-logo-ds"><span
+            class="u-heading-font u-heading-lg-mb u-text-primary u-heading-bold">Design System</span></a>
+        <a class="c-mobile-navbar__toggle l-pr-1" id="toggleButton" onclick="showNav()"><i
+            class="fa-solid fa-bars fa-lg u-text-primary"></i></a>
+        <a class="c-mobile-navbar__close l-pr-1" id="closeButton" onclick="showNav()" style="display: none"><i
+            class="fa-solid fa-times fa-lg u-text-primary"></i></a>
       </div>
+      <!--Top Navbar-->
+      <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
+        <ul class="c-top-navbar__menu">
+          <li class="l-py-0-dt l-pr-1-5">
+            <a id="aboutLink" class="c-top-navbar__link" href="about-me.html">About Me</a>
+          </li>
+          <li class="l-py-0-dt">
+            <a id="demoLink" class="c-top-navbar__link" href="demo-site.html">Demo Site</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <!--Site Header-->
-    <header class="c-site-header u-bg-primary">
-      <div class="l-max-width-desktop l-mx-auto l-flex-dt l-align-center">
-        <!--Mobile Navbar-->
-        <div
-          class="c-mobile-navbar u-bg-primary l-py-1 l-flex l-justify-space-between l-align-center l-py-1-5-dt"
-        >
-          <a href="index.html" class="l-flex"
-            ><img
-              src="images/outback-nursery-site-logo.png"
-              class="c-site-header__logo l-pl-1"
-              alt="Outback Nursery Site Logo"
-          /></a>
-          <a
-            class="c-mobile-navbar__toggle c-toggle-home l-pr-1"
-            id="toggleButton"
-            onclick="showNav()"
-            ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
-          ></a>
-        </div>
-        <nav class="c-menu-block u-bg-primary l-block-dt">
-          <div
-            class="c-wrapper l-max-width-desktop l-flex-dt l-justify-space-between l-mx-auto"
-          >
-            <a
-              class="c-mobile-navbar__close l-pr-1 l-py-0-5"
-              id="closeButton"
-              onclick="showNav()"
-              style="display: none"
-              ><i class="fa-solid fa-times fa-lg u-text-primary"></i
-            ></a>
-            <ul
-              class="c-nav-menu u-body-lg l-align-center l-px-1 l-flex-dt l-px-0-dt l-justify-flex-end"
-            >
-              <li>
-                <a
-                  href="coming-soon.html"
-                  class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
-                  >Products</a
-                >
-              </li>
-              <li class="c-nav-menu__dropdown">
-                <a
-                  href="#"
-                  class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
-                  onclick="toggleDropdown()"
-                >
-                  Resources
-                  <i class="fa-solid fa-caret-down u-text-primary l-pl-0-5"></i>
-                </a>
-                <ul
-                  class="c-nav-menu__dropdown-menu u-bg-dropdown-dt l-none l-px-0-dt"
-                  id="resourcesDropdown"
-                >
-                  <li>
-                    <a
-                      href="coming-soon.html"
-                      class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
-                      >Blog</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="coming-soon.html"
-                      class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
-                      >FAQ</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="coming-soon.html"
-                      class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
-                      >Gift Certificate</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="coming-soon.html"
-                  class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
-                  >About</a
-                >
-              </li>
-              <li class="l-mt-2 l-mb-2 l-my-0-dt">
-                <a
-                  href="#contact-us"
-                  class="c-nav-menu__link c-nav-menu__cta-btn c-cta-button c-cta-button-2 u-text-primary-dark u-heading-font u-letter-spacing-cabin-normal l-block l-py-0-75 l-px-1-25-dt"
-                  >Contact us</a
-                >
-              </li>
-            </ul>
-            <ul
-              class="c-social-menu u-body-lg l-align-center l-px-1 l-flex l-justify-center l-px-0-dt"
-            >
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100045470087619"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="c-social-menu__link u-text-primary l-block l-pr-1-5 l-py-0-5"
-                  aria-label="Facebook link"
-                  ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
-                  ><span class="c-sr-only">Facebook</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/outbacknursery/?hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="c-social-menu__link u-text-primary l-block l-py-0-5"
-                  aria-label="Instagram link"
-                  ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-                  ><span class="c-sr-only">Instagram</span></a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <!--Hero section-->
-      <section class="c-hero-section u-bg-primary">
-        <!--Slider container-->
-        <div class="c-slider l-flex">
-          <div
-            class="c-slider__slide l-grow-shrink-basis c-slider__slide--active"
-          >
-            <img
-              src="images/outback-nursery-trees.jpg"
-              alt="Outback Nursery Trees image"
-            />
-            <div class="c-slider-overlay u-bg-overlay-dt"></div>
-          </div>
-          <div class="c-slider__slide l-grow-shrink-basis">
-            <img
-              src="images/outback-nursery-shrubs.jpg"
-              alt="Outback Nursery Shrubs image"
-            />
-            <div class="c-slider-overlay u-bg-overlay-dt"></div>
-          </div>
-          <div class="c-slider__slide l-grow-shrink-basis">
-            <img
-              src="images/outback-nursery-plants.jpg"
-              alt="Outback Nursery Plants image"
-            />
-            <div class="c-slider-overlay u-bg-overlay-dt"></div>
-          </div>
-          <!--Slider navigation-->
-          <div class="c-slider__navigation"></div>
-        </div>
-        <!--Slider/Banner caption-->
-        <div
-          class="c-slider-caption l-flex-dt l-direction-column l-justify-center l-px-1 l-pt-1-5 l-pt-7-dt l-pb-4"
-        >
-          <div
-            class="c-slider-caption-holder l-max-width-mobile l-fixed-width-desktop l-mx-auto"
-          >
-            <h1
-              class="l-caption-text-wrapper-dt u-text-primary-light-dt u-heading-font u-heading-bold u-heading-xl-mb u-heading-xl-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-1-25"
-            >
-              Welcome to Outback Nursery &amp; Garden Center
-            </h1>
-            <p
-              class="l-caption-text-wrapper-dt u-text-primary-light-dt u-body-lg"
-            >
-              Explore our diverse botanical collection and find your perfect
-              plant companion. Elevate your outdoor space with our quality
-              foliage, from resilient succulents to elegant flowering shrubs.
-              Find inspiration and authenticity for your garden oasis.
-            </p>
-            <a
-              href="coming-soon.html"
-              class="c-hero-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt"
-              >Discover our botanical treasure</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!--Services section-->
-      <section class="c-section c-services-section u-bg-secondary">
-        <div
-          class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-4"
-        >
-          <div
-            class="c-services-section-intro l-text-wrapper-desktop l-mx-auto"
-          >
-            <h2
-              class="c-section__title u-text-primary u-heading-font u-heading-bold u-heading-lg-mb u-heading-lg-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-1-25 l-mb-2-dt"
-            >
-              Services we offer
-            </h2>
-            <p class="l-text-wrapper-desktop u-text-primary u-body-lg l-mb-3">
-              At Outback Nursery, we guarantee thriving plants. From bark mulch
-              sales to personalized delivery and planting, we make gardening
-              easy.
-            </p>
-          </div>
-          <div
-            class="c-services-container l-flex-dt l-justify-space-between l-block-gap"
-          >
-            <!--Service One-->
-            <div class="c-services-block u-bg-primary l-py-2 l-px-2 l-mb-2">
-              <span class="l-block l-mb-0-5"
-                ><img
-                  class="c-services-section__icon"
-                  src="images/bark-mulch-delivery-service.png"
-                  alt="Bark Mulch Sales and Delivery service icon"
-              /></span>
-              <h3
-                class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-              >
-                Bark Mulch Sales and Delivery
-              </h3>
-              <p class="u-text-primary u-body-lg">
-                Enhance your garden with our blend of FIR/HEMLOCK bark mulch.
-                Prices start at $7.00 per bag or $50.00 per yard. Delivery
-                available with advance notification.
-              </p>
-            </div>
-            <!--Service Two-->
-            <div class="c-services-block u-bg-primary l-py-2 l-px-2 l-mb-2">
-              <span class="l-block l-mb-0-5"
-                ><img
-                  class="c-services-section__icon"
-                  src="images/delivery-service-icon.png"
-                  alt="Delivery service icon"
-              /></span>
-              <h3
-                class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-              >
-                Delivery and Planting Services
-              </h3>
-              <p class="u-text-primary u-body-lg">
-                Let us handle delivery and planting for your trees and shrubs.
-                Receive personalized recommendations for optimal growth and
-                aesthetics.
-              </p>
-            </div>
-            <!--Service Three-->
-            <div class="c-services-block u-bg-primary l-py-2 l-px-2 l-mb-2">
-              <span class="l-block l-mb-0-5"
-                ><img
-                  class="c-services-section__icon"
-                  src="images/plant-spacing-recommendation-service-icon.png"
-                  alt="Plant spacing recommendation service icon"
-              /></span>
-              <h3
-                class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-              >
-                Plant Spacing Recommendations
-              </h3>
-              <p class="u-text-primary u-body-lg">
-                Receive expert advice on plant spacing for different species,
-                striking the ideal balance between aesthetics and maintenance
-                needs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--Gift Card section-->
-      <section class="c-section c-gift-section u-bg-primary">
-        <div
-          class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-5"
-        >
-          <h2
-            class="c-section__title l-text-wrapper-desktop u-text-primary u-heading-font u-heading-bold u-heading-lg-mb u-heading-lg-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-2 l-mb-2"
-          >
-            Give the gift of greenery: gift certificates available in just 3
-            easy steps!
-          </h2>
-          <div
-            class="c-gift-section__details l-flex-dt l-justify-space-between l-align-center"
-          >
-            <div id="step1" class="c-gift-section-steps">
-              <span
-                class="c-step-counter l-block u-heading-font u-body-md u-body-bold u-text-primary-dark l-mb-0-5"
-                >Step 1</span
-              >
-              <h3
-                class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-              >
-                Email us your details
-              </h3>
-              <p class="u-text-primary u-body-md">
-                Send an email to
-                <a
-                  class="c-gift-section__link u-text-secondary"
-                  href="mailto:name@email.com"
-                  >info@outbacknursery.ca</a
-                >
-                - as a way to introduce yourself.
-              </p>
-            </div>
-            <div id="step2" class="c-gift-section-steps" style="display: none">
-              <span
-                class="c-step-counter l-block u-heading-font u-body-md u-body-bold u-text-primary-dark l-mb-0-5"
-                >Step 2</span
-              >
-              <h3
-                class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-              >
-                Make your payment
-              </h3>
-              <p class="u-text-primary u-body-md">
-                Send an E-transfer to
-                <a
-                  class="c-gift-section__link u-text-secondary u-body-md"
-                  href="mailto:name@email.com"
-                  >info@outbacknursery.ca</a
-                >
-                with your chosen amount
-              </p>
-            </div>
-            <div id="step3" class="c-gift-section-steps" style="display: none">
-              <span
-                class="c-step-counter l-block u-heading-font u-body-md u-body-bold u-text-primary-dark l-mb-0-5"
-                >Step 3</span
-              >
-              <h3
-                class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-              >
-                Receive your voucher
-              </h3>
-              <p class="u-text-primary u-body-md">
-                We will scan a voucher and email it back to you or another email
-                of your choosing
-              </p>
-            </div>
-            <div class="c-gift-section__pagination l-mt-2-5 l-mt-0-dt">
-              <a
-                class="c-gift-section__pagination-link u-text-secondary u-body-bold l-mr-2 l-mr-0-dt"
-                href="#"
-                id="prev"
-                style="display: none"
-                ><i class="fa-solid fa-arrow-left-long l-mr-0-5"></i>
-                Previous</a
-              >
-              <a
-                class="c-gift-section__pagination-link u-text-secondary u-body-bold l-ml-2-dt"
-                href="#"
-                id="next"
-                >Next <i class="fa-solid fa-arrow-right-long l-ml-0-5"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--FAQ section-->
-      <section class="c-section c-faq-section u-fixed-bg-image">
-        <div
-          class="c-faq-section-container l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-5"
-        >
-          <div class="c-faq-section-intro l-text-wrapper-desktop l-mx-auto">
-            <h2
-              class="c-section__title u-text-primary u-heading-font u-heading-bold u-heading-lg-mb u-heading-lg-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-3"
-            >
-              Our Top Queries Answered
-            </h2>
-          </div>
-          <div class="c-faq-container l-flex-dt l-wrap l-justify-space-between">
-            <div class="c-faq-col">
-              <div class="c-faq-accordion l-mb-1">
-                <div
-                  class="c-faq-question u-bg-primary-dark l-flex l-justify-space-between l-align-center l-faq-gap u-text-primary-light u-heading-font u-letter-spacing-cabin-normal l-py-1 l-px-1 l-px-1-25-dt"
-                >
-                  <span
-                    >What should I do before planting trees and shrubs?</span
-                  >
-                  <i class="c-faq__icon fas fa-plus"></i>
-                </div>
-                <div class="c-faq-answer l-py-1 l-px-1 l-px-1-25-dt">
-                  <p>
-                    Before planting, ensure your trees and shrubs are well
-                    watered. If you can't plant them immediately, place them in
-                    afternoon shade during the summer. Avoid planting during the
-                    heat of the day. Make sure you have the right location for
-                    your plant to thrive, considering soil and exposure
-                    requirements. Most plants don't do well in poor draining
-                    soil, so consider conducting a drainage test if you're
-                    unsure.
-                  </p>
-                </div>
-              </div>
-
-              <div class="c-faq-accordion l-mb-1">
-                <div
-                  class="c-faq-question u-bg-primary-dark l-flex l-justify-space-between l-align-center l-faq-gap u-text-primary-light u-heading-font u-letter-spacing-cabin-normal l-py-1 l-px-1 l-px-1-25-dt"
-                >
-                  <span>What are some tips for planting trees and shrubs?</span>
-                  <i class="c-faq__icon fas fa-plus"></i>
-                </div>
-                <div class="c-faq-answer l-py-1 l-px-1 l-px-1-25-dt">
-                  <p>
-                    When planting, dig a hole as deep as the container or
-                    root-ball but twice as wide if possible. Avoid creating a
-                    water bowl in hard-pan soil, as water may not drain
-                    properly. Carefully remove the plant from the container
-                    without breaking up the root system. For balled and
-                    burlapped (B&B) trees, plant them intact, removing the
-                    string and rolling back the burlap but leaving it buried as
-                    it is biodegradable. Backfill the hole with existing soil or
-                    amend with compost or bark mulch for poor soils.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="c-faq-col">
-              <div class="c-faq-accordion l-mb-1">
-                <div
-                  class="c-faq-question u-bg-primary-dark l-flex l-justify-space-between l-align-center l-faq-gap u-text-primary-light u-heading-font u-letter-spacing-cabin-normal l-py-1 l-px-1 l-px-1-25-dt"
-                >
-                  <span
-                    >How should I care for newly planted trees and shrubs?</span
-                  >
-                  <i class="c-faq__icon fas fa-plus"></i>
-                </div>
-                <div class="c-faq-answer l-py-1 l-px-1 l-px-1-25-dt">
-                  <p>
-                    Water regularly for at least the first two years after
-                    planting, regardless of the plants' drought tolerance. Deep
-                    watering less often is better than a light sprinkle once a
-                    day, especially in the evening to keep the soil hydrated
-                    through the night. Fertilize with a slow-release fertilizer
-                    in spring for the first five years.
-                  </p>
-                </div>
-              </div>
-
-              <div class="c-faq-accordion l-mb-1">
-                <div
-                  class="c-faq-question u-bg-primary-dark l-flex l-justify-space-between l-align-center l-faq-gap u-text-primary-light u-heading-font u-letter-spacing-cabin-normal l-py-1 l-px-1 l-px-1-25-dt"
-                >
-                  <span
-                    >What is Outback Nursery's policy on plant material
-                    returns?</span
-                  >
-                  <i class="c-faq__icon fas fa-plus"></i>
-                </div>
-                <div class="c-faq-answer l-py-1 l-px-1 l-px-1-25-dt">
-                  <p>
-                    We have a no-refund or return policy on live plant material.
-                    Our plants are healthy when leaving the Nursery, and it's
-                    essential to ensure they remain that way with proper care.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="c-faq__btn-holder">
-            <a
-              href="coming-soon.html"
-              class="c-faq__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-accent u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt"
-              >Visit our FAQ page</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!--Blog section-->
-      <section class="c-section c-blog-section u-bg-primary">
-        <div
-          class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-5"
-        >
-          <div class="c-blog-section-intro l-text-wrapper-desktop l-mx-auto">
-            <h2
-              class="c-section__title u-text-primary u-heading-font u-heading-bold u-heading-lg-mb u-heading-lg-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-1-25 l-mb-2-dt"
-            >
-              Explore Our Blog
-            </h2>
-            <p class="l-text-wrapper-desktop u-text-primary u-body-lg l-mb-3">
-              The following lists were written and published in (Comox Valley
-              Record) by Annette (2018). We hope they provide a great reference
-              when planning your outdoor spaces.
-            </p>
-          </div>
-          <div
-            class="c-blog-post-container l-flex-dt l-justify-space-between l-block-gap"
-          >
-            <!--Blog Post One-->
-            <article class="c-blog-post-col l-flex-dt u-bg-primary l-mb-2">
-              <div
-                class="c-blog-post__thumbnail c-blog-post__thumbnail-big l-mb-0-5 l-mr-2-dt"
-              >
-                <a href="coming-soon.html"
-                  ><img
-                    class="c-blog-post__image l-full-width"
-                    src="images/weeping-japanese-maples.jpg"
-                    alt="Weeping Japanese Maples image"
-                /></a>
-              </div>
-              <div class="c-blog-post-content l-flex-dt l-direction-column">
-                <h3
-                  class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-                >
-                  <a
-                    class="c-blog-post__title u-text-primary"
-                    href="coming-soon.html"
-                  >
-                    Top 10 Weeping Japanese Maples</a
-                  >
-                </h3>
-                <p class="u-text-primary u-body-md">
-                  There are so many available on the market today it's a little
-                  overwhelming. They come in large variety of shapes
-                </p>
-                <a
-                  class="c-blog-post__cta u-text-secondary u-body-bold l-block l-mt-2"
-                  href="coming-soon.html"
-                  >Read More
-                  <i class="fa-solid fa-arrow-right-long l-ml-0-5"></i
-                ></a>
-              </div>
-            </article>
-
-            <div
-              class="c-blog-post-wrapper c-blog-post-col l-flex-dt l-direction-column l-justify-space-between"
-            >
-              <!--Blog Post Two-->
-              <article class="c-blog-post l-flex-dt u-bg-primary l-mb-2">
-                <div
-                  class="c-blog-post__thumbnail c-blog-post__thumbnail-small l-mb-0-5 l-mr-2-dt"
-                >
-                  <a href="coming-soon.html"
-                    ><img
-                      class="c-blog-post__image l-full-width"
-                      src="images/dwarf-conifers.jpg"
-                      alt="Dwarf Conifers image"
-                  /></a>
-                </div>
-                <h3
-                  class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-                >
-                  <a
-                    class="c-blog-post__title u-text-primary"
-                    href="coming-soon.html"
-                  >
-                    Top 10 Dwarf Conifers</a
-                  >
-                </h3>
-              </article>
-
-              <!--Blog Post Three-->
-              <article class="c-blog-post l-flex-dt u-bg-primary l-mb-2">
-                <div
-                  class="c-blog-post__thumbnail c-blog-post__thumbnail-small l-mb-0-5 l-mr-2-dt"
-                >
-                  <a href="coming-soon.html"
-                    ><img
-                      class="c-blog-post__image l-full-width"
-                      src="images/flowering-deciduous-trees.jpg"
-                      alt="Flowering Deciduous Trees image"
-                  /></a>
-                </div>
-                <h3
-                  class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-                >
-                  <a
-                    class="c-blog-post__title u-text-primary"
-                    href="coming-soon.html"
-                  >
-                    Top 10 Flowering Deciduous Trees</a
-                  >
-                </h3>
-              </article>
-            </div>
-          </div>
-          <div class="c-blog-section__btn-holder">
-            <a
-              href="coming-soon.html"
-              class="c-blog-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt"
-              >Read our curated top 10s</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!--About section-->
-      <section class="c-section c-about-section u-fixed-bg-image">
-        <div
-          class="c-about-section-container l-text-wrapper-desktop l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-5"
-        >
-          <h2
-            class="c-section__title u-text-primary u-heading-font u-heading-bold u-heading-lg-mb u-heading-lg-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-1-25 l-mb-2-dt"
-          >
-            Learn about our roots
-          </h2>
-          <p class="u-text-primary u-body-lg">
-            Uncover the story behind Outback Nursery's inception, from our
-            family's move to the island to the transformation of our 6-acre
-            property into a flourishing oasis. Explore our roots and learn how
-            our passion for nature blossomed into a thriving business, rooted in
-            quality and dedication.
-          </p>
-          <a
-            href="coming-soon.html"
-            class="c-about-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-accent u-heading-font u-letter-spacing-cabin-normal l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt"
-            >How we started</a
-          >
-        </div>
-      </section>
-
-      <!--Connect with Us section-->
-      <section class="c-section c-social-section u-bg-primary-dark">
-        <div
-          class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-5"
-        >
-          <h2
-            class="c-section__title l-text-wrapper-desktop u-text-primary-light u-heading-font u-heading-bold u-heading-lg-mb u-heading-lg-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-2 l-mb-2"
-          >
-            Stay connected with Outback Nursery
-          </h2>
-          <div class="l-flex-dt l-justify-space-between l-align-center">
-            <p
-              class="c-social-section__text l-text-wrapper-desktop u-text-primary-light u-body-lg"
-            >
-              Join our community to stay updated on the latest gardening tips,
-              plant care advice, and exclusive offers from Outback Nursery!
-            </p>
-            <div class="c-social-section__icons l-flex l-mt-2-5 l-mt-0-dt">
-              <a
-                href="https://www.facebook.com/profile.php?id=100045470087619"
-                target="_blank"
-                class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
-                ><i class="fa-brands fa-facebook-f"
-                  ><span class="c-sr-only">Facebook</span></i
-                ></a
-              >
-              <a
-                href="https://www.instagram.com/outbacknursery/?hl=en"
-                target="_blank"
-                class="c-social-section__icon l-flex l-justify-center l-align-center u-text-primary-light u-heading-md"
-                ><i class="fa-brands fa-instagram"></i
-                ><span class="c-sr-only">Instagram</span></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--Contact section-->
-      <section
-        id="contact-us"
-        class="c-section c-contact-section u-bg-primary-light"
-      >
-        <div
-          class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-5"
-        >
-          <h2
-            class="c-contact-section__title l-text-wrapper-desktop l-mx-auto u-text-primary u-heading-font u-heading-bold u-heading-lg-mb u-heading-lg-dt u-heading-line-height-md u-heading-line-height-lg-tp u-letter-spacing-heading u-letter-spacing-lg-dt l-mb-1-25 l-mb-2-dt"
-          >
-            Visit us today
-          </h2>
-          <div
-            class="c-contact-details l-flex-dt l-justify-space-evenly l-pb-3 l-mb-3"
-          >
-            <!--Location details-->
-            <div class="c-location-block l-mb-2-5 l-mb-0-dt">
-              <span class="l-block l-mb-0-5" aria-label="Map icon"
-                ><i
-                  class="fa-solid fa-location-dot u-heading-md u-text-accent-dark"
-                  aria-hidden="true"
-                ></i>
-              </span>
-              <h4
-                class="u-heading-font u-heading-bold u-heading-sm u-body-line-height u-letter-spacing-heading l-mb-0-5"
-              >
-                Location:
-              </h4>
-              <p class="u-text-primary u-body-lg">
-                6016 Headquarters Rd, Courtenay, BC V9J 1M7
-              </p>
-            </div>
-            <!--Opening hour details-->
-            <div class="c-hrs-block">
-              <span class="l-block l-mb-0-5" aria-label="Clock icon"
-                ><i
-                  class="fa-solid fa-clock u-heading-md u-text-accent-dark"
-                  aria-hidden="true"
-                ></i>
-              </span>
-              <h4
-                class="u-heading-font u-heading-bold u-heading-sm u-body-line-height u-letter-spacing-heading l-mb-0-5"
-              >
-                Opening hours:
-              </h4>
-              <p class="u-text-primary u-body-lg">
-                9:00 AM - 5:00 PM (Everyday)
-              </p>
-            </div>
-          </div>
-          <div class="c-contact-form">
-            <h3
-              class="c-contact-form__title u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-2"
-            >
-              Email us for personalized support
-            </h3>
-            <!--Contact Form-->
-            <div
-              class="c-contact-form-wrapper l-text-wrapper-desktop l-mx-auto"
-            >
-              <form action="coming-soon.html" method="post">
-                <label for="name" class="u-text-secondary u-body-lg"
-                  >Name:</label
-                >
-                <input
-                  class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name here"
-                  required
-                />
-                <label for="email" class="u-text-secondary u-body-lg"
-                  >Email:</label
-                >
-                <input
-                  class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email here"
-                  required
-                />
-                <label for="question" class="u-text-secondary u-body-lg"
-                  >Ask any Question:</label
-                >
-                <input
-                  class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
-                  type="text"
-                  id="question"
-                  name="question"
-                  placeholder="Enter your question here"
-                />
-                <label for="message" class="u-text-secondary u-body-lg"
-                  >Message:</label
-                >
-                <textarea
-                  class="c-contact-form__input l-full-width l-px-1 l-py-1 l-mb-0-75 l-mt-0-25 u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
-                  id="message"
-                  name="message"
-                  placeholder="Enter your message here"
-                  style="height: 200px"
-                  required
-                ></textarea>
-
-                <div class="c-contact-form-btn-wrapper">
-                  <input
-                    class="c-contact-section__cta-btn c-cta-button l-caption-text-wrapper-dt u-text-primary-light u-heading-font u-body-lg u-letter-spacing-cabin-normal u-accent l-block l-inline-block-dt l-py-1 l-px-1 l-px-2-5-dt l-mt-2 l-mt-2-5-dt"
-                    type="submit"
-                    value="Submit"
-                  />
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!--Footer Section-->
-    <footer class="c-site-footer u-bg-secondary">
-      <div
-        class="c-site-footer-top l-flex-dt l-block-gap l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-4"
-      >
-        <div class="c-site-footer-column">
+    <!--Side Navbar-->
+    <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
+      <ul class="c-side-navbar__menu">
+        <li>
+          <a id="brandingLink" class="c-side-navbar__link-category" href="#">Branding</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a id="colorsLink" class="c-side-navbar__link" href="colours.html">01 Colours</a>
+          </li>
+          <li>
+            <a id="typographyLink" class="c-side-navbar__link" href="typography.html">02 Typography</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Utilities</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="spacing.html">03 Spacing</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="containers.html">04 Containers</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="images.html">05 Images</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="interactive.html">06 Interactive</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Navigation</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="navbars.html">07 Navbars</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="breadcrumbs.html">08 Breadcrumbs</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="pagination.html">09 Pagination</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Blocks</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="hero.html">10 Hero and Carousel</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="footer.html">11 Footer</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Components</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="cards.html">12 Cards</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="forms.html">13 Forms</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="accordion.html">14 Accordion</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="lists.html">15 Lists</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+  <main class="c-site-content l-full-width l-desktop-full-width">
+    <div class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end">
+      <h1
+        class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-mt-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-40-desktop u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt">
+        Welcome to the Outback Nursery Design System
+      </h1>
+    </div>
+    <section class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-px-40-desktop">
+      <p class="l-text-wrapper-desktop l-mt-3-5">
+        Greetings, designers and developers! Welcome to the Outback Nursery
+        Design System, your comprehensive toolkit for crafting digital and
+        graphic design products that encapsulate the essence of Outback
+        Nursery's natural beauty and charm. Whether you're embarking on the
+        creation of a website, app, or marketing materials for the nursery,
+        this design system is your go-to resource for seamless integration and
+        consistent results.
+      </p>
+      <h2
+        class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt">
+        What's Inside:
+      </h2>
+      <div class="l-flex-dt l-justify-space-between">
+        <div class="c-two-col-content">
           <h3
-            class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-          >
-            About Us
+            class="l-content-width u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading">
+            1. Documentation Website:
           </h3>
-          <p>
-            Outback Nursery is one of the largest garden centres on Vancouver
-            Island. Our nursery is situated on a 6 acre property and offers 5
-            overflowing greenhouses (30x170ft); almost 23,000 square feet.
+          <p class="l-mt-0-5">
+            Dive into our comprehensive documentation website, your gateway to
+            understanding and utilizing every facet of the Outback Nursery
+            Design System. Here, you'll find guidelines for implementing the
+            system across various digital and graphic design projects. Each
+            aspect of the system, from colors to components to spacing, has
+            its dedicated page, ensuring clarity and ease of use. Simply apply
+            the provided classes from our documentation to HTML elements, and
+            watch your designs come to life.
+          </p>
+
+          <h3
+            class="l-content-width u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mt-1-25">
+            2. GitHub Repository:
+          </h3>
+          <p class="l-mt-0-5">
+            Access the comprehensive GitHub repository housing the Outback
+            Nursery Design System's CSS sheet. This repository serves as a
+            centralized hub for developers and designers, offering easy access
+            to the latest version of the CSS framework. Simply clone or fork
+            the repository to incorporate the design system seamlessly into
+            your projects.
           </p>
         </div>
-        <div class="c-site-footer-column l-pt-2-5 l-pt-0-dt">
+
+        <div class="c-two-col-content">
           <h3
-            class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-          >
-            Our Favorite Websites
+            class="l-content-width u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mt-1-25">
+            3. Demo Site:
           </h3>
-          <ul class="c-site-footer__list l-pl-0">
-            <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.rhs.org.uk"
-                target="_blank"
-                >rhs.org.uk</a
-              >
-            </li>
-            <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.gardenia.net"
-                target="_blank"
-                >gardenia.net</a
-              >
-            </li>
-            <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.finegardening.com"
-                target="_blank"
-                >finegardening.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.pinterest.com"
-                target="_blank"
-                >pinterest.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.houzz.com"
-                target="_blank"
-                >houzz.com</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="c-site-footer-column l-pt-2 l-pt-0-dt">
+          <p class="l-mt-0-5">
+            Explore the demo site, where you can witness firsthand how each
+            part of the design system integrates into real-world contexts.
+            From effective color palettes to versatile components, experience
+            Outback Nursery's design system in action, sparking inspiration
+            for your own projects.
+          </p>
+
           <h3
-            class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-1-25"
-          >
-            Google Map
+            class="l-content-width u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mt-1-25">
+            4. About Me:
           </h3>
-          <iframe
-            class="c-site-footer__map l-full-width"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10311.229474873362!2d-125.0508448!3d49.7520682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1712140421689!5m2!1sen!2sca"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <p class="l-mt-0-5">
+            Meet the mind behind the Outback Nursery Design System. This page
+            provides insights into the creator of this toolkit.
+          </p>
         </div>
       </div>
-      <div
-        class="c-footer-copyright l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-1 l-pb-1"
-      >
-        <p class="l-pb-0-25">©2024 North Island College</p>
-        <p>
-          This is a fictional website that was designed and coded as an
-          educational exercise. It is not intended to be seen outside of the
-          class environment. None of the content and images were approved by the
-          business owner.
-        </p>
+    </section>
+    <section class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-px-40-desktop">
+      <h2
+        class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt">
+        Why Choose Outback Nursery Design System:
+      </h2>
+      <div class="l-flex-dt l-justify-space-between">
+        <div class="c-two-col-content">
+          <h3
+            class="l-content-width u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading">
+            Authenticity:
+          </h3>
+          <p class="l-mt-0-5 l-mb-1-25">
+            Rooted in the natural beauty and charm of Outback Nursery, the
+            design system offers a genuine reflection of the brand identity
+            and values.
+          </p>
+
+          <h3
+            class="l-content-width u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading">
+            Efficiency:
+          </h3>
+          <p class="l-mt-0-5 l-mb-1-25">
+            With clear documentation, downloadable CSS, and a demo site for
+            reference, streamline your design and development process with
+            ease and efficiency.
+          </p>
+        </div>
+        <div class="c-two-col-content">
+          <h3
+            class="l-content-width u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading">
+            Versatility:
+          </h3>
+          <p class="l-mt-0-5 l-mb-1-25">
+            Whether you're designing a website, mobile app, or promotional
+            materials, the design system offers versatility and adaptability
+            to suit your unique needs and preferences.
+          </p>
+        </div>
       </div>
-    </footer>
-    <script src="main.js"></script>
-  </body>
+    </section>
+  </main>
+  <script src="design-system.js"></script>
+</body>
+
 </html>

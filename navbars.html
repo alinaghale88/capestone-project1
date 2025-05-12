@@ -1,317 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar Component</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="design-system.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/588bcee0c3.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body
-    class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md"
-  >
-    <header class="c-site-header">
-      <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
-      <div class="c-desktop-header">
-        <!--Mobile Navbar-->
-        <div class="c-mobile-navbar u-bg-primary l-pl-1">
-          <a href="design-system.html" class="c-logo-ds"
-            ><span class="u-heading-font u-heading-lg-mb u-text-primary u-heading-bold"
-              >Design System</span
-            ></a
-          >
-          <a
-            class="c-mobile-navbar__toggle l-pr-1"
-            id="toggleButton"
-            onclick="showNav()"
-            ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
-          ></a>
-          <a
-            class="c-mobile-navbar__close l-pr-1"
-            id="closeButton"
-            onclick="showNav()"
-            style="display: none"
-            ><i class="fa-solid fa-times fa-lg u-text-primary"></i
-          ></a>
-        </div>
-        <!--Top Navbar-->
-        <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
-          <ul class="c-top-navbar__menu">
-            <li class="l-py-0-dt l-pr-1-5">
-              <a id="aboutLink" class="c-top-navbar__link" href="about-me.html"
-                >About Me</a
-              >
-            </li>
-            <li class="l-py-0-dt">
-              <a id="demoLink" class="c-top-navbar__link" href="index.html"
-                >Demo Site</a
-              >
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Component</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="design-system.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/588bcee0c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md">
+  <header class="c-site-header">
+    <!--Desktop header is a component whose styling will only be activated for the site header in desktop screens-->
+    <div class="c-desktop-header">
+      <!--Mobile Navbar-->
+      <div class="c-mobile-navbar u-bg-primary l-pl-1">
+        <a href="index.html" class="c-logo-ds"><span
+            class="u-heading-font u-heading-lg-mb u-text-primary u-heading-bold">Design System</span></a>
+        <a class="c-mobile-navbar__toggle l-pr-1" id="toggleButton" onclick="showNav()"><i
+            class="fa-solid fa-bars fa-lg u-text-primary"></i></a>
+        <a class="c-mobile-navbar__close l-pr-1" id="closeButton" onclick="showNav()" style="display: none"><i
+            class="fa-solid fa-times fa-lg u-text-primary"></i></a>
       </div>
-      <!--Side Navbar-->
-      <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
-        <ul class="c-side-navbar__menu">
-          <li>
-            <a id="brandingLink" class="c-side-navbar__link-category" href="#"
-              >Branding</a
-            >
+      <!--Top Navbar-->
+      <nav class="c-navbar c-top-navbar u-bg-primary-light l-pr-1">
+        <ul class="c-top-navbar__menu">
+          <li class="l-py-0-dt l-pr-1-5">
+            <a id="aboutLink" class="c-top-navbar__link" href="about-me.html">About Me</a>
           </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a id="colorsLink" class="c-side-navbar__link" href="colours.html"
-                >01 Colours</a
-              >
-            </li>
-            <li>
-              <a
-                id="typographyLink"
-                class="c-side-navbar__link"
-                href="typography.html"
-                >02 Typography</a
-              >
-            </li>
-          </ul>
-          <li>
-            <a class="c-side-navbar__link-category" href="#">Utilities</a>
+          <li class="l-py-0-dt">
+            <a id="demoLink" class="c-top-navbar__link" href="demo-site.html">Demo Site</a>
           </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a class="c-side-navbar__link" href="spacing.html">03 Spacing</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="containers.html"
-                >04 Containers</a
-              >
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="images.html">05 Images</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="interactive.html">06 Interactive</a>
-            </li>
-          </ul>
-          <li>
-            <a class="c-side-navbar__link-category" href="#">Navigation</a>
-          </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a class="c-side-navbar__link" href="navbars.html">07 Navbars</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="breadcrumbs.html">08 Breadcrumbs</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="pagination.html">09 Pagination</a>
-            </li>
-          </ul>
-          <li>
-            <a class="c-side-navbar__link-category" href="#">Blocks</a>
-          </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a class="c-side-navbar__link" href="hero.html">10 Hero and Carousel</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="footer.html">11 Footer</a>
-            </li>
-          </ul>
-          <li>
-            <a class="c-side-navbar__link-category" href="#">Components</a>
-          </li>
-          <ul class="c-side-navbar__sub-menu">
-            <li>
-              <a class="c-side-navbar__link" href="cards.html">12 Cards</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="forms.html">13 Forms</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="accordion.html">14 Accordion</a>
-            </li>
-            <li>
-              <a class="c-side-navbar__link" href="lists.html">15 Lists</a>
-            </li>
-          </ul>
         </ul>
       </nav>
-    </header>
-    <main class="c-site-content l-full-width l-desktop-full-width">
-      <div
-        class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end"
-      >
-        <h1
-          class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-2-5-dt u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt"
-        >
-          Navbars
-        </h1>
-      </div>
-      <div
-        class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-px-2-5-dt"
-      >
-        <section>
-          <h2
-            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
-          >
-            Design
-          </h2>
-          <p class="l-text-wrapper-desktop">
-            The navbar consist of various components, including links to
-            different pages, dropdown menu, a CTA button and social media links.
-          </p>
-          <!--Generated from ChatGPT-->
+    </div>
+    <!--Side Navbar-->
+    <nav class="c-navbar c-side-navbar u-bg-primary-light l-pl-1">
+      <ul class="c-side-navbar__menu">
+        <li>
+          <a id="brandingLink" class="c-side-navbar__link-category" href="#">Branding</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a id="colorsLink" class="c-side-navbar__link" href="colours.html">01 Colours</a>
+          </li>
+          <li>
+            <a id="typographyLink" class="c-side-navbar__link" href="typography.html">02 Typography</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Utilities</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="spacing.html">03 Spacing</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="containers.html">04 Containers</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="images.html">05 Images</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="interactive.html">06 Interactive</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Navigation</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="navbars.html">07 Navbars</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="breadcrumbs.html">08 Breadcrumbs</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="pagination.html">09 Pagination</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Blocks</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="hero.html">10 Hero and Carousel</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="footer.html">11 Footer</a>
+          </li>
+        </ul>
+        <li>
+          <a class="c-side-navbar__link-category" href="#">Components</a>
+        </li>
+        <ul class="c-side-navbar__sub-menu">
+          <li>
+            <a class="c-side-navbar__link" href="cards.html">12 Cards</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="forms.html">13 Forms</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="accordion.html">14 Accordion</a>
+          </li>
+          <li>
+            <a class="c-side-navbar__link" href="lists.html">15 Lists</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+  <main class="c-site-content l-full-width l-desktop-full-width">
+    <div class="c-site-title-container u-bg-primary-light l-flex l-direction-column l-justify-flex-end">
+      <h1
+        class="l-max-width-mobile l-max-width-desktop l-full-width l-mx-auto l-mb-2 l-px-1 u-heading-font u-heading-bold u-heading-xl-mb u-heading-line-height-lg u-letter-spacing-lg-dt l-px-2-5-dt u-heading-xl-dt u-heading-line-height-xl u-letter-spacing-xl-dt">
+        Navbars
+      </h1>
+    </div>
+    <div class="l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-px-2-5-dt">
+      <section>
+        <h2
+          class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt">
+          Design
+        </h2>
+        <p class="l-text-wrapper-desktop">
+          The navbar consist of various components, including links to
+          different pages, dropdown menu, a CTA button and social media links.
+        </p>
+        <!--Generated from ChatGPT-->
 
-          <!--Navbar layout-->
-          <div class="l-mt-1-5">
-            <div class="c-site-header c-navbars-header u-bg-primary">
-              <div class="l-max-width-desktop l-mx-auto l-flex-dt l-align-center">
-                <!--Mobile Navbar-->
-                <div
-                  class="c-mobile-navbar u-bg-primary l-py-1 l-flex l-justify-space-between l-align-center l-py-1-5-dt"
-                >
-                  <a href="index.html" class="l-flex"
-                    ><img
-                      src="images/outback-nursery-site-logo.png"
-                      class="c-site-header__logo c-navbars-logo l-pl-1"
-                      alt="Outback Nursery Site Logo"
-                  /></a>
-                  <a
-                    class="c-mobile-navbar__toggle l-pr-1"
-                    id="toggleButton"
-                    onclick="showNav()"
-                    ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
-                  ></a>
-                </div>
-                <nav class="c-menu-block u-bg-primary l-block-dt">
-                  <div
-                    class="c-wrapper l-max-width-desktop l-flex-dt l-justify-space-between l-mx-auto"
-                  >
-                    <a
-                      class="c-mobile-navbar__close l-pr-1 l-py-0-5"
-                      id="closeButton"
-                      onclick="showNav()"
-                      style="display: none"
-                      ><i class="fa-solid fa-times fa-lg u-text-primary"></i
-                    ></a>
-                    <ul
-                      class="c-nav-menu u-body-lg l-align-center l-px-1 l-flex-dt l-px-0-dt l-justify-flex-end"
-                    >
-                      <li>
-                        <a
-                          href="coming-soon.html"
-                          class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
-                          >Products</a
-                        >
-                      </li>
-                      <li class="c-nav-menu__dropdown">
-                        <a
-                          href="#"
-                          class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
-                          onclick="toggleDropdown()"
-                        >
-                          Resources
-                          <i class="fa-solid fa-caret-down u-text-primary l-pl-0-5"></i>
-                        </a>
-                        <ul
-                          class="c-nav-menu__dropdown-menu u-bg-dropdown-dt l-none l-px-0-dt"
-                          id="resourcesDropdown"
-                        >
-                          <li>
-                            <a
-                              href="coming-soon.html"
-                              class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
-                              >Blog</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="coming-soon.html"
-                              class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
-                              >FAQ</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="coming-soon.html"
-                              class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
-                              >Gift Certificate</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a
-                          href="coming-soon.html"
-                          class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
-                          >About</a
-                        >
-                      </li>
-                      <li class="l-mt-2 l-mb-2 l-my-0-dt">
-                        <a
-                          href="#contact-us"
-                          class="c-nav-menu__link c-nav-menu__cta-btn c-cta-button c-cta-button-2 u-text-primary-dark u-heading-font u-letter-spacing-cabin-normal l-block l-py-0-75 l-px-1-25-dt"
-                          >Contact us</a
-                        >
-                      </li>
-                    </ul>
-                    <ul
-                      class="c-social-menu u-body-lg l-align-center l-px-1 l-flex l-justify-center l-px-0-dt"
-                    >
-                      <li>
-                        <a
-                          href="https://www.facebook.com/profile.php?id=100045470087619"
-                          target="_blank"
-                          class="c-social-menu__link u-text-primary l-block l-pr-1-5 l-py-0-5"
-                          ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.instagram.com/outbacknursery/?hl=en"
-                          target="_blank"
-                          class="c-social-menu__link u-text-primary l-block l-py-0-5"
-                          ><i class="fa-brands fa-instagram"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
+        <!--Navbar layout-->
+        <div class="l-mt-1-5">
+          <div class="c-site-header c-navbars-header u-bg-primary">
+            <div class="l-max-width-desktop l-mx-auto l-flex-dt l-align-center">
+              <!--Mobile Navbar-->
+              <div
+                class="c-mobile-navbar u-bg-primary l-py-1 l-flex l-justify-space-between l-align-center l-py-1-5-dt">
+                <a href="demo-site.html" class="l-flex"><img src="images/outback-nursery-site-logo.png"
+                    class="c-site-header__logo c-navbars-logo l-pl-1" alt="Outback Nursery Site Logo" /></a>
+                <a class="c-mobile-navbar__toggle l-pr-1" id="toggleButton" onclick="showNav()"><i
+                    class="fa-solid fa-bars fa-lg u-text-primary"></i></a>
               </div>
+              <nav class="c-menu-block u-bg-primary l-block-dt">
+                <div class="c-wrapper l-max-width-desktop l-flex-dt l-justify-space-between l-mx-auto">
+                  <a class="c-mobile-navbar__close l-pr-1 l-py-0-5" id="closeButton" onclick="showNav()"
+                    style="display: none"><i class="fa-solid fa-times fa-lg u-text-primary"></i></a>
+                  <ul class="c-nav-menu u-body-lg l-align-center l-px-1 l-flex-dt l-px-0-dt l-justify-flex-end">
+                    <li>
+                      <a href="coming-soon.html"
+                        class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block">Products</a>
+                    </li>
+                    <li class="c-nav-menu__dropdown">
+                      <a href="#" class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
+                        onclick="toggleDropdown()">
+                        Resources
+                        <i class="fa-solid fa-caret-down u-text-primary l-pl-0-5"></i>
+                      </a>
+                      <ul class="c-nav-menu__dropdown-menu u-bg-dropdown-dt l-none l-px-0-dt" id="resourcesDropdown">
+                        <li>
+                          <a href="coming-soon.html"
+                            class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt">Blog</a>
+                        </li>
+                        <li>
+                          <a href="coming-soon.html"
+                            class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt">FAQ</a>
+                        </li>
+                        <li>
+                          <a href="coming-soon.html"
+                            class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt">Gift
+                            Certificate</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="coming-soon.html"
+                        class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block">About</a>
+                    </li>
+                    <li class="l-mt-2 l-mb-2 l-my-0-dt">
+                      <a href="#contact-us"
+                        class="c-nav-menu__link c-nav-menu__cta-btn c-cta-button c-cta-button-2 u-text-primary-dark u-heading-font u-letter-spacing-cabin-normal l-block l-py-0-75 l-px-1-25-dt">Contact
+                        us</a>
+                    </li>
+                  </ul>
+                  <ul class="c-social-menu u-body-lg l-align-center l-px-1 l-flex l-justify-center l-px-0-dt">
+                    <li>
+                      <a href="https://www.facebook.com/profile.php?id=100045470087619" target="_blank"
+                        class="c-social-menu__link u-text-primary l-block l-pr-1-5 l-py-0-5"><i
+                          class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/outbacknursery/?hl=en" target="_blank"
+                        class="c-social-menu__link u-text-primary l-block l-py-0-5"><i
+                          class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section>
-          <h2
-            class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt"
-          >
-            HTML Structure
-          </h2>
-          <p class="l-text-wrapper-desktop">
-            Below is the HTML code snippet illustrating the structure of our
-            navbar:
-          </p>
-          <!--Generated from ChatGPT-->
-          <div class="l-mt-1-5">
-            <pre class="c-code-snippet">
+      <section>
+        <h2
+          class="u-heading-font u-heading-bold u-heading-lg-mb u-heading-line-height-md u-letter-spacing-heading l-mt-3-5 l-mb-1-25 u-heading-lg-dt u-heading-line-height-lg u-letter-spacing-lg-dt">
+          HTML Structure
+        </h2>
+        <p class="l-text-wrapper-desktop">
+          Below is the HTML code snippet illustrating the structure of our
+          navbar:
+        </p>
+        <!--Generated from ChatGPT-->
+        <div class="l-mt-1-5">
+          <pre class="c-code-snippet">
 &lt;header class=&quot;c-site-header u-bg-primary&quot;&gt;
   &lt;div class=&quot;l-max-width-desktop l-mx-auto l-flex-dt l-align-center&quot;&gt;
     &lt;!--Mobile Navbar--&gt;
     &lt;div
       class=&quot;c-mobile-navbar u-bg-primary l-py-1 l-flex l-justify-space-between l-align-center l-py-1-5-dt&quot;
     &gt;
-      &lt;a href=&quot;index.html&quot; class=&quot;l-flex&quot;
+      &lt;a href=&quot;demo-site.html&quot; class=&quot;l-flex&quot;
         &gt;&lt;img
           src=&quot;images/outback-nursery-site-logo.png&quot;
           class=&quot;c-site-header__logo l-pl-1&quot;
@@ -425,10 +339,11 @@
 &lt;/header&gt;
 
             </pre>
-          </div>
-        </section>
-      </div>
-    </main>
-    <script src="design-system.js"></script>
-  </body>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="design-system.js"></script>
+</body>
+
 </html>

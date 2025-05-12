@@ -1,261 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coming Soon page</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/588bcee0c3.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body
-    class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary"
-  >
-    <!--Dropdown button-->
-    <span
-      id="dropdownButton"
-      onclick="toggleNotice()"
-      class="c-notice-dropdown u-bg-accent-dark"
-      ><i class="fa-solid fa-chevron-down l-pl-0-25" style="color: #f4ffff"></i
-    ></span>
-    <!--Notice Section-->
-    <div
-      class="c-notice-section u-bg-accent-dark u-text-primary-light"
-      id="noticeSection"
-    >
-      <div
-        class="c-wrapper l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-py-1"
-      >
-        <span
-          onclick="hideNotice()"
-          class="c-notice-section__close-btn l-block l-pb-0-25"
-          ><i class="fa-solid fa-times fa-lg u-text-primary-light"></i
-        ></span>
-        <p class="c-notice-section__text">Coming Soon!!</p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/588bcee0c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="u-body-font u-letter-spacing-normal u-body-line-height u-body-md u-text-primary">
+  <!--Dropdown button-->
+  <span id="dropdownButton" onclick="toggleNotice()" class="c-notice-dropdown u-bg-accent-dark"><i
+      class="fa-solid fa-chevron-down l-pl-0-25" style="color: #f4ffff"></i></span>
+  <!--Notice Section-->
+  <div class="c-notice-section u-bg-accent-dark u-text-primary-light" id="noticeSection">
+    <div class="c-wrapper l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-py-1">
+      <span onclick="hideNotice()" class="c-notice-section__close-btn l-block l-pb-0-25"><i
+          class="fa-solid fa-times fa-lg u-text-primary-light"></i></span>
+      <p class="c-notice-section__text">Coming Soon!!</p>
     </div>
-    <!--Site Header-->
-    <header class="c-site-header u-bg-primary">
-      <div class="l-max-width-desktop l-mx-auto l-flex-dt l-align-center">
-        <!--Mobile Navbar-->
-        <div
-          class="c-mobile-navbar u-bg-primary l-py-1 l-flex l-justify-space-between l-align-center l-py-1-5-dt"
-        >
-          <a href="index.html" class="l-flex"
-            ><img
-              src="images/outback-nursery-site-logo.png"
-              class="c-site-header__logo l-pl-1"
-              alt="Outback Nursery Site Logo"
-          /></a>
-          <a
-            class="c-mobile-navbar__toggle l-pr-1"
-            id="toggleButton"
-            onclick="showNav()"
-            ><i class="fa-solid fa-bars fa-lg u-text-primary"></i
-          ></a>
-        </div>
-        <nav class="c-menu-block u-bg-primary l-block-dt">
-          <div
-            class="c-wrapper l-max-width-desktop l-flex-dt l-justify-space-between l-mx-auto"
-          >
-            <a
-              class="c-mobile-navbar__close l-pr-1 l-py-0-5"
-              id="closeButton"
-              onclick="showNav()"
-              style="display: none"
-              ><i class="fa-solid fa-times fa-lg u-text-primary"></i
-            ></a>
-            <ul
-              class="c-nav-menu u-body-lg l-align-center l-px-1 l-flex-dt l-px-0-dt l-justify-flex-end"
-            >
-              <li>
-                <a
-                  href="coming-soon.html"
-                  class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
-                  >Products</a
-                >
-              </li>
-              <li class="c-nav-menu__dropdown">
-                <a
-                  href="#"
-                  class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
-                  onclick="toggleDropdown()"
-                >
-                  Resources
-                  <i class="fa-solid fa-caret-down u-text-primary l-pl-0-5"></i>
-                </a>
-                <ul
-                  class="c-nav-menu__dropdown-menu u-bg-dropdown-dt l-none l-px-0-dt"
-                  id="resourcesDropdown"
-                >
-                  <li>
-                    <a
-                      href="coming-soon.html"
-                      class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
-                      >Blog</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="coming-soon.html"
-                      class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
-                      >FAQ</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="coming-soon.html"
-                      class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt"
-                      >Gift Certificate</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="coming-soon.html"
-                  class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
-                  >About</a
-                >
-              </li>
-              <li class="l-mt-2 l-mb-2 l-my-0-dt">
-                <a
-                  href="#contact-us"
-                  class="c-nav-menu__link c-nav-menu__cta-btn c-cta-button c-cta-button-2 u-text-primary-dark u-heading-font u-letter-spacing-cabin-normal l-block l-py-0-75 l-px-1-25-dt"
-                  >Contact us</a
-                >
-              </li>
-            </ul>
-            <ul
-              class="c-social-menu u-body-lg l-align-center l-px-1 l-flex l-justify-center l-px-0-dt"
-            >
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100045470087619"
-                  target="_blank"
-                  class="c-social-menu__link u-text-primary l-block l-pr-1-5 l-py-0-5"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/outbacknursery/?hl=en"
-                  target="_blank"
-                  class="c-social-menu__link u-text-primary l-block l-py-0-5"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  </div>
+  <!--Site Header-->
+  <header class="c-site-header u-bg-primary">
+    <div class="l-max-width-desktop l-mx-auto l-flex-dt l-align-center">
+      <!--Mobile Navbar-->
+      <div class="c-mobile-navbar u-bg-primary l-py-1 l-flex l-justify-space-between l-align-center l-py-1-5-dt">
+        <a href="demo-site.html" class="l-flex"><img src="images/outback-nursery-site-logo.png"
+            class="c-site-header__logo l-pl-1" alt="Outback Nursery Site Logo" /></a>
+        <a class="c-mobile-navbar__toggle l-pr-1" id="toggleButton" onclick="showNav()"><i
+            class="fa-solid fa-bars fa-lg u-text-primary"></i></a>
       </div>
-    </header>
-    <main>
-    </main>
-    <!--Footer Section-->
-    <footer class="c-site-footer u-bg-secondary">
-      <div
-        class="c-site-footer-top l-flex-dt l-block-gap l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-4"
-      >
-        <div class="c-site-footer-column">
-          <h3
-            class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-          >
-            About Us
-          </h3>
-          <p>
-            Outback Nursery is one of the largest garden centres on Vancouver
-            Island. Our nursery is situated on a 6 acre property and offers 5
-            overflowing greenhouses (30x170ft); almost 23,000 square feet.
-          </p>
-        </div>
-        <div class="c-site-footer-column l-pt-2-5 l-pt-0-dt">
-          <h3
-            class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75"
-          >
-            Our Favorite Websites
-          </h3>
-          <ul class="c-site-footer__list l-pl-0">
+      <nav class="c-menu-block u-bg-primary l-block-dt">
+        <div class="c-wrapper l-max-width-desktop l-flex-dt l-justify-space-between l-mx-auto">
+          <a class="c-mobile-navbar__close l-pr-1 l-py-0-5" id="closeButton" onclick="showNav()"
+            style="display: none"><i class="fa-solid fa-times fa-lg u-text-primary"></i></a>
+          <ul class="c-nav-menu u-body-lg l-align-center l-px-1 l-flex-dt l-px-0-dt l-justify-flex-end">
             <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.rhs.org.uk"
-                target="_blank"
-                >rhs.org.uk</a
-              >
+              <a href="coming-soon.html"
+                class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block">Products</a>
+            </li>
+            <li class="c-nav-menu__dropdown">
+              <a href="#" class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block"
+                onclick="toggleDropdown()">
+                Resources
+                <i class="fa-solid fa-caret-down u-text-primary l-pl-0-5"></i>
+              </a>
+              <ul class="c-nav-menu__dropdown-menu u-bg-dropdown-dt l-none l-px-0-dt" id="resourcesDropdown">
+                <li>
+                  <a href="coming-soon.html"
+                    class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt">Blog</a>
+                </li>
+                <li>
+                  <a href="coming-soon.html"
+                    class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt">FAQ</a>
+                </li>
+                <li>
+                  <a href="coming-soon.html"
+                    class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block l-px-1-25-dt l-py-1-dt">Gift
+                    Certificate</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.gardenia.net"
-                target="_blank"
-                >gardenia.net</a
-              >
+              <a href="coming-soon.html"
+                class="c-nav-menu__link c-nav-menu__link--hover u-text-primary l-py-0-5 l-block">About</a>
+            </li>
+            <li class="l-mt-2 l-mb-2 l-my-0-dt">
+              <a href="#contact-us"
+                class="c-nav-menu__link c-nav-menu__cta-btn c-cta-button c-cta-button-2 u-text-primary-dark u-heading-font u-letter-spacing-cabin-normal l-block l-py-0-75 l-px-1-25-dt">Contact
+                us</a>
+            </li>
+          </ul>
+          <ul class="c-social-menu u-body-lg l-align-center l-px-1 l-flex l-justify-center l-px-0-dt">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100045470087619" target="_blank"
+                class="c-social-menu__link u-text-primary l-block l-pr-1-5 l-py-0-5"><i
+                  class="fa-brands fa-facebook-f"></i></a>
             </li>
             <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.finegardening.com"
-                target="_blank"
-                >finegardening.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.pinterest.com"
-                target="_blank"
-                >pinterest.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="c-site-footer__link u-text-secondary"
-                href="https://www.houzz.com"
-                target="_blank"
-                >houzz.com</a
-              >
+              <a href="https://www.instagram.com/outbacknursery/?hl=en" target="_blank"
+                class="c-social-menu__link u-text-primary l-block l-py-0-5"><i class="fa-brands fa-instagram"></i></a>
             </li>
           </ul>
         </div>
-        <div class="c-site-footer-column l-pt-2 l-pt-0-dt">
-          <h3
-            class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-1-25"
-          >
-            Google Map
-          </h3>
-          <iframe
-            class="c-site-footer__map l-full-width"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10311.229474873362!2d-125.0508448!3d49.7520682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1712140421689!5m2!1sen!2sca"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      <div
-        class="c-footer-copyright l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-1 l-pb-1"
-      >
-        <p class="l-pb-0-25">©2024 North Island College</p>
+      </nav>
+    </div>
+  </header>
+  <main>
+  </main>
+  <!--Footer Section-->
+  <footer class="c-site-footer u-bg-secondary">
+    <div
+      class="c-site-footer-top l-flex-dt l-block-gap l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-4 l-pb-4">
+      <div class="c-site-footer-column">
+        <h3 class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75">
+          About Us
+        </h3>
         <p>
-          This is a fictional website that was designed and coded as an
-          educational exercise. It is not intended to be seen outside of the
-          class environment. None of the content and images were approved by the
-          business owner.
+          Outback Nursery is one of the largest garden centres on Vancouver
+          Island. Our nursery is situated on a 6 acre property and offers 5
+          overflowing greenhouses (30x170ft); almost 23,000 square feet.
         </p>
       </div>
-    </footer>
-    <script src="main.js"></script>
-  </body>
+      <div class="c-site-footer-column l-pt-2-5 l-pt-0-dt">
+        <h3 class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-0-75">
+          Our Favorite Websites
+        </h3>
+        <ul class="c-site-footer__list l-pl-0">
+          <li>
+            <a class="c-site-footer__link u-text-secondary" href="https://www.rhs.org.uk" target="_blank">rhs.org.uk</a>
+          </li>
+          <li>
+            <a class="c-site-footer__link u-text-secondary" href="https://www.gardenia.net"
+              target="_blank">gardenia.net</a>
+          </li>
+          <li>
+            <a class="c-site-footer__link u-text-secondary" href="https://www.finegardening.com"
+              target="_blank">finegardening.com</a>
+          </li>
+          <li>
+            <a class="c-site-footer__link u-text-secondary" href="https://www.pinterest.com"
+              target="_blank">pinterest.com</a>
+          </li>
+          <li>
+            <a class="c-site-footer__link u-text-secondary" href="https://www.houzz.com" target="_blank">houzz.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="c-site-footer-column l-pt-2 l-pt-0-dt">
+        <h3 class="u-heading-font u-heading-bold u-heading-md u-body-line-height u-letter-spacing-heading l-mb-1-25">
+          Google Map
+        </h3>
+        <iframe class="c-site-footer__map l-full-width"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10311.229474873362!2d-125.0508448!3d49.7520682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1712140421689!5m2!1sen!2sca"
+          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="c-footer-copyright l-max-width-mobile l-max-width-desktop l-mx-auto l-px-1 l-pt-1 l-pb-1">
+      <p class="l-pb-0-25">©2024 North Island College</p>
+      <p>
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the
+        class environment. None of the content and images were approved by the
+        business owner.
+      </p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>
